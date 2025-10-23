@@ -160,6 +160,28 @@ def merge_and_filter_csv(input_folder: str, output_file: str, min_words: int = 1
 
 
 # ============================================================
+# Removes functional requirements
+# ============================================================
+def remove_functional_req(input_csv: str, output_csv: str):
+    """Load a CSV, remove all rows where 'Prediction' == 'F', and save the result"""
+    df = pd.read_csv(input_csv)
+    print(f"Loaded {len(df)} rows from {input_csv}")
+
+    # Check for column existence
+    if "Prediction" not in df.columns:
+        raise ValueError("Column 'Prediction' not found in the dataset.")
+
+    # Filter rows
+    filtered_df = df[df["Prediction"].astype(str).str.strip() != "F"]
+    print(f"Remaining rows after filtering: {len(filtered_df)}")
+
+    # Save filtered dataset
+    filtered_df.to_csv(output_csv, index=False)
+    print(f"Filtered dataset saved to {output_csv}")
+
+    return filtered_df
+
+# ============================================================
 
 if __name__ == "__main__":
 
