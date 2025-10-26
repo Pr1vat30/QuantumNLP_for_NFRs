@@ -2,14 +2,15 @@
 # Experiment: Compare Embeddings + LazyPredict Classifiers
 # ============================================================
 
-import torch, pandas as pd
-import numpy as np
+import torch, pandas as pd, numpy as np
 from sklearn.model_selection import train_test_split
 from lazypredict.Supervised import LazyClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import LabelEncoder
+from sklearn.metrics import classification_report
 from transformers import BertTokenizer, BertModel
 import gensim.downloader as api
+
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -192,8 +193,45 @@ def evaluate_with_lazy(X_train, X_val, y_train, y_val, embedding_name: str):
     print(f"\n=== Evaluating {embedding_name} embeddings ===")
     clf = LazyClassifier(verbose=0, ignore_warnings=True, custom_metric=None)
     models, predictions = clf.fit(X_train, X_val, y_train, y_val)
+    model_dictionary = clf.provide_models(X_train, X_val, y_train, y_val)
     print(models.head(5))  # top 5 models by accuracy
-    return models
+    return models, model_dictionary
+
+
+def report_dataframe(y_true, y_pred, label_names):
+    report = classification_report(y_true, y_pred, target_names=label_names, output_dict=True, zero_division=0)
+    rows = []
+    for label in label_names:
+        metrics = report[label]
+        rows.append({
+            "class": label,
+            "precision": round(metrics["precision"],2),
+            "recall": round(metrics["recall"],2),
+            "f1-score": round(metrics["f1-score"],2)
+        })
+    avg = report["macro avg"]
+    rows.append({
+        "class": "Average",
+        "precision": round(avg["precision"],2),
+        "recall": round(avg["recall"],2),
+        "f1-score": round(avg["f1-score"],2)
+    })
+    return pd.DataFrame(rows)
+
+
+def evaluate_best_model(X_test, y_test, model_dictionary, results_df, embedding_name: str):
+    best_model_name = results_df.sort_values("Accuracy", ascending=False).index[0]
+    print(f"\nBest model for {embedding_name}: {best_model_name}")
+
+    model = model_dictionary[best_model_name]
+
+    y_pred = model.predict(X_test)
+    df_report = report_dataframe(y_test, y_pred, ["O", "PE", "SE", "US"])
+
+    print(f"📊 Detailed classification report for {embedding_name}:")
+    print(df_report.to_string(index=False))
+
+    return df_report
 
 
 # ============================================================
@@ -227,7 +265,9 @@ def run_experiment(csv_path: str):
 
         # Valuta con LazyPredict
         print(f"🔸 Evaluating models for {name}...")
-        models = evaluate_with_lazy(X_train_emb, X_val_emb, y_train_enc, y_val_enc, name)
+        models, model_dictionary = evaluate_with_lazy(X_train_emb, X_val_emb, y_train_enc, y_val_enc, name)
+
+        evaluate_best_model(X_test_emb, y_test_enc, model_dictionary, models, name)
 
         results[name] = models
 
