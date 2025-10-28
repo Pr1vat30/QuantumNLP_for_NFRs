@@ -42,7 +42,7 @@ def show_dataset_info(df: pd.DataFrame):
 # ============================================================
 # Plot class distribution
 # ============================================================
-def plot_type_distribution(df: pd.DataFrame):
+def plot_type_distribution(df: pd.DataFrame, title="Relative Frequency of 'Type' Classes"):
     """
     Plot the distribution of classes in the 'Type' column
     including error bars and expected frequency line.
@@ -60,7 +60,7 @@ def plot_type_distribution(df: pd.DataFrame):
     plt.figure(figsize=(8, 5))
     freqs.plot(kind='bar', yerr=std_errors * 1.96, color='steelblue', edgecolor='black', capsize=5)
     plt.axhline(expected_frequency, color='red', linestyle='--', label='Expected frequency (uniform)')
-    plt.title("Relative Frequency of 'Type' Classes")
+    plt.title(title)
     plt.xlabel("Type")
     plt.ylabel("Relative Frequency")
     plt.legend()
@@ -100,7 +100,7 @@ def remove_underrepresented(df: pd.DataFrame) -> pd.DataFrame:
 
 
 # ============================================================
-# Undersample remaining classes to mean count
+# Undersample remaining classes to min count
 # ============================================================
 def undersample_classes(df: pd.DataFrame) -> pd.DataFrame:
     """
@@ -117,7 +117,7 @@ def undersample_classes(df: pd.DataFrame) -> pd.DataFrame:
     print(class_counts)
 
     df_balanced = (
-        df.groupby("Type", group_keys=False)
+        df.groupby("Type", group_keys=False)[df.columns]
         .apply(lambda x: x.sample(n=min_count, random_state=42))
         .reset_index(drop=True)
     )
@@ -150,17 +150,16 @@ def process_dataset(csv_path: str):
 
 
 # ============================================================
-# Example usage
-# ============================================================
+
 if __name__ == "__main__":
-    input_csv = "../dataset/ARTA/gold/ARTA_Req_labeled.csv"
+    input_csv = "../dataset/ARTA/gold/ARTA_Req_normalized.csv"
     balanced_df = process_dataset(input_csv)
 
     output_csv = "../dataset/ARTA/gold/ARTA_Req_balanced.csv"
     balanced_df.to_csv(output_csv, index=False)
     print(f"\nBalanced dataset saved to {output_csv}")
 
-    input_csv = "../dataset/ReqExp_PURE/gold/PURE_Req_labeled.csv"
+    input_csv = "../dataset/ReqExp_PURE/gold/PURE_Req_normalized.csv"
     balanced_df = process_dataset(input_csv)
 
     output_csv = "../dataset/ReqExp_PURE/gold/PURE_Req_balanced.csv"
