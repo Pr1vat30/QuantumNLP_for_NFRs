@@ -3,6 +3,7 @@ import re
 import nltk
 import string
 import pandas as pd
+import language_tool_python
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
@@ -12,6 +13,7 @@ nltk.download('wordnet', quiet=True)
 nltk.download('omw-1.4', quiet=True)
 nltk.download('punkt', quiet=True)
 
+tool = language_tool_python.LanguageTool('en-US')
 
 # ============================================================
 # Dataset Upload
@@ -23,11 +25,18 @@ def load_dataset(csv_path: str, text_col: str = "Requirement") -> pd.DataFrame:
     try:
         df = pd.read_csv(csv_path)
         print(f"Loaded CSV: {os.path.basename(csv_path)} ({len(df)} rows)")
+        return df
     except Exception as e:
         print(f"Error in file {csv_path}: {e}")
+        return pd.DataFrame(columns=[text_col])
 
-    return df
-
+def correct_sentence(sentence: str) -> str:
+    """
+    Corrects grammar, spelling, and syntax of a single sentence.
+    """
+    matches = tool.check(sentence)
+    text = language_tool_python.utils.correct(sentence, matches)
+    return clean_sentence(text)
 
 # ============================================================
 # Text normalization
@@ -50,6 +59,8 @@ def clean_sentence(sentence: str) -> str:
     sentence = re.sub(r'^\s*\d+(\.\d+)*\s*', '', sentence)
     # remove type (O) tag or [SRS001]
     sentence = re.sub(r'\([A-Z]+\)|\[[^\]]*\]', '', sentence)
+    # removes sparse numbers (e.g. "2.3.1")
+    sentence = re.sub(r'\(\s*\d+(\.\d+)*\s*\)', '', sentence)
 
     sentence = sentence.lower()
     sentence = re.sub(f"[{re.escape(string.punctuation)}]", "", sentence)
@@ -75,9 +86,10 @@ def process_tokens(sentence: str) -> str:
 # Single sentence pipeline
 # ============================================================
 def process_sentence(sentence: str) -> str:
-    sentence = clean_sentence(sentence)
-    sentence = process_tokens(sentence)
-    return sentence
+    correct = correct_sentence(sentence)
+    clean = clean_sentence(correct)
+    process = process_tokens(clean)
+    return process
 
 
 # ============================================================

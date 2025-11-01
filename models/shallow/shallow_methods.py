@@ -42,7 +42,7 @@ def split_dataset(df: pd.DataFrame, label_col: str = "Type"):
 # Embedding Functions
 # ============================================================
 
-# 1️⃣ TF-IDF
+# 1) TF-IDF
 def embed_tfidf(X_train, X_val, X_test):
     vectorizer = TfidfVectorizer(max_features=5000)
 
@@ -57,7 +57,7 @@ def embed_tfidf(X_train, X_val, X_test):
 
     return X_train_vec, X_val_vec, X_test_vec
 
-# 2️⃣ Word2Vec
+# 2) Word2Vec
 def embed_word2vec(X_train, X_val, X_test):
 
     w2v = api.load("word2vec-google-news-300")
@@ -82,7 +82,7 @@ def embed_word2vec(X_train, X_val, X_test):
     print("Done - dimensione embedding:", w2v.vector_size)
     return X_train_vec, X_val_vec, X_test_vec
 
-# 3️⃣ GloVe
+# 3) GloVe
 def embed_glove(X_train, X_val, X_test):
 
     glove = api.load("glove-wiki-gigaword-300")
@@ -107,7 +107,7 @@ def embed_glove(X_train, X_val, X_test):
     print("Embeddings GloVe generati correttamente.")
     return X_train_vec, X_val_vec, X_test_vec
 
-# 4️⃣ FastText
+# 4) FastText
 def embed_fasttext(X_train, X_val, X_test):
 
     ft = api.load("fasttext-wiki-news-subwords-300")
@@ -132,7 +132,7 @@ def embed_fasttext(X_train, X_val, X_test):
     print("Embeddings FastText generati correttamente.")
     return X_train_vec, X_val_vec, X_test_vec
 
-# 5️⃣ BERT (Hugging Face)
+# 5) BERT (Hugging Face)
 def embed_bert(X_train, X_val, X_test, batch_size=32):
 
     # Carica il tokenizer e il modello
@@ -304,7 +304,7 @@ def display_results(results: dict):
             df_results = df_results.sort_values(by="Accuracy", ascending=False)
 
         # Stampa risultati completi e leggibili
-        print(f"\n📊 Risultati per {embed_name} (ordinati per Accuracy):")
+        print(f"\nRisultati per {embed_name} (ordinati per Accuracy):")
         print(df_results[table].to_string(index=False))
 
         all_results.append(df_results)
