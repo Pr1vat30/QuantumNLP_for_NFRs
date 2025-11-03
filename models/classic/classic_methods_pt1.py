@@ -1,13 +1,10 @@
-from lambeq import BobcatParser, Dataset, PytorchModel, PytorchTrainer
+from lambeq import BobcatParser, Dataset, PytorchModel, PytorchTrainer, cups_reader
 from lambeq import AtomicType, TensorAnsatz
 from lambeq.backend.tensor import Dim
-import matplotlib.pyplot as plt
-import torch, pandas as pd, numpy as np
-from sklearn.model_selection import train_test_split
-
-import torch as th
 from sympy import default_sort_key
-import tensornetwork as tn
+from sklearn.model_selection import train_test_split
+import torch, pandas as pd, numpy as np, tensornetwork as tn
+import matplotlib.pyplot as plt
 
 """
 Some elements in the original dataset cause the training process to not make progress --> training starts 
@@ -94,18 +91,21 @@ def split_dataset(df: pd.DataFrame, label_col: str):
 # Parser & Circuit Generator
 # ============================================================
 
-def generate_diagrams(train_data, val_data, test_data):
-    print("\nParsing sentences into diagrams...")
-    parser = BobcatParser(verbose='progress')
+def generate_diagrams(data, parser_model: str = "Bobcat"):
 
-    train_diagrams = parser.sentences2diagrams(train_data)
-    val_diagrams = parser.sentences2diagrams(val_data)
-    test_diagrams = parser.sentences2diagrams(test_data)
+    print(f"\nParsing sentences into diagrams...")
 
+    if parser_model == "Bobcat":
+        parser = BobcatParser(verbose='progress')
+    elif parser_model == "CupsReader":
+        parser = cups_reader
+    else: raise ValueError(f"Unknown model '{parser_model}'.")
+
+    diagrams = parser.sentences2diagrams(data)
     print("Parsed sentences successfully.")
-    # train_diagrams[0].draw(figsize=(7, 3))
+    # diagrams[0].draw(figsize=(7, 3))
 
-    return train_diagrams, val_diagrams, test_diagrams
+    return diagrams
 
 def generate_circuits(diagrams, labels):
     print("\nGenerating circuits...")
@@ -129,12 +129,12 @@ def generate_circuits(diagrams, labels):
 
             # test on tensor circuits
             syms = sorted(circuit.free_symbols, key=default_sort_key)
-            sym_dict = {k: th.ones(k.size) for k in syms}
+            sym_dict = {k: torch.ones(k.size) for k in syms}
             subbed_diagram = circuit.lambdify(*syms)(*sym_dict.values())
 
             # circuits contraction into tensor
             result = subbed_diagram.eval(contractor=tn.contractors.auto)
-            if isinstance(result, th.Tensor):
+            if isinstance(result, torch.Tensor):
                 result = result.detach().cpu().numpy()
 
             # check coherency of dtype
@@ -151,7 +151,7 @@ def generate_circuits(diagrams, labels):
             print(f"Skipping {diagram} diagram (other error): {e}")
 
     print(f"{len(valid_circuits)} circuits generated successfully.")
-    #train_circuits[0].draw(figsize=(7, 3))
+    # train_circuits[0].draw(figsize=(7, 3))
 
     return valid_circuits, valid_labels
 
@@ -168,7 +168,6 @@ def encode_labels(label_lists):
         all_labels.update(labels)
     print(f"\nEncoding labels {sorted(all_labels)}")
 
-    # class_names = ["O", "PE", "SE", "US"]
     class_names = sorted(all_labels)  # list of dataset class
     label_map = {name: i for i, name in enumerate(class_names)}
 
@@ -186,7 +185,7 @@ def encode_labels(label_lists):
 def run_training(
         train_circuits, val_circuits, test_circuits,
         train_labels, val_labels, test_labels,
-        learning_rate=0.01, epochs=10, batch_size=16,
+        learning_rate, epochs, batch_size,
 ):
     train_dataset = Dataset(train_circuits, encode_labels(train_labels))
     val_dataset = Dataset(val_circuits, encode_labels(val_labels))
@@ -300,9 +299,7 @@ def evaluate_on_test(model, test_circuits, test_labels):
 # ============================================================
 
 def run_lambeq_pipeline(
-        csv_path, text_col="Requirement", label_col="Type",
-        parser_model = "Bobcat", loss_fun = "BCELoss",
-        learning_rate=0.01, epochs=50, batch_size=16
+        csv_path, text_col="Requirement", label_col="Type", parser_model = "Bobcat"
 ):
 
     # Load dataset
@@ -312,7 +309,9 @@ def run_lambeq_pipeline(
     X_train, X_val, X_test, y_train, y_val, y_test = split_dataset(df, label_col)
 
     # Lambeq diagram
-    train_diagrams, val_diagrams, test_diagrams = generate_diagrams(X_train, X_val, X_test)
+    train_diagrams = generate_diagrams(X_train, parser_model)
+    val_diagrams = generate_diagrams(X_val, parser_model)
+    test_diagrams = generate_diagrams(X_test, parser_model)
 
     # Lambeq circuit
     train_circuits, train_labels = generate_circuits(train_diagrams, y_train)
@@ -334,14 +333,18 @@ def run_lambeq_pipeline(
 # ============================================================
 
 if __name__ == "__main__":
-    # print("\nFirst lambeq tensor network model training (Bobcat + BCELoss) ...")
-    # run_lambeq_pipeline("../../dataset/ARTA/gold/ARTA_Req_balanced.csv")
 
-    # print("\nSecond lambeq tensor network model training (Bobcat + BCELoss) ...")
-    # run_lambeq_pipeline("../../dataset/ReqExp_PURE/gold/PURE_Req_balanced.csv")
+    arta_path = "../../dataset/ARTA/gold/ARTA_Req_balanced.csv"
+    pure_path = "../../dataset/ReqExp_PURE/gold/PURE_Req_balanced.csv"
 
-    print("\nFirst lambeq tensor network model training (CupsReader + BCELoss) ...")
-    run_lambeq_pipeline("../../dataset/ARTA/gold/ARTA_Req_balanced.csv")
+    # print("\nARTA - lambeq tensor network model training (Bobcat + BCELoss) ...")
+    # run_lambeq_pipeline(arta_path, parser_model="Bobcat")
 
-    # print("\nSecond lambeq tensor network model training (CupsReader + BCELoss) ...")
-    # run_lambeq_pipeline("../../dataset/ReqExp_PURE/gold/PURE_Req_balanced.csv")
+    # print("\nPURE - lambeq tensor network model training (Bobcat + BCELoss) ...")
+    # run_lambeq_pipeline(pure_path, parser_model="Bobcat")
+
+    print("\nARTA - lambeq tensor network model training (CupsReader + BCELoss) ...")
+    run_lambeq_pipeline(arta_path, parser_model="CupsReader")
+
+    print("\nPURE - lambeq tensor network model training (CupsReader + BCELoss) ...")
+    run_lambeq_pipeline(pure_path, parser_model="CupsReader")
