@@ -1,0 +1,1057 @@
+Requirement,Prediction,Type
+mechanism generation link assurance signal shall specified,NFR,O
+weight operational radio including battery exceed 800g electrical,NFR,O
+tc software shall capable hosted variety computer operating system organic various service,NFR,O
+tc software shall defense information infrastructure common operating environment compliant,NFR,O
+distributed telescope system many instrument gemini 8m telescope system internal communication need,NFR,O
+gemini system software designed following constraint,NFR,O
+modified,NFR,O
+testability shall considered design development tc,NFR,O
+message passing communication primitive shall provided tasktotask communication well broadcast processor,NFR,O
+gemini 8m telescope software developed according structured formally denied development model purpose,NFR,O
+n shall configured automatically enter sync microcode following power,NFR,O
+av telemetry data shall available support tc function required,NFR,O
+make file automated script support build download flash programming process shall delivered software nasa,NFR,O
+entrain mobile shall provide standardized interface ertmsetcs,NFR,O
+direct mode equipment shall capable operation channel defined table 151,NFR,O
+system support ssl encrypted connection,NFR,O
+flight hardware shall fabricated using radiation hardened ardor radiation tolerant component,NFR,O
+numbering team shall treated way maintenance team 9242,NFR,O
+system must support multiple type communication service remote access,NFR,O
+using one traction unit function shall disabled leading traction unit,NFR,O
+deleted deleted deleted deleted,NFR,O
+meet growth requirement tc shall capable adding additional storage without major hardware reconfiguration,NFR,O
+mobile support service defined relevant gsm specification service mainly used,NFR,O
+location information may provided system external radio system example ground based system track circuit,NFR,O
+shall possible perform voted venus reset via n,NFR,O
+controller equipment must designed function correctly railway operating environment control center signal box,NFR,O
+flight n shall designed electromagnetically compatible redstone power pc 604r,NFR,O
+system shall utilize interchangeable plugins,NFR,O
+system shall operate within window xp professional operating system,NFR,O
+whilst ongoing multidrivers indication shall displayed permanently cab radio,NFR,O
+ftse object module linked application four fcs shall identical,NFR,O
+tc shall provide capability capture frozen frame imagery store frozen image review processing,NFR,O
+application shall run web application server,NFR,O
+shunting mode implemented link assurance tone shall provided via loudspeaker direct mode,NFR,O
+tc shall provide tape drive storage retrieval tc data,NFR,O
+tc shall capable interoperable predator outrider uavs across 5 level uav interaction,NFR,O
+tc shall receive process present payload data operator status payload determined sss151,NFR,O
+tc transportation theater army marine corp system shall ground air well rail transportable,NFR,O
+tc shall capable executing payload maintenance software displaying appropriate status result,NFR,O
+system designed near architecture presentation logic separated business logic separated data access logic,NFR,O
+continuous tone coded squelch system shall implemented direct mode equipment,NFR,O
+tc shall use standard military worldwide 110220 volt 5060 hertz generator commercial power source,NFR,O
+priority call handling facility shall provided performance requirement defined section 34 102 met runtime diagnostics,NFR,O
+faulttolerant system service software shall use work version 54 operating system,NFR,O
+gemini supported software developed using formally denied model wardmellor approach developing realtime system used cover,NFR,O
+line fitted rbc etc train borne equipment shall able transmit location entire train rbc,NFR,O
+operational radio shall capable withstanding exposure extreme environmental condition,NFR,O
+etc train borne equipment shall capable receiving information national train control system mean stm,NFR,O
+prototype n use convection cooling,NFR,O
+etc onboard shall capable receiving national value trackside adapt national requirement,NFR,O
+current train data shall stored except transition shunting etc equipment traction unit operative,NFR,O
+standardized output interface shall enable transmission information recorded medium investigation,NFR,O
+system initialization shall initiate execution ftse x38 application code,NFR,O
+maintenance product fall within established corporate maintenance window,NFR,O
+cab radio shall able receive display store incoming short text message see section 12,NFR,O
+platform browser independent client,NFR,O
+ix automatic network selection suitable use area risk cab radio change foreign network unpredictably,NFR,O
+weight general purpose radio including battery exceed 250g electrical,NFR,O
+subsection function provided cab radio described,NFR,O
+data terminal control shall include limited antenna pointing control transmitter control receiver control,NFR,O
+tc shall able store 24 hour payload data external storage utilized purpose,NFR,O
+user workstation shall meet minimum software requirement prior implementation,NFR,O
+access control electronics hardware vme ion using epic software control interface permitted,NFR,O
+iv pushtotalk function shall provided use group call,NFR,O
+using one traction unit function shall disabled leading traction unit,NFR,O
+general purpose radio suitable use car adapter kit,NFR,O
+operational radio suitable use car adapter kit,NFR,O
+tc shall support los data link sitcom data link capability,NFR,O
+system shall extremely portable via usb drive,NFR,O
+shall possible use tandem traction unit without isolating etc train borne equipment tandem traction unit,NFR,O
+general purpose radio suitable use car adapter kit,NFR,O
+system designed near architecture presentation logic separated business logic separated data access logic,NFR,O
+logical architecture comprises number interface different arena element,NFR,O
+functional number deregistration facility shall supported arena user equipment,NFR,O
+system shall support multiparty voice communication six different party,NFR,O
+product shall available distribution packaged cd,NFR,O
+scope fair shall limited hardware four fcp board four cpctc board five icp five n,NFR,O
+ftse shall provide status data application ccnucc rs422 link ctc used command data,NFR,O
+tc shall provide adequate capability allow operator operate uav within certified operational flight envelope,NFR,O
+train shall supervised static dynamic train speed profile,NFR,O
+country train number alphanumeric support number required interoperability,NFR,O
+upon request driver cab radio able perform suite run time diagnostic test physical interface,NFR,O
+system shall interface campus connects central server,NFR,O
+interactive courseware training capability tc shall developed phase introduced user scheduled demonstration test,NFR,O
+prototype n shall fabricated using commercial grade component,NFR,O
+tc shall maintained accordance service approved uav maintenance concept procedure,NFR,O
+etc train borne equipment shall capable isolated,NFR,O
+product shall available distribution via internet binary zip file,NFR,O
+unsynchronized processor shall excluded fcp configuration,NFR,O
+system shall provide open interface change management control system like bugzilla serena change man dimension,NFR,O
+product shall interface choice part system per day approximately 1,NFR,O
+shall mode operation shutdown state,NFR,O
+applicable av via selected system data link well direct ground connection,NFR,O
+interaction protocol web server mediator defined,NFR,O
+recovery tc shall include startup download software startup csis establishment state readiness interface,NFR,O
+character set used shall support different language,NFR,O
+system hardware shall fixed patched via internet connection,NFR,O
+weight operational radio including battery exceed 800g electrical,NFR,O
+tc shall functionality connect power supply equipment provided tc operating environment,NFR,O
+cab radio required provide communication ertmsetcs,NFR,O
+documentation shall contain sufficient technical detail define hardware software design implemented satisfy system requirement,NFR,O
+interaction protocol web server mediator defined,NFR,O
+technical lead shall perform code review every system change change may committed source control,NFR,O
+functional requirement relating controller equipment specification found arena functional requirement specification,NFR,O
+tc shall capability simultaneously control monitor lineofsight well los data terminal,NFR,O
+load module four fcs shall identical,NFR,O
+arena numbering plan shall standardized allow interoperability shall implemented private numbering plan within asmr network,NFR,O
+system use http communication protocol ie http encrypted secure socket layer,NFR,O
+etc shall compatible existing national system listed cc tsi interfere national system interfered national system,NFR,O
+connector p1 pin 1 32 row shall connected 5v,NFR,O
+system supporting support monitoring followup activity required tracking status case exposed individual,NFR,O
+command read capability fcp shall read command data received ctc via ccnucc,NFR,O
+n shall support least 6 virtual group,NFR,O
+tc shall incorporate intercom system provides verbal communicate situation,NFR,O
+providing site map separate navigation overview site map provided application showing structure site overview form,NFR,O
+contractor shall develop preliminary design ftp architecture,NFR,O
+direct mode shall operate simplex mode radio link us single frequency alternate transmission reception,NFR,O
+n shall support class 1 class 2 bandwidth least 1 byte,NFR,O
+number general constraint placed gemini software,NFR,O
+shall possible user store ardor overwrite number detail radio computer interface,NFR,O
+interface requirement specification defined tc isaf tc 211,NFR,O
+support solution accessible user within application also outside application browser interface,NFR,O
+system must support multiple type communication service remote access,NFR,O
+tc shall provide external interface launch recovery system,NFR,O
+tc hardware shall mounted well ruggedized withstand inter intra theater movement,NFR,O
+operational radio shall operate standard gsm terminal supplying mobile service defined section 4,NFR,O
+equipment default operation common access channel direct mode channel 1 entry direct mode,NFR,O
+etc train borne equipment shall capable isolated,NFR,O
+tc software flexibility expandability shall provided use coe use standardized software development practice,NFR,O
+system shall support group voice call,NFR,O
+system support selective encryption stored data,NFR,O
+operating location dependent addressing manual action shall required update system mobile move location,NFR,O
+dbms pm data storage must available provide enough user licensee ensure full functionality pm,NFR,O
+arena mobile equipment shall capable operated board rolling stock electrical,NFR,O
+system provide role based control functionality within system,NFR,O
+minimum tc shall provide startup fdp operator workstation,NFR,O
+tc shall port outputting data imagery internal hard copy printer,NFR,O
+tc shall permit operator control payload using method supported payload installed selected av,NFR,O
+system shall used within specification defined computer used program administrator nursing staff member,NFR,O
+ftse shall route message proper virtual group socket,NFR,O
+targeting 5 c4i system interface,NFR,O
+section identifies arena application may used operational radio functionality provided operational radio detailed,NFR,O
+flight n shall reside single ruggedized wedge locked conduction cooled 6u vme board,NFR,O
+section function provided general purpose radio described,NFR,O
+system shall support group voice call,NFR,O
+system based gsm architecture summarized figure 13,NFR,O
+communication service shall provide message queue communication mechanism guarantee message delivery sending receiving task,NFR,O
+tc support fielding package shall developed available operational testing,NFR,O
+operational radio used shunting shall able switched following two operating mode maintenance function,NFR,O
+shall objective capability integrated operated tactical command control aircraft,NFR,O
+system shall interface student master server,NFR,O
+possible maintenance function enable disable emergency call function,NFR,O
+tc shall provide capability print waypoint data alphanumeric format,NFR,O
+additionally fair shall reinitialize integrate n,NFR,O
+n syndrome shall located second longford input information block buffer cell,NFR,O
+shall possible change battery without losing data stored radio,NFR,O
+system shall continue depend upon use single sql server 2008 database,NFR,O
+network shall operate subband combination subbands rsm band defined,NFR,O
+website must interface cybersource api process credit card transaction,NFR,O
+system shall mdi form allows viewing graph data table,NFR,O
+tc transport storage container shall reusable enable operator set equipment within established timeline word,NFR,O
+software product expected run window linux platform,NFR,O
+scheduler shall support 5 vehicle mode,NFR,O
+tacoma segment shall provide external interface communication medium indicated table 31041,NFR,O
+iv pushtotalk function shall provided use group call,NFR,O
+hardware constraint covered individual chapter software design description,NFR,O
+use air conjunction sim application toolkit update sim card home network recommended see detail,NFR,O
+test point shall made available p2 connector examining operational status n,NFR,O
+cab radio support direct mode communication defined section 15,NFR,O
+shall possible change battery without losing data stored radio,NFR,O
+telemetry capability shall capable transferring 12800 byte within 10 hz frame fcp,NFR,O
+abbreviated dialling facility shall supported,NFR,O
+intercom system shall compatible service specific voice communication system,NFR,O
+product installation upgrade shall handled middleware technology team within established launch time frame,NFR,O
+police regarding data synchronization defined support multiple deployment option discussed section 21 system architecture document,NFR,O
+internal within ioc implementation database based epic implementation within host workstation tbd,NFR,O
+cs operating system executable software shall reprogrammable without hardware disassembly,NFR,O
+note adaptive multirate codec suitable voice group call voice broadcast call,NFR,O
+development team shall perform weekly integration system deploy system update staging environment,NFR,O
+call related function shall possible handset hook,NFR,O
+functional number deregistration facility shall supported arena user equipment,NFR,O
+onboard shall capable sending train data trackside confirmation driver entering rbc area,NFR,O
+standard data interface provided allow computer connected radio,NFR,O
+interface shall allow information data server made available component tc,NFR,O
+facility shall provided support list stored name number minimum 100 entry,NFR,O
+configuration management protocol personnel identified support multiple deployment option,NFR,O
+product must support mozilla firefox 10,NFR,O
+etc equipped traction unit shall capable moved shunting without train data track data movement authority,NFR,O
+switched radio shall retain setting number stored time radio switched select language,NFR,O
+tc shall provide external interface launch recovery system,NFR,O
+user workstation shall meet minimum hardware requirement prior implementation minimum hard disk space,NFR,O
+support required range data communication ground mobile user application may include,NFR,O
+thomas system shall control heating cooling unit designated part thomas system,NFR,O
+radio shall support least ten different language adjust loudspeaker volume,NFR,O
+secondary database used store historical statistic data,NFR,O
+system developed deployed 3tier datacenter architecture,NFR,O
+interaction protocol web server mediator defined,NFR,O
+targeting 5 c4i system interface,NFR,O
+tc shall capability load map onto display zoom scroll print clear map map display,NFR,O
+radio shall support least ten different language adjust loudspeaker volume,NFR,O
+additional information may also provided available external system,NFR,O
+cab radio required national railway support handheld portable cab radio shall,NFR,O
+moreover driver may provided handheld portable allow communication whilst driver outside train,NFR,O
+application programming interface shall documented ftse api document,NFR,O
+run microsoft window xp,NFR,O
+memory scrubbing shall executed without interfering normal execution application task,NFR,O
+cab radio shall support shunting mode communication defined section 14,NFR,O
+mmi shall suitable use day night,NFR,O
+implementation cut must take account requirement interoperability,NFR,O
+addition individual railway may requirement interface national control command system,NFR,O
+weight general purpose radio including battery exceed 250g electrical,NFR,O
+product function alongside server software operating system java runtime installed,NFR,O
+tc shall capable automatically controlling transmitter receiver mode selected data terminal,NFR,O
+ftse software shall configure fcp act redstone bit master exception icp neft master,NFR,O
+ftp shall consist five n one fcc one neft ftse software,NFR,O
+ftse delivery shall made using cd room medium,NFR,O
+ftse software work operating system together shall take 3 megabyte room loaded fcp icp memory,NFR,O
+tc shall provide interface respective uav program provided data link command control uav data,NFR,O
+goal requirement interface provide support,NFR,O
+system shall support multiparty voice communication six different party,NFR,O
+useful operating life shall determined analysis presented critical design review,NFR,O
+server work apache tomcat mysql database,NFR,O
+train shall supervised static dynamic train speed profile,NFR,O
+shall possible implement one etc application level line,NFR,O
+rtp interface requirement specification defined data server tc 238,NFR,O
+default loudspeaker volume shall set predetermined level suitable operating environment stored within system,NFR,O
+interface may provided cab radio system,NFR,O
+system able run debug mode,NFR,O
+number constraint gemini 8m telescope computer hardware although constraint may appear redundant project recognizes,NFR,O
+logical architecture operational radio illustrated figure 71,NFR,O
+rtp interface shall support distributed processing capability,NFR,O
+arena mobile equipment shall capable store die without operational temperature 40c without permanent damage,NFR,O
+mobile radio shall following power class,NFR,O
+access transmit queue shall controlled within communication service primitive,NFR,O
+tc shall provide common software architecture tc interaction predator outrider future tactical uavs,NFR,O
+operational radio shall suitable use car adapter kit,NFR,O
+additional information may also provided available external system,NFR,O
+system run multiple browser,NFR,O
+normal operation mode tc shall support following function,NFR,O
+bit shall executed without interfering normal execution application task,NFR,O
+communication service shall route message proper virtual group socket,NFR,O
+software developed keeping downward compatibility intact,NFR,O
+dedicated pushtotalk button shall provided,NFR,O
+lead washing process operate within established physical web service structure,NFR,O
+necessary train interface unit may implemented adapt entrain system standard interface provided cab radio,NFR,O
+ertmsetcs level 2 3 implemented network shall capable supporting data communication train control system,NFR,O
+primary database used store cached data active user,NFR,O
+etc train borne equipment shall capable receiving information national train control system mean stm,NFR,O
+general purpose radio comprise man machine interface includes following component display control panel loudspeaker microphone,NFR,O
+battery requirement shall provided without use discontinuous reception transmission ddr,NFR,O
+tc shall capable positioning antenna maintain los well sitcom,NFR,O
+software must portable window o,NFR,O
+standardized output interface shall enable transmission information recorded medium investigation,NFR,O
+ftse shall execute redstone power pc 604r,NFR,O
+data synchronized instance om application working server able share use data,NFR,O
+direct mode implemented mean enter leave direct mode shall provided,NFR,O
+battery used mobile equipment shall sufficient capacity support typical railway use electromagnetic compatibility,NFR,O
+clean objectoriented design allowing good maintainability,NFR,O
+product must support internet explorer 55,NFR,O
+scheduler shall provide mechanism task optionally define user written softwareexceptionhandling routine run context task,NFR,O
+tc hardware flexibility expansion shall provided use gfe adi cot hardware designed upgraded expanded,NFR,O
+local area group call implemented shall able modified within network,NFR,O
+system shall protected open source firewall called fire starter httpwwwfssecuritycom,NFR,O
+land based part system shall provide communication mobile stationary travelling speed maximum allowable line speed,NFR,O
+transfer time message segment less 30 second 95 message,NFR,PE
+audible visual indication incoming call shall provided,NFR,PE
+system must maintain audit trail long required least life case refers,NFR,PE
+short audible visual indication incoming call shall provided,NFR,PE
+powering cab radio shall cause disconnection cab radio mobile network,NFR,PE
+audible visual indication incoming call shall provided,NFR,PE
+isolation etc train borne equipment shall disconnect etc train borne equipment vehicle braking system,NFR,PE
+driver previously registered train shall informed audible visual indication train number overridden another driver,NFR,PE
+sequence described 1139i step 17 may interrupted may require additional user action confirmation,NFR,PE
+56k connection system response time operation must 6 second 90 time,NFR,PE
+new n observed functioning n return operational mode within 500 microsecond,NFR,PE
+following processor recovery time frozen ftse software shall account frozen time update met proper value,NFR,PE
+failure apply full service brake detected emergency brake shall stop train rear danger point,NFR,PE
+shall provide functionality maximum delay time 1 second operator command system acknowledgement response,NFR,PE
+idle mode gsm service indicator see lost mobile shall give audible visual indication,NFR,PE
+sep api call made prior actual separation call shall return zero,NFR,PE
+mobile equipment shall function correctly travelling speed 0 kmh,NFR,PE
+etc onboard shall capable receiving information regarding air tightness trackside,NFR,PE
+audible indication provided user network service longer available,NFR,PE
+ftse shall wait icp signal completed initialization suspending application memory realignment,NFR,PE
+met shall initialized zero first 50 hz frame,NFR,PE
+tc shall provide capability monitor specific telemetry element realtime record telemetry element future review processing,NFR,PE
+system shall let existing customer log website email address password 5 second,NFR,PE
+shall also possible allow driver change adhesion condition case information trackside priority,NFR,PE
+system must provide adequate response time commonly performed function standard peak condition,NFR,PE
+draper shall violate 100 microsecond requirement,NFR,PE
+system initialization hardware reset starting 50 hz timer shall take longer 15 minute,NFR,PE
+surviving triplex shall attempt sync failed fcp,NFR,PE
+system shall let administrator deactivate customer account 1 minute customer longer able access website,NFR,PE
+etc train borne equipment shall supervise end movement authority information available onboard,NFR,PE
+shall possible driver increase decrease loudspeaker volume within adjustment range selected,NFR,PE
+time n failure identified n recoverable time n recovered shall 15 minute,NFR,PE
+system initialization shall enable reset processor watchdog timer absence fault watchdog timer expire reset processor,NFR,PE
+timestamp shall 32bit quantity indicates relative time within fcc,NFR,PE
+link assurance signal shall deactivated upon receipt shunting emergency call,NFR,PE
+shall possible deregister ten functional number item equipment physically connected cab radio within 30 second,NFR,PE
+sync procedure shall terminate 5 n synchronized four n synchronized four n powered timeout period,NFR,PE
+n shall provide capability perform voted vme bus reset,NFR,PE
+control flow four fcs shall similar identical,NFR,PE
+onboard shall supervise train ceiling speed,NFR,PE
+onoff control designed prevent accidental activation deactivation,NFR,PE
+continuous visual indication emergency function activated shall provided originating receiving terminal,NFR,PE
+flight n storage life shall 5 year better,NFR,PE
+confirmation message shall received central location 99 probability success within 5 minute call termination,NFR,PE
+continuous bit shall diagnose faulty fcr within 1 second detecting failure,NFR,PE
+telemetry capability shall transfer telemetry block fcp ccnucc connected ctc,NFR,PE
+acceptable one mobile user involved group call may talk time case,NFR,PE
+call terminated continuous visual alarm indication cab shall cease,NFR,PE
+ccss tone shall frequency 2035 hz,NFR,PE
+ftp system shall monitor presence new channel 1 hz periodic rate,NFR,PE
+mission mode congruent noncongruent memory boundary shall known fixed,NFR,PE
+redundancy management shall notify application alignment reintegration processor take place 1 second,NFR,PE
+password field completed repeat password field must completed,NFR,PE
+failed channel provided recoverable shall recovered less 15 minute,NFR,PE
+downtime failure shall exceed x hour,NFR,PE
+system shall allow minimum 6 user work time,NFR,PE
+ii picking handset shall transfer communication handset reduce loudspeaker volume minimum level,NFR,PE
+terminate gcse call dtmf signalling 3digit sequence shall used,NFR,PE
+cma report shall returned later 60 second user entered cma report criterion,NFR,PE
+fcp watchdog timer shall remain active memory realignment,NFR,PE
+operational n enter working group tnr routine fcs request send tnr packet,NFR,PE
+runtime diagnostics implemented failure interface shall reported driver via display,NFR,PE
+transition occur train stationary shall initiated automatically manually appropriate,NFR,PE
+railway emergency call shall able initiated using single red button see section 13,NFR,PE
+scheduler shall place processing time bound rate group ensure rate group monopolizes fcc processor,NFR,PE
+system shall able email customer vendor less 1 second,NFR,PE
+system shall able restore 1000 record per second,NFR,PE
+possible driver speak part call receiving broadcast call,NFR,PE
+recreation inventory quantity adjustment period previous 30 day shall take 30min,NFR,PE
+n syndrome shall include indication vote error faulttolerant clock synchronization error fiberoptic link error detailed,NFR,PE
+changing battery result losing data stored radio,NFR,PE
+n fails synchronize n sync predefined timeout period shall enter tnr microcode,NFR,PE
+automatic self testing radio shall use gsm imsi attach procedure,NFR,PE
+random vibration withstood mobile equipment shall 025g three ax freedom,NFR,PE
+train received emergency stop etc shall command emergency brake,NFR,PE
+n shall directly enter tnr microcode voted reset n watchdog timer reset,NFR,PE
+call shall continue terminated calling driver authorized controller network,NFR,PE
+audible indication provided user network service longer available,NFR,PE
+majority unanimity fcp member observed packet output buffer timeout shall initiated,NFR,PE
+fcp shall application initialization complete send fcp ready sync message icp,NFR,PE
+reversing function shall possible one active cab closed time procedure,NFR,PE
+shall possible command immediate train stop,NFR,PE
+iron administrator must able add new product website within 2 minute,NFR,PE
+assume doggie freeze baseline usb system delivery,NFR,PE
+pointtopoint call shall allow party talk simultaneously public emergency voice call,NFR,PE
+switching radio shall cause following,NFR,PE
+system must maintain audit trail long required least life case refers,NFR,PE
+system shall able add product shopping cart less 2ms,NFR,PE
+confirmation message shall commence end call radio move call area,NFR,PE
+qualification testing sweep time per axis shall 3 minute 141 arm overall,NFR,PE
+maximum timeout value shall 32768 microsecond 256 count least significant bit faulttolerant clock 128 microsecond,NFR,PE
+upon activation registration function used message see section 11 shall sent cab radio,NFR,PE
+tc shall provide override payload automated well preprogrammed input,NFR,PE
+utility timer shall available via ftse api call,NFR,PE
+driver shall able confirm train integrity rbc manually confirmation requires train stationary,NFR,PE
+system shall able validate credit card less 2 second,NFR,PE
+mission execution tc shall provide operator caution warning uav system identified malfunction,NFR,PE
+ct shall also contain timeouts vote mask,NFR,PE
+transition occur train stationary shall initiated automatically manually appropriate,NFR,PE
+shall possible register ten functional number item equipment physically connected cab radio within 30 second,NFR,PE
+train speed shall speed specified national value,NFR,PE
+ftp shall recover babbling n icp within 40 millisecond detected,NFR,PE
+audible visual indication shall provided driver call proceeding,NFR,PE
+presence absence neft icp shall impact ftse software ie ftse icp load different,NFR,PE
+time management shall provide met,NFR,PE
+direct mode equipment sensitivity shall least 107dbm,NFR,PE
+scheduler shall detect 50 hz 10 hz 1 hz rate group overrun,NFR,PE
+contact mobile radio network lost cab radio shall give audible visual indication,NFR,PE
+performing given task mission execution operator shall given appropriate warning message concurrently executing subsystem task,NFR,PE
+timestamps shall congruent across member destination fcp,NFR,PE
+railway emergency call shall able initiated using single red button see section 13,NFR,PE
+upon usb plugged system shall able deployed operational less 1 minute,NFR,PE
+time fcr failure identified component fcr recoverable alignment permitted time fcr recovered shall 15 minute,NFR,PE
+mean interleave direct mode operation provided see section 15,NFR,PE
+process scheduling shall performed certain controlled location synchronization point,NFR,PE
+system shall let administrator add remove category website 5 minute,NFR,PE
+mean time failure must least 300 hour,NFR,PE
+system able connect call audible visual indication shall provided user send railway emergency call,NFR,PE
+scheduler shall provide api call fcp application task alert scheduler vehicle mode change,NFR,PE
+call shall connected loudspeaker driver pick handset,NFR,PE
+ftse shall configure fcp halt processing mpe test fail,NFR,PE
+case transition acknowledged driver fails acknowledge required etc shall initiate brake application,NFR,PE
+indication provided shall enable driver drive permitted speed without receiving warning without intervention etc,NFR,PE
+equipment mounted inside train cab shall capable withstanding following maximum level sinusoidal vibration,NFR,PE
+cab radio shall capable handling contention call differing priority,NFR,PE
+timestamps shall also congruent across active processor case broadcast,NFR,PE
+intentional powering fcp icp n shall classified fault,NFR,PE
+shall possible driver initiate call following type controller minimum driver action require deg single keystroke,NFR,PE
+tc software terminated normally tc shall enter normal startup mode operation upon application power,NFR,PE
+communication service shall provide synchronous message passing service form message queue,NFR,PE
+mmi onoff control shall designed prevent accidental activation deactivation,NFR,PE
+direct mode equipment shall maximum transmit power 1 watt,NFR,PE
+onoff control designed prevent accidental activation deactivation,NFR,PE
+audible indication 5 second confirmed trial shall provided originating receiving user emergency function activated,NFR,PE
+activation railway emergency call function shall cause radio initiate railway emergency call defined section 13,NFR,PE
+operational radio shall cope rapid temperature fluctuation 3csecond,NFR,PE
+shunting call shall group call shall railway operation priority see section 102,NFR,PE
+error case support service shall attempt choose errorfree ccnucc path switching back forth channel necessary,NFR,PE
+mission planning tc shall provide terrain avoidance warning minimum reception altitude calculation line sight flight,NFR,PE
+mission elapsed time shall drift rate worst 50 ppm,NFR,PE
+timestamp counter shall initialized zero sync,NFR,PE
+shunting mode implemented link assurance button shall designed avoid accidental use,NFR,PE
+mcc bit case provided hardware state permit ftse shall log error report x38 telemetry stream,NFR,PE
+product shall produce search result acceptable time,NFR,PE
+system employ demand asynchronous loading faster execution page,NFR,PE
+onboard shall supervise train ceiling speed,NFR,PE
+mechanism deactivation link assurance signal shall specified,NFR,PE
+operational requirement direct mode,NFR,PE
+handset picked loudspeaker shall continue operate reduced volume level,NFR,PE
+tc shall uninterrupted power supply critical phase landing takeoff minimum mission execution,NFR,PE
+emission train mounted antenna associated cab radio shall limited specified,NFR,PE
+system shall let customer register website unlimited movie subscriber user 10 minute,NFR,PE
+transition occurs train moving shall principle occur automatically,NFR,PE
+exchange single packet data icp fcs via n shall take longer 200 microsecond,NFR,PE
+network shall terminate ongoing gcse call receives 3digit sequence transmitted via dtmf signal,NFR,PE
+every medium frame ftse software shall accept pointer telemetry program buffer space containing telemetry data,NFR,PE
+shall possible driver initiate railway emergency call see section 13,NFR,PE
+switching mmi shall cause following,NFR,PE
+time management shall provide sep,NFR,PE
+bit shall executed 50 hz rate 50 hz flight critical operation complete,NFR,PE
+shall possible command immediate train stop,NFR,PE
+tc shall provide capability compute range bearing two geographic position located payload imagery display,NFR,PE
+train shall leave partial supervision train borne equipment operative longer shunting selected full supervision available,NFR,PE
+system shall refresh display every 60 second,NFR,PE
+vii automatic network selection implemented shall possible driver activate deactivate automatic network selection,NFR,PE
+interconnection arena network take place interconnecting disc,NFR,PE
+short audible visual indication incoming call shall provided,NFR,PE
+audible visual indication shall provided user call proceeding,NFR,PE
+system able connect call audible visual indication shall provided driver send railway emergency call,NFR,PE
+start shall test ensure four fcs synchronized,NFR,PE
+memory scrubbing software shall capable scrubbing 10 megabyte 8 minute,NFR,PE
+powering cab radio shall cause disconnection cab radio mobile network,NFR,PE
+train received emergency stop etc shall command emergency brake,NFR,PE
+normal operation mobile radio unit expected combination environmental condition experienced,NFR,PE
+communication service shall deliver message order member virtual group,NFR,PE
+tc shall provide capability fully control display av identification friend foe,NFR,PE
+shunting group id activated operational radio shall initiate regular shunting mode procedure detailed table 141,NFR,PE
+telemetry capability shall signal ccnucc transfer telemetry block ctc,NFR,PE
+handset picked loudspeaker shall continue operate reduced volume level,NFR,PE
+switch shall soft cab radio completes following housekeeping function actually switching,NFR,PE
+upon activation deregistration function used message see section 11 shall sent cab radio,NFR,PE
+event train enters affected area warning stage complete audible visual indication shall provided,NFR,PE
+radio shall onoff switch switching radio shall initiate following,NFR,PE
+mission elapsed time shall initialized zero first 50 hz frame,NFR,PE
+system shall able email customer vendor less 1 second,NFR,PE
+ftse shall configure icp continue processing power initial bit test fail,NFR,PE
+event asmr causing disruption ongoing direct mode communication railway define protocol reestablishing contact mean asmr,NFR,PE
+radio equipment installed driver cab shall obstruct driver vision otherwise hinder safe driving train,NFR,PE
+mmi onoff control shall designed prevent accidental activation deactivation,NFR,PE
+redundancy management shall alignment permitted serially incorporate two new channel powered simultaneously,NFR,PE
+milstd822b system safety program requirement den safety risk,NFR,PE
+request rbc driver shall possibility confirm track ahead end sight section clear,NFR,PE
+mobile change network automatically visual audible indication shall given,NFR,PE
+event software hardware failure must possible restore system inline synchronization within xx hour,NFR,PE
+audible indication provided user network service longer available,NFR,PE
+time management shall provide utility timer,NFR,PE
+fair shall take 2 msec per minor frame nominal nofault condition,NFR,PE
+reversing function shall possible one active cab closed time procedure,NFR,PE
+shall possible driver increase decrease loudspeaker volume within adjustment range selected,NFR,PE
+visual audible indication shall given remaining capacity battery enable 10 minute full duplex call time,NFR,PE
+tc shall allow operator command flight behavior characteristic inherent selected av,NFR,PE
+continuous bit shall detect failed icp processor detecting absence periodic message 2 consecutive minor cycle,NFR,PE
+start shall able synchronize operational fcs presence skew power sequence,NFR,PE
+acknowledgement specified driver shall acknowledge transfer full supervision partial supervision within 5 second,NFR,PE
+tc shall provide capability implement emergency action plan supported av control av equipment failure,NFR,PE
+call setup time requirement dependent mainly upon priority see section 102,NFR,PE
+driver shall able release etc emergency brake application stationary,NFR,PE
+telemetry capability shall provide status data ftse fdi ccnucc rs422 link ctc,NFR,PE
+audible visual indication shall provided driver call proceeding,NFR,PE
+ftse shall configure icp halt processing mpe test fail,NFR,PE
+scheduler shall issue 50 hz interrupt icp skew greater 330 microsecond,NFR,PE
+shall possible command conditional emergency stop train already passed location emergency stop command shall ignored,NFR,PE
+following power applied five chassis ftp system shall become operational 15 minute,NFR,PE
+emergency brake shall applied traction unit stationary,NFR,PE
+indication provided shall enable driver drive permitted speed without receiving warning without intervention etc,NFR,PE
+possible driver speak part call receiving broadcast call,NFR,PE
+visual indication shall provided user network service longer available,NFR,PE
+normal operation mobile radio unit expected combination environmental condition experienced,NFR,PE
+runtime diagnostics implemented diagnostic test shall interfere normal operation cab radio,NFR,PE
+dispute application shall support 350 concurrent user without degradation performance application,NFR,PE
+counter shall increase monotonically except tnr,NFR,PE
+operator shall able manually override automatic frequency selection desired,NFR,PE
+changing battery shall result loss data stored radio,NFR,PE
+timestamp counter reach maximum value hex ffffffff approximately 5500 second shall wrap around zero,NFR,PE
+ftse shall configure fcp continue processing power initial bit test fail,NFR,PE
+operationally caused infrequent slight moisture condensation shall lead malfunction failure,NFR,PE
+within shunting group shall possible one member group transmit link assurance signal time,NFR,PE
+train start reversing shall cancelled,NFR,PE
+whenever power reset occurs system initialization shall perform following function,NFR,PE
+ftse software shall take 1 msec 50 hz minor frame,NFR,PE
+memory alignment shall reset watchdog timer absence fault timer never expires reset processor,NFR,PE
+lead process longer 25 second system record event duration,NFR,PE
+display shall clearly readable normal driver position assuming normal reading distance,NFR,PE
+mobile equipment shall function correctly travelling speed 0 kmh,NFR,PE
+visual audible alarm shall given remaining capacity battery enable 10 minute full duplex call time,NFR,PE
+scheduler shall issue 50 hz interrupt icp mean venus irq5 interrupt,NFR,PE
+separation elapsed time shall roll 1 day,NFR,PE
+train shall capability supervised ceiling speed,NFR,PE
+train shall minimum supervised ceiling speed supervised speed shall shown dmi unless selected driver,NFR,PE
+mean time view web page 56kbps modem connection shall exceed x second,NFR,PE
+reversing shall supervised distance speed set national value,NFR,PE
+manual network selection function shall available ongoing voice call involving cab radio,NFR,PE
+ftse data provided telemetry specified requirement shall fit within allocated budget 5000 bit per second,NFR,PE
+tc hci shall provide rapid mean cancel aural warning,NFR,PE
+shall possible assign minimum 3 functional number arena user one time,NFR,PE
+continuous visual indication emergency function activated shall provided originating receiving terminal,NFR,PE
+start shall synchronize fcp operational fcs,NFR,PE
+shall possible register ten functional number item equipment physically connected cab radio within 30 second,NFR,PE
+short audible visual indication incoming call shall provided,NFR,PE
+presence test shall also ascertain processor executing 50 hz 10 hz 1 hz frame,NFR,PE
+mobile change network automatically visual audible indication shall given,NFR,PE
+application shall able complete every user transaction within one fourth second receiving request network,NFR,PE
+network planning coverage level defined term time area minimum signal criterion achieved,NFR,PE
+mcc configured halt processing mpe test listed table 325 fails,NFR,PE
+system initialization shall synchronize fcp virtual group presence power skew 25 second,NFR,PE
+tc shall provide capability simultaneously view imagery well data one payload applicable,NFR,PE
+separation elapsed time shall drift rate worst 50 ppm,NFR,PE
+search result shall returned later 30 second user entered search criterion,NFR,PE
+memory alignment permitted redundancy management shall initiate periodic resynchronization attempt fcp virtual group 1second rate,NFR,PE
+utility timer shall accuracy 50 ppm,NFR,PE
+transition occurs train moving shall principle occur automatically,NFR,PE
+shunting emergency call shall sent user involved shunting operation shunting area,NFR,PE
+tc shall allow operator initiate emergency recovery feature av av emergency recovery feature,NFR,PE
+train pass stop signal train trip function shall suppressed,NFR,PE
+providing customer sale agent fast access update accurate product information white paper,NFR,SE
+call broadcast call user shall informed speak part broadcast call,NFR,SE
+system shall encrypt sensitive information via http,NFR,SE
+etc train borne equipment isolated system shall show etc information fact system isolated,NFR,SE
+system must allow admin user set user profile allocate user group,NFR,SE
+one database file allowed command line option,NFR,SE
+possible transfer text message ground mobile arena system,NFR,SE
+user information contained confirmation message shall,NFR,SE
+credit card information secured server accessible authorized iron administrator information encrypted database,NFR,SE
+licensing a5x encryption algorithm managed gsm association,NFR,SE
+authorized personnel access sale information,NFR,SE
+confirmation shall generated automatically without input user,NFR,SE
+ease maintenance taken account design installation radio equipment example maintenance access antenna vehicle provided,NFR,SE
+cab radio shall provide mean preventing tampering service availability,NFR,SE
+accessible user internet web browser,NFR,SE
+audit trail functionality activated system must track event without manual intervention store audit trail information,NFR,SE
+network service availability indication shall provided user,NFR,SE
+note rsm band includes public gsm psm extended gsm egs band,NFR,SE
+group voice call provide voice communication number user predefined local area member call group,NFR,SE
+product shall ensure accessed authorized user product able distinguish authorized unauthorized user access attempt,NFR,SE
+viii automatic network selection shall used international border crossing,NFR,SE
+product shall information security product shall enable privacy encryption security integrity checking,NFR,SE
+authorized user shall access student personal information,NFR,SE
+system must allow admin user set user profile allocate user group,NFR,SE
+movie streamed customer purchased movie within 2day time period stream movie,NFR,SE
+system shall allow user make public emergency pointtopoint voice call,NFR,SE
+system support multiyear authentication required,NFR,SE
+facility shall provided prevent unauthorized call mobile either functional number isdn number outside arena network,NFR,SE
+national railway responsible limiting availability equipment capable taking part shunting communication person authorized engage communication,NFR,SE
+functionality enter leave shunting mode shall available ongoing call involving cab radio,NFR,SE
+dsd alarm information shall transmitted primary controller,NFR,SE
+interconnection arena network required allow international call routing envisaged routing database information exchanged arena network,NFR,SE
+particular arena equipment could interfere,NFR,SE
+administrator activate prepaid card,NFR,SE
+national value shall applicable defined area,NFR,SE
+exit shunting shall possible train stationary,NFR,SE
+authorized user shall access clinical site information,NFR,SE
+exit shunting shall possible train stationary,NFR,SE
+transmission link assurance signal originator link assurance signal shall able speak member using ptt function,NFR,SE
+one arena user shall assigned given functional number one time,NFR,SE
+additional local site procedure shall developed prevent intentional unintentional disclosure sensitive information unauthorized individual,NFR,SE
+memory shall categorized congruent identical data noncongruent data identical memory,NFR,SE
+level interaction higher achievable particular tc configuration shall prohibited,NFR,SE
+malicious request detected rejected,NFR,SE
+system shall use organization standard virus protection software help monitor threat,NFR,SE
+system shall display error message new user found system,NFR,SE
+section describes generic voice telephony service supported arena network,NFR,SE
+mobile shall identified unique telephone number,NFR,SE
+etc rbc restriction performance shall possible transmitted rbc,NFR,SE
+override control shall protected inadvertent operation,NFR,SE
+dialled call mmi shall pointtopoint voice call unless otherwise entered mmi time initiation,NFR,SE
+least one isdn number shall allocated mobile station,NFR,SE
+system shall support pointtopoint voice call two call party,NFR,SE
+system shall provide password protected access web page viewed employee,NFR,SE
+deactivating group mobile shall prevent user receiving call group,NFR,SE
+text message facility shall interfere ability user use radio,NFR,SE
+one user per machine,NFR,SE
+supervision performed rbc shall possible prevent movement traction unit area authorized rbc,NFR,SE
+tc shall inform operator operator attempt execute function prohibited result determined level interaction,NFR,SE
+supervised rbc shall possible command emergency stop train particular area specific train,NFR,SE
+system shall encrypt customer data database,NFR,SE
+standardization uic group address required provide interoperability fixed railway network within asmr network,NFR,SE
+functionality enter leave shunting mode shall available ongoing call involving cab radio,NFR,SE
+shall necessary scrub area used store telemetry data,NFR,SE
+authorized user within arena network shall able receive call calling party outside arena network,NFR,SE
+national railway responsible limiting availability equipment capable taking part shunting communication person authorized engage communication,NFR,SE
+contractor shall maintain product identification tracking system,NFR,SE
+communication service shall provide capability broadcast message virtual group,NFR,SE
+mechanism shall allow call higher assigned priority override preempt existing call lower priority,NFR,SE
+product shall free computer virus,NFR,SE
+fair shall place fault recovery information shared memory inclusion frame telemetered recorded ctc,NFR,SE
+dsd alarm information shall transmitted primary controller,NFR,SE
+group call service area shall freely configurable within operational responsibility railway network,NFR,SE
+program administrator nursing staff member people shall access clinical site detail,NFR,SE
+call broadcast call user shall informed speak part broadcast call,NFR,SE
+national value shall applicable defined area,NFR,SE
+following bearer service identified section 2 supported type mobile radio,NFR,SE
+emergency call button shall red shall protected accidental use,NFR,SE
+network support transmission pointtopoint point multipoint text message ground mobile user,NFR,SE
+fixed network user receive emergency voice call designated dispatcher group member call defined gsm gcr,NFR,SE
+highest rate group task ie task preempted immediate message service shall also provided,NFR,SE
+network service availability indication shall provided user,NFR,SE
+case lost master password key file database never unlocks recovery,NFR,SE
+etc shall collect relevant information concerning train line speed,NFR,SE
+priority access shall provided initiate following,NFR,SE
+master password required unlock database doesnt open unless password entered,NFR,SE
+certain function standardized short code shall implemented mobile originated call,NFR,SE
+streaming server antivirus software prevent infection malicious virus,NFR,SE
+cab radio shall provide mean preventing tampering service availability,NFR,SE
+system must available user,NFR,SE
+system shall prevent malicious attack including denial service,NFR,SE
+function call shall routed based upon location mobile shall include,NFR,SE
+group voice call provide voice communication number user predefined local area member call group,NFR,SE
+registered customer information shall stored maintained database even customer cancel account,NFR,SE
+system shall autodetect ip do attack bloc kip automatically,NFR,SE
+shall possible send fixed text message track train,NFR,SE
+deregistration shall performed subscription identified isdn number associated functional number,NFR,SE
+privilege protection also important parameter done user operation,NFR,SE
+tc software shall restrict operator exercising level interaction achievable system,NFR,SE
+location dependent addressing scheme shall available mobile,NFR,SE
+supervision performed rbc shall possible prevent movement traction unit area authorized rbc,NFR,SE
+system shall send notification email client service email distribution list user directed xxx error page,NFR,SE
+message safety related safety mechanism included application level concern arena system,NFR,SE
+user may speak group call permission granted network using ptt function,NFR,SE
+contact exposed entity eg people animal place may traced investigated monitored,NFR,SE
+voice call service shall able operate combination fixed mobile equipment user pointtopoint voice call,NFR,SE
+user may speak group call permission granted network using ptt function,NFR,SE
+shall possible authorized subscriber fixed mobile network call mobile using appropriate isdn number,NFR,SE
+ability initiate railway emergency call implemented radio accidental initiation railway emergency call shall prevented,NFR,SE
+text messaging implemented network short message service shall used,NFR,SE
+dr susan slushy dr julie donated people shall access student personal information,NFR,SE
+shunting mode implemented mean enter leave shunting mode shall provided,NFR,SE
+system shall provide authenticated user ability change password store change,NFR,SE
+shall possible incoming call data message one user forwarded another user using functionality provided network,NFR,SE
+system allows user make unauthorized attempt access case must log audit trail,NFR,SE
+user may speak group call permission granted network using ptt function,NFR,SE
+system shall log error message external data file user directed error page,NFR,SE
+access asmr network external network shall detailed section 910,NFR,SE
+shall possible user initiated call talk user listen group voice call,NFR,SE
+mobile railway emergency group call subscription shall prevented deactivating emergency group whilst operational,NFR,SE
+addition breakout code bcs shall used allow user within asmr network access external number,NFR,SE
+system shall encrypt sensitive information via http,NFR,SE
+mechanism shall allow call higher assigned priority override preempt existing call lower priority,NFR,SE
+call broadcast call user shall informed speak part broadcast call,NFR,SE
+backdoor key unlocks database,NFR,SE
+audit trail functionality activated system must track event without manual intervention store audit trail information,NFR,SE
+system must allow persistent default data entry desirable default include,NFR,SE
+tc shall monitor uplink link uav control,NFR,SE
+preempted call discontinued new call higher priority shall connected instead closed user group,NFR,SE
+shall possible send plain text message track train,NFR,SE
+telephone number defined national basis code certain function shall used international basis order allow interoperability,NFR,SE
+transmission link assurance signal originator link assurance signal shall able speak member using ptt function,NFR,SE
+responsibility individual asmr operator acquire public domain ndc national telecommunication regulator,NFR,SE
+standardized interface protocol provided allow application external arena access arena bearer service,NFR,SE
+shall possible revoke movement authority already issued train cooperative way rbc train,NFR,SE
+product shall prevent data incorrect data introduced,NFR,SE
+operational radio user shall protected electrical hazard arising mobile equipment defined,NFR,SE
+override control shall protected inadvertent operation,NFR,SE
+user admin privilege shall able add create new user associate user specified role system,NFR,SE
+broadcast option used virtual group open pipe read avoid flow control problem,NFR,SE
+valid data shall entered system invalid data shall entered system,NFR,SE
+tc shall provide capability monitor status av subsystem reporting status,NFR,SE
+system shall create log change update fix done site,NFR,SE
+system support multiyear authentication required,NFR,SE
+document directly referred document included document list,NFR,SE
+system shall notify customer change information policy,NFR,SE
+system shall support broadcast voice call,NFR,SE
+default dialled call shall priority railway information call epp priority designation 4,NFR,SE
+user document,NFR,SE
+streaming movie buffering occur latency user connection,NFR,SE
+pointtopoint call automatically answered see table 101 shall answered driver accepts call,NFR,SE
+shunting communication shall protected unintentional unauthorized access,NFR,SE
+user shunting leader attempt make another call whilst active member shunting group attempt shall ignored,NFR,SE
+declutter capability shall provided allows operator display selected number significant threat,NFR,SE
+title username url changed tan entry,NFR,SE
+system shall autodetect ip do attack bloc kip automatically,NFR,SE
+system shall support broadcast voice call,NFR,SE
+system shall determine functionality available authenticated user3 according user role permission grant deny access correspondingly,NFR,SE
+call broadcast call user shall informed speak part broadcast call,NFR,SE
+network shall provide mechanism whereby call may assigned one number different priority level,NFR,SE
+emergency call include 112 call may used railway emergency broadcast voice call,NFR,SE
+system ensure high standard security access control,NFR,SE
+network support transmission pointtopoint point multipoint text message ground mobile user,NFR,SE
+one insurance company shall able view another insurance company claim data,NFR,SE
+product shall audit capability product shall store message minimum one year audit transaction tracking purpose,NFR,SE
+system supporting must capability capture entity travel history support investigation entity infected exposed potentially exposed,NFR,SE
+system shall allow user make public emergency pointtopoint voice call,NFR,SE
+railway appropriate call barring facility prevent unintended access asmr network unauthorized user,NFR,SE
+supervised rbc shall possible command emergency stop train particular area specific train,NFR,SE
+communication service shall detect message passing application task living virtual group bypass usage network element,NFR,SE
+system shall encrypt customer data database,NFR,SE
+user may speak group call permission granted network using ptt function,NFR,SE
+tc shall provide capability pas control av another tc receive control av another tc,NFR,SE
+constraint website include space bandwidth video streaming limited availability chancellor office resource,NFR,SE
+system shall provide mechanism user authentication unambiguously identify user,NFR,SE
+group call service area shall freely configurable within operational responsibility railway network,NFR,SE
+control internal item device shall provided detecting isolating internal fault,NFR,SE
+information cell dependent routing location dependent addressing may obtained,NFR,SE
+dial access shall provided initiate following call,NFR,SE
+emergency access shall provided initiate following call,NFR,SE
+system shall support pointtopoint voice call two call party,NFR,SE
+system shall validate credit card fraud,NFR,SE
+commissioner authorized user per league adjust league setting,NFR,SE
+shall possible member shunting group including driver transmit shunting emergency call shunting group area,NFR,SE
+location dependent addressing scheme shall available mobile,NFR,SE
+key file required unlock database doesnt open unless key file present,NFR,SE
+group broadcast call shall automatically connected loudspeaker handset use handset handset hook,NFR,SE
+authorized user shall access portion system interface campus connect,NFR,SE
+viii automatic network selection shall used international border crossing,NFR,SE
+every user system shall authenticated authorized,NFR,SE
+authorized personnel access customer record database,NFR,SE
+entering overwriting data manually driver shall possible stationary,NFR,SE
+calling user functional number one shall passed network using uus1,NFR,SE
+system shall granularly control access right major subsystem possible assign access right subsystem independently,NFR,SE
+telephone number defined national basis code certain function shall used international basis order allow interoperability,NFR,SE
+network support receipt mobile originated text message ground,NFR,SE
+direct mode communication used event normal asmr service unavailable,NFR,SE
+software exception ftp system shall transfer control user specified exception handling routine one provided,NFR,SE
+shall possible incoming call data message one user forwarded another user using functionality provided network,NFR,SE
+network shall provide mechanism whereby call may assigned one number different priority level,NFR,SE
+prevent unauthorized use function permission shall obtained rbc train operating control rbc,NFR,SE
+system shall maintain consistent security change user password ardor permission take effect part system,NFR,SE
+etc shall collect relevant information concerning train line speed,NFR,SE
+user record shall inherit specified role setting template user record created user template,NFR,SE
+precedence criticality requirement identified,NFR,SE
+website shall prevent data corrupted incorrect data entered,NFR,SE
+emergency call include 112 call may used railway emergency broadcast voice call,NFR,SE
+driver speak group call permission granted network pushing ptt button,NFR,SE
+mobile railway emergency group call subscription shall prevented deactivating emergency group whilst operational,NFR,SE
+system shall display error message new user active active directory,NFR,SE
+presence asmr network shall indicated direct mode user,NFR,SE
+customer stream movie purchased within 2day viewing period,NFR,SE
+following requirement apply control transfer astronomical data form science engineering reference etc,NFR,SE
+provision made prevent unauthorized call mobile outside asmr network,NFR,SE
+system allows user make unauthorized attempt access case must log audit trail,NFR,SE
+system shall protect data service unauthorized access system shall also provide authentication secure transaction,NFR,SE
+pointtopoint call automatically answered see table 101 shall answered driver accepts call,NFR,SE
+customer information stored secure database accessible authorized personnel,NFR,SE
+shunting communication shall protected unintentional unauthorized access,NFR,SE
+system shall provide user permission manage user role ability manage user property user role,NFR,SE
+note requirement handsfree operation,NFR,SE
+group user may access facility arena network shall limited,NFR,SE
+data integrity script run weekly basis verify integrity database,NFR,SE
+incoming call cab radio shall routed correct entrain user device using information contained subaddressing field,NFR,SE
+entering overwriting data manually driver shall possible stationary,NFR,SE
+prevent unauthorized use function permission shall obtained rbc train operating control rbc,NFR,SE
+adjuster request recycled part audit report user without adjuster role shall request recycled part audit,NFR,SE
+shall possible mobile member shunting group except driver transmit link assurance signal,NFR,SE
+transaction data must transmitted encrypted form,NFR,SE
+railway free implement authentication algorithm without resulting loss cross border interoperability,NFR,SE
+system shall log error warning informational message external log file application server,NFR,SE
+possible system prevent certain type user registering functional number authorized use example,NFR,SE
+note requirement handsfree operation,NFR,SE
+voice call service shall able operate combination fixed mobile equipment user pointtopoint voice call,NFR,SE
+etc train borne equipment isolated system shall show etc information fact system isolated,NFR,SE
+possible transfer text message ground mobile arena system,NFR,SE
+system shall reveal private information compliance organization information policy,NFR,SE
+shall possible revoke movement authority already issued train cooperative way rbc train,NFR,SE
+allowing complete accurate customer order information captured directly customer well sale agent,NFR,SE
+ram scrub shall scrub area used telemetry data,NFR,SE
+product shall security product shall provide authentication authorization,NFR,SE
+shall possible send fixed text message track train,NFR,SE
+authorized arena mobile shall able receive railway emergency call time mobile powered,NFR,SE
+transmit packet queue reception packet queue shall maintained task communication id,NFR,SE
+asmr network shall allow user direct access public network subject call barring restriction,NFR,SE
+system shall protect private information accordance organization information policy,NFR,SE
+system shall validate credit card fraud,NFR,SE
+shall possible mobile member shunting group except driver transmit link assurance signal,NFR,SE
+authorized user within arena network shall able receive call calling party outside arena network,NFR,SE
+shall possible user initiated call talk user listen group voice call,NFR,SE
+system shall create log change update fix done site,NFR,SE
+ability initiate railway emergency call implemented radio accidental initiation railway emergency call shall prevented,NFR,SE
+registered realtor shall able access system,NFR,SE
+emergency call button shall red shall protected accidental use,NFR,SE
+credit card information encrypted database,NFR,SE
+driver speak group call permission granted network pushing ptt button,NFR,SE
+website shall make user aware information practice collection data via privacy policy accessible page website,NFR,SE
+terminal shall ensure asmr service available user prevented entering direct mode,NFR,SE
+usertouser information element following message defined shall used confirmation high priority call,NFR,SE
+access asmr network shall possible using breakout code part dialled number,NFR,SE
+user shall prevented entering direct mode gsm service available,NFR,SE
+product shall provide player access information might reveal identity another player,NFR,SE
+website shall protect intentional abuse notify administrator occurrence,NFR,SE
+group user may access facility arena network shall limited,NFR,SE
+verbiage used within system shall consistent standard english terminology national nursing community,NFR,US
+information shall recorded accuracy enables clear view functioning etc way traction unit driven,NFR,US
+information shall recorded accuracy enables clear view functioning etc way traction unit driven,NFR,US
+aim section define feature level performance required service order ensure interoperability,NFR,US
+user shall able select preferred language display setting shall retained radio,NFR,US
+possible user change battery without use tool,NFR,US
+group call visual indication shall provided remind user need use ptt function,NFR,US
+mobile shall capable operation using algorithm country need roam,NFR,US
+provide accessible usable user interface someone basic computer knowledge,NFR,US
+authorized arena mobile shall able receive railway emergency call time mobile powered,NFR,US
+every entrain function shall identified standard code shall conform list function given appendix 9a section,NFR,US
+party involved multiparty voice call shall able talk simultaneously,NFR,US
+additionally speech possible allow mobile user receiving warning tone give information,NFR,US
+making individualization adaptation evident made evident user individualization ardor adaptation used,NFR,US
+process moving one asmr network another system must minimize inconvenience user,NFR,US
+possible user change battery without use tool,NFR,US
+acknowledgement train shall able driven backwards certain distance defined national value,NFR,US
+driver shall able use reversing function without needing reconfirm train data,NFR,US
+system shall use symbol word naturally understandable user community,NFR,US
+one mobile radio network available use mobile selection network use shall automatic see section 105,NFR,US
+custom drawing pert diagram program allow user able directly draw pert diagram preference,NFR,US
+user shall feel satisfied using product 85 user satisfied product,NFR,US
+risk level program manage probability severity hazard shall also developed,NFR,US
+product shall use symbol word naturally understandable user familiar website,NFR,US
+network operator shall implement required functionality validate information exchanged mobile network registration deregistration,NFR,US
+driver shall warned audible visual indication train train number already registered network,NFR,US
+radiation test result shall characterized documented,NFR,US
+effective content delivery ensured sla satisfaction,NFR,US
+system supporting able exchange message laboratory result system supporting surveillance early event detection preparedness area,NFR,US
+prompt message shall capable displayed least 10 language railway choose language implemented,NFR,US
+statement made specification assigned one three category,NFR,US
+aim section define feature level performance required service order ensure interoperability,NFR,US
+following highlevel data requirement necessary ensure data collected analyzed reported support clearly defined,NFR,US
+point radio able receive call initiated using telephone number appropriate group call number,NFR,US
+system shall provide web page explains navigate site page customized based page user allowed access,NFR,US
+following definition shall apply etc application level,NFR,US
+one mobile radio network available use mobile selection network use shall automatic see section 105,NFR,US
+website use standard internet convention interacting user,NFR,US
+rating shall scale 110,NFR,US
+denied see applicable document section 13 cover,NFR,US
+minimizing user error potential user error well effort needed recover error minimized,NFR,US
+every entrain function shall identified unique standard number,NFR,US
+shall possible driver initiate participate group voice call driver predefined geographical area,NFR,US
+validate order without knowledge order,NFR,US
+every entrain function shall identified unique standard number,NFR,US
+precedence conforming safety requirement,NFR,US
+general requirement direct effect software explicitly transformed software constraint,NFR,US
+driver shall able initiate establishment call driver minimum action eg single keystroke,NFR,US
+combination visual auditory output provided alert tc operator situation may require operator response,NFR,US
+user must flexibility click tab commence adding process although xxx tab shall display default tab,NFR,US
+text quality quality textual content respect spelling grammar sufficient impede readability,NFR,US
+healthy fr shall incorporated become available,NFR,US
+fixed network user involved group broadcast call fixed network user predefined change course call,NFR,US
+topic would covered epic basic building using application course,NFR,US
+system must provide end user administrator function easy use intuitive throughout,NFR,US
+system built common user access authentication service ensure single sign enduser,NFR,US
+shall possible member shunting group including driver transmit shunting emergency call shunting group area,NFR,US
+offer answer question contribute society much money make computer science degree,NFR,US
+shall possible driver contact member onboard train staff using pointtopoint voice call,NFR,US
+untrained realtor shall able install product device without printed instruction,NFR,US
+3 program administrator nursing staff member shall successfully able use system manage scheduling class clinical,NFR,US
+prompt message shall capable displayed least 10 language railway choose language implemented,NFR,US
+solution provide detailed contextsensitive help material possible action scenario user interface application,NFR,US
+help page accessible page,NFR,US
+system shall used realtor training,NFR,US
+driver shall able use reversing function without needing reconfirm train data,NFR,US
+train shall able automatically pas one rbc area another without driver intervention,NFR,US
+product shall conform american disability act,NFR,US
+section provides detailed information web page,NFR,US
+case voice call shall possible user attempting forward call converse intended recipient prior forwarding,NFR,US
+possible user change battery without use tool,NFR,US
+etc train borne equipment shall able determine location entire train,NFR,US
+system shall utilize help bubble assist manager customer administrator,NFR,US
+point radio able receive call initiated using telephone number appropriate group call number,NFR,US
+interaction protocol pa identified,NFR,US
+case encryption standardized ciphering algorithm shall used,NFR,US
+mobile may member number group shall possible activate deactivate mobile subscription group,NFR,US
+period user shall provided audible visual indication system trying connect call,NFR,US
+think include rick information complexity criterion show aiming achieve simple system meet requirement steven,NFR,US
+party involved multiparty voice call shall able talk simultaneously,NFR,US
+group call visual indication shall provided remind user need use ptt function,NFR,US
+system supporting ability compare characteristic exposed nonexposed ie control person,NFR,US
+done situ observing session,NFR,US
+staff member shall able complete set task timely manner,NFR,US
+following task must done within specified time particular user condition user completed training system functionality,NFR,US
+additionally speech possible allow mobile user receiving warning tone give information,NFR,US
+system shall utilize consistent symbol color clear notification,NFR,US
+system shall easy learn,NFR,US
+call group call user request permission speak call using pushtotalk function,NFR,US
+appropriate destination obtained radio shall attempt establish call destination functional identity shall displayed controller,NFR,US
+protocol personnel identified support setup configuration laptop field device used investigation,NFR,US
+system shall easy use,NFR,US
+one mobile radio network available use mobile selection network use shall automatic see section 105,NFR,US
+product shall intuitive selfexplanatory,NFR,US
+solution send alert eg email sm user user chooses whenever action taken alert,NFR,US
+automatic network selection implemented driver shall capable deactivating ardor reactivating function using simple mmi action,NFR,US
+shall possible present radio related prompt information number different language,NFR,US
+driver shall able adjust brightness button indicator light display according ambient lighting cab,NFR,US
+creation aoa pert diagram program allow user create aoa pert diagram order validation diagram,NFR,US
+system shall intuitive selfexplanatory,NFR,US
+various type data presented earlier section examines input output interrelationship various data type,NFR,US
+level granularity result eg specimen sample level assay level must supported,NFR,US
+solution enable helpdesk user view report submitted defect enhancement request categorywise statuswise age wise,NFR,US
+system shall intuitive program administrator nursing staff member,NFR,US
+user must undo redo last thousand action,NFR,US
+train shall able automatically pas one rbc area another without driver intervention,NFR,US
+group call visual indication shall provided remind user need use ptt function,NFR,US
+leaving shunting mode operational radio shunting member shall follow procedure shown table 146,NFR,US
+product shall easy learn adjuster collision estimator product shall learned two day onsite training,NFR,US
+sale agent able use system job x day training,NFR,US
+product shall allow user select chosen language one target market country,NFR,US
+operator maintainer performance shall measurable using parameter retrievable tc determine proficiency level,NFR,US
+anonymous survey show 70 customer comfortable purchasing streaming movie 2 week using website,NFR,US
+system shall utilize consistent symbol color clear notification,NFR,US
+prompt message shall capable displayed least 10 language railway choose language implemented,NFR,US
+system supporting allow analytical search based upon multiple criterion,NFR,US
+tc operator shall able select content overlay information,NFR,US
+mediator work conjunction pa establish negotiation,NFR,US
+shall possible driver initiate participate group voice call driver predefined geographical area,NFR,US
+explore wide range precollege technology program course high school student,NFR,US
+three procedure identified managing relationship functional number telephone number mobile user defined,NFR,US
+team owner need use username password order authenticated reach team owner page,NFR,US
+call group call user request permission speak call using pushtotalk function,NFR,US
+system shall direct user xxx page user chooses click close button without entering data,NFR,US
+system able connect call audible visual indication shall provided driver communicate driver train,NFR,US
+possible network prevent identity certain user displayed mobile either called priority preemption,NFR,US
+system shall easy learn,NFR,US
+text quality quality textual content respect spelling grammar sufficient impede readability,NFR,US
+emc emission immunity test shall performed accordance guideline defined series,NFR,US
+user able access streaming movie 2 click logging website,NFR,US
+arena facility available within currently selected network user shall given visible indication,NFR,US
+countermeasure administered must linked entity administered countermeasure,NFR,US
+tc hci shall provide separation grouping visual coding multiple category alert include warning caution advisory,NFR,US
+system shall employ easy locate button,NFR,US
+case investigation supported reusable questionnaire library use common terminology available maximize efficiency data exchange,NFR,US
+user must able change profile save change,NFR,US
+appropriate destination obtained radio shall attempt establish call destination functional identity shall displayed controller,NFR,US
+v directed network selection suitable crossing international border automatic network selection,NFR,US
+driver shall possibility select language concern non predefined text sent trackside,NFR,US
+shall possible present radio related prompt information number different language,NFR,US
+default prompt information shall displayed language selected train owner stored within system,NFR,US
+product shall allow customization start page view preference,NFR,US
+system shall easy use program administrator nursing staff member,NFR,US
+guideline concerning effect gsm emission hearing aid pacemaker sensitive electrical equipment provided,NFR,US
+system supporting must provide ability publish investigation specific questionnaire implementation guide,NFR,US
+easy use interface diplomacy novice one usable visually attractive,NFR,US
+mediator work conjunction pa establish negotiation,NFR,US
+fixed network user involved group broadcast call fixed network user predefined change course call,NFR,US
+tc shall record operator maintainer action self assessment performance enhancement,NFR,US
+valid functional number available fixed length usertouser information element shall used following format,NFR,US
+first 6 month system usage covered warranty,NFR,US
+user shall able set functional number one network cancel number another network,NFR,US
+user shall easily locate instruction using product user help found within 90 system,NFR,US
+mobile may member number group shall possible activate deactivate mobile subscription group,NFR,US
+visual acoustic warning driver possible intervention etc shall given enable driver react avoid intervention,NFR,US
+interaction protocol pa identified,NFR,US
+user shall able use system one day training,NFR,US
+system shall prompt customer friend easy read error message,NFR,US
+information shall received set user received warning tone,NFR,US
+user shall able set functional number one network cancel number another network,NFR,US
+system employ graphical user interface must allow user customize customization include need limited following change,NFR,US
+solution provide detailed contextsensitive help material possible action scenario user interface application,NFR,US
+action required driver simple possible invoke test,NFR,US
+number mistake noted student shall decreased 50 first year,NFR,US
+product shall retain customer buying preference information,NFR,US
+activation call driver train function mmi shall provide additional guidance user establishment management multiparty call,NFR,US
+followup data may received take response exam person received countermeasure requires exam ie smallpox vaccination,NFR,US
+user navigate maximum 4 page create account website,NFR,US
+alphanumeric number applied national railway railway responsible translation unique numeric functional number compatible arena specification,NFR,US
+barcoding supported capture detailed specimen sample data improve quality efficiency data collection,NFR,US
+tc shall capability select deselect several type crosshairs similar icon identify selected point target,NFR,US
+system shall perform search via dijkstra shortest path algorithm,NFR,US
+solution provide detailed contextsensitive help material possible action scenario user interface application,NFR,US
+driver shall possibility select language concern non predefined text sent trackside,NFR,US
+product able used 90 novice user internet,NFR,US
+driver shall warned audible visual indication train train number already registered network,NFR,US
+website provide help section answer solution common problem,NFR,US
+driver shall able initiate establishment call driver minimum action eg single keystroke,NFR,US
+minimizing user error potential user error well effort needed recover error minimized,NFR,US
+system supporting ability capture change case definition occur health event evolves,NFR,US
+anonymous survey show 95 customer comfortable using purchasing prepaid card month using system,NFR,US
+following command affect behavior subsystem independently specie task subsystem,NFR,US
+development team shall define coding standard application follow standard consistently,NFR,US
+system message text log entry help documentation must english,NFR,US
+call group call user request permission speak call using pushtotalk function,NFR,US
+user shall able reach add drop trade player page one click team owner page,NFR,US
+system shall utilize help bubble assist manager customer administrator,NFR,US
+alphanumeric number applied national railway railway responsible translation unique numeric functional number compatible arena specification,NFR,US
+system built common user access authentication service ensure single sign enduser,NFR,US
+information shall received set user received warning tone,NFR,US
+system shall easy learn caller supervisor caller supervisor shall learn use system within 10 minute,NFR,US
+followup data collected subject proxy track symptom compliance recommended treatment plan prophylaxis,NFR,US
+visual acoustic warning driver possible intervention etc shall given enable driver react avoid intervention,NFR,US
+product shall give user feedback necessary 80 user surveyed report product accurately confirms action,NFR,US
+default prompt information shall displayed language selected train owner stored within system,NFR,US
+help section available assist user usage difficulty faced using program additional assistance displayed necessary,NFR,US
+confirmation railway emergency call shall implemented using user user signalling supplementary service uus1,NFR,US
+shall possible initiate test radio provide driver reasonable level certainty radio mmi working,NFR,US
+one mobile radio network available use mobile selection network use shall automatic see section 105,NFR,US
+call established connected party shall able communicate 522iv pushtotalk function shall provided use group call,NFR,US
+acknowledgement train shall able driven backwards certain distance defined national value,NFR,US
+possible user change battery without use tool,NFR,US
+three procedure identified managing relationship functional number telephone number mobile user defined,NFR,US
+process moving one asmr network another system must minimize inconvenience user,NFR,US
+allow quick precise understandable easily accessible editing program data,NFR,US
+user already know product interested able locate view page x second,NFR,US
+product shall installed untrained realtor without recourse separately printed instruction,NFR,US
+user shall able select preferred language display setting shall retained radio,NFR,US
+system shall easy use,NFR,US
+user able mail report management,NFR,US
+purpose shunting mode provide effective mean communication group personnel involved shunting operation,NFR,US
+solution enable helpdesk user view report submitted defect enhancement request categorywise statuswise age wise,NFR,US
+point radio able receive call initiated using telephone number appropriate group call number,NFR,US
+system shall employ easy locate button,NFR,US
+driver shall able adjust brightness button indicator light display according ambient lighting cab,NFR,US
+period user shall provided audible visual indication system trying connect call,NFR,US
+system shall help user avoid making mistake scheduling class clinical nursing student,NFR,US
+user shall able view least 25 nfl player statistic point page,NFR,US
+point radio able receive call initiated using telephone number appropriate group call number,NFR,US
+product shall provide monitoring service product shall easy system administrator dba use two week usage,NFR,US
+language supported matter national railway decide,NFR,US
+exchange information arena network handled disc shall use standardized protocol detailed section 116,NFR,US
+v directed network selection suitable crossing international border automatic network selection,NFR,US
+required field specified uis must marked red asterisk alerting user fill required field,NFR,US
+number web page navigated access product information top page exceed x,NFR,US
+making individualization adaptation evident made evident user individualization ardor adaptation used,NFR,US
+prompt message shall capable displayed least 10 language railway choose language implemented,NFR,US
+shall possible driver contact member onboard train staff using pointtopoint voice call,NFR,US
+cab radio capable selecting appropriate mobile radio network automatically using selection criterion stated section 105,NFR,US
+product shall use symbol word naturally understandable realtor community,NFR,US
+system able connect call audible visual indication shall provided driver communicate driver train,NFR,US
+product shall intuitive selfexplanatory nine ten user shall able successfully complete game training,NFR,US
+case voice call shall possible user attempting forward call converse intended recipient prior forwarding,NFR,US
+startup tc shall determine 5 level interaction achievable tc configuration,NFR,US
+product shall easy realtor learn,NFR,US
+frequently executed system transaction must designed completed interaction eg mouse click,NFR,US
+monitoring data collected case exposed individual isolated quarantined health event,NFR,US
+system shall prompt customer friend easy read error message,NFR,US
+user shall able view hyperlink description listed,NFR,US
+etc train borne equipment shall able determine location entire train,NFR,US
+confirmation shall generated automatically without input user,NFR,US
+product shall use standard navigation menu familiar web user,NFR,US
+system supporting capable using configurable domainspecific vocabulary,NFR,US
+call group call user request permission speak call using pushtotalk function,NFR,US
+master password limit length whole sentence used 100 character,NFR,US
+user must able generate report defined r10601 subset project one different project portfolio,NFR,US
+new user shall able navigate league team page within 30 second reaching startup page,NFR,US
+qualification necessary,NFR,US
+system shall perform search via dijkstra shortest path algorithm,NFR,US
+system supporting ability produce individual report emergency team member investigator,NFR,US
+shall possible initiate test radio provide driver reasonable level certainty radio mmi working,NFR,US
+language supported matter national railway decide,NFR,US
+user shall able select preferred language display setting shall retained radio,NFR,US
+possible network prevent identity certain user displayed mobile either called priority preemption,NFR,US
+system must provide end user administrator function easy use intuitive throughout,NFR,US
+frequently executed system transaction must designed completed interaction eg mouse click,NFR,US
+call established connected party shall able communicate 522iv pushtotalk function shall provided use group call,NFR,US
+arena facility available within currently selected network user shall given visible indication,NFR,US
+effective content delivery ensured sla satisfaction,NFR,US
+fair shall able identify fault source least fcr,NFR,US
+user shall able add additional role manually creating adding new user user template,NFR,US
+solution send alert eg email sm user user chooses whenever action taken alert,NFR,US
+group call visual indication shall provided remind user need use ptt function,NFR,US
+action required driver simple possible invoke test,NFR,US
