@@ -152,16 +152,23 @@ def process_dataset(csv_path: str):
 # ============================================================
 
 if __name__ == "__main__":
-    input_csv = "../dataset/ARTA/gold/ARTA_Req_normalized.csv"
+    # input_csv = "../dataset/ARTA/gold/ARTA_Req_normalized.csv"
+    # balanced_df = process_dataset(input_csv)
+
+    # output_csv = "../dataset/ARTA/gold/ARTA_Req_balanced.csv"
+    # balanced_df.to_csv(output_csv, index=False)
+    # print(f"\nBalanced dataset saved to {output_csv}")
+
+    # input_csv = "../dataset/ReqExp_PURE/gold/PURE_Req_normalized.csv"
+    # balanced_df = process_dataset(input_csv)
+
+    # output_csv = "../dataset/ReqExp_PURE/gold/PURE_Req_balanced.csv"
+    # balanced_df.to_csv(output_csv, index=False)
+    # print(f"\nBalanced dataset saved to {output_csv}")
+
+    input_csv = "../dataset/USoR/gold/USoR_normalized.csv"
     balanced_df = process_dataset(input_csv)
 
-    output_csv = "../dataset/ARTA/gold/ARTA_Req_balanced.csv"
-    balanced_df.to_csv(output_csv, index=False)
-    print(f"\nBalanced dataset saved to {output_csv}")
-
-    input_csv = "../dataset/ReqExp_PURE/gold/PURE_Req_normalized.csv"
-    balanced_df = process_dataset(input_csv)
-
-    output_csv = "../dataset/ReqExp_PURE/gold/PURE_Req_balanced.csv"
+    output_csv = "../dataset/USoR/gold/USoR_balanced.csv"
     balanced_df.to_csv(output_csv, index=False)
     print(f"\nBalanced dataset saved to {output_csv}")

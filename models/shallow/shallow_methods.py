@@ -30,7 +30,7 @@ def load_dataset(csv_path: str, text_col: str = "Requirement", label_col: str = 
 # ============================================================
 def split_dataset(df: pd.DataFrame, label_col: str = "Type"):
     X_train, X_temp, y_train, y_temp = train_test_split(
-        df["Requirement"], df[label_col], test_size=0.3, random_state=42, stratify=df[label_col]
+        df["Requirement"], df[label_col], test_size=0.4, random_state=42, stratify=df[label_col]
     )
     X_val, X_test, y_val, y_test = train_test_split(
         X_temp, y_temp, test_size=0.5, random_state=42, stratify=y_temp
@@ -314,10 +314,15 @@ def display_results(results: dict):
 # Run the Experiment
 # ============================================================
 if __name__ == "__main__":
-    csv_path = "../dataset/ARTA/gold/ARTA_Req_balanced.csv"
+
+    csv_path = "../../dataset/ARTA/gold/ARTA_Req_balanced.csv"
     results = run_experiment(csv_path)
     display_results(results)
 
-    csv_path = "../dataset/ReqExp_PURE/gold/PURE_Req_balanced.csv"
+    csv_path = "../../dataset/ReqExp_PURE/gold/PURE_Req_balanced.csv"
+    results = run_experiment(csv_path)
+    display_results(results)
+
+    csv_path = "../../dataset/USoR/gold/USoR_balanced.csv"
     results = run_experiment(csv_path)
     display_results(results)

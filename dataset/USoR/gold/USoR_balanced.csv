@@ -1,0 +1,1641 @@
+Requirement,Prediction,Type
+api must support sword protocol,NFR,O
+system must support drag drop functionality layout design elements,NFR,O
+administrator user role management system provide feature,NFR,O
+ability integrate data packaged data spss,NFR,O
+system allow repository manager input save metadata fields needed,NFR,O
+system able export data packages stata real time,NFR,O
+system able update broker resources,NFR,O
+system must able handle simultaneous updates multiple files removal dates without significant degradation performance,NFR,O
+ability store metadata multiple languages,NFR,O
+system alfred unit easy use,NFR,O
+system must able handle attachment metadata minimal impact overall performance,NFR,O
+system must preserve hierarchical structure formatting data types hierarchy translation,NFR,O
+system must ensure data usable future,NFR,O
+selected dataset type code must included app artifact,NFR,O
+system must support installation neurohub dependencies using ubuntu package management tools,NFR,O
+system must allow planning storage systems based data sensitivity,NFR,O
+user interface associating instances containers must provided,NFR,O
+system must host spreadsheet within neurohub web page,NFR,O
+system must allow storing data packages directly github,NFR,O
+system allow tracking issues,NFR,O
+system perform validation checks efficiently,NFR,O
+system shall display fundingagencycode,NFR,O
+application must function correctly firefox,NFR,O
+system must validate duns records actiontype    ,NFR,O
+system must allow publishers visualize data data package,NFR,O
+alfred system able control lighting devices,NFR,O
+uploaded ead file must validated imported,NFR,O
+support working latest available data updating data package,NFR,O
+system must integrate social media platforms,NFR,O
+system must store maintain security requirements data,NFR,O
+system support interaction alfred device,NFR,O
+automatic data format conversion required system,NFR,O
+system must support integration tools,NFR,O
+support theming web interface graphics colours,NFR,O
+configuration pre packaged within built version application,NFR,O
+make accessible curator dashboard,NFR,O
+system shall provide mechanisms implementing multiple interfaces single dataset type,NFR,O
+user profile updates stored database,NFR,O
+option custom configuration built version application must exist,NFR,O
+system shall able integrate https data mendeley com,NFR,O
+system must able handle multiple instances fedora including hidden instance used emory,NFR,O
+support ldap authentication,NFR,O
+system must support integration eprints,NFR,O
+system must provide visual representations index cards archivists view,NFR,O
+system shall support oai pmh protocol,NFR,O
+system must support maintenance data storage,NFR,O
+system must able perform local authentication,NFR,O
+system must able handle large volumes archived data without significant degradation performance,NFR,O
+system must able extract display description data collected,NFR,O
+system must able handle removal holds without significant impact overall performance,NFR,O
+apps able create utilize instances deployed dataset types,NFR,O
+system must provide special client support customer,NFR,O
+system shall support importing multiple stories single spreadsheet file batch process,NFR,O
+system must support searching using tags,NFR,O
+system must handle sql schema strings length without degradation performance,NFR,O
+system must able access use data stored database,NFR,O
+system able store manage different user defined roles,NFR,O
+system support conversion uploaded files required formats,NFR,O
+csv file downloaded user must contain data used current visualisation,NFR,O
+software must support integration jquery plugin core data packages,NFR,O
+system integrates alfred assuming alfred existing system,NFR,O
+ability configure grant record filtering usaspending api interface required,NFR,O
+dataset stored github system shall automatically retrieve populate associated descriptive metadata,NFR,O
+system must able process appeals,NFR,O
+api must accessible website,NFR,O
+system allow reusability extracted description external applications documents,NFR,O
+system support defining experiments later stage,NFR,O
+system allow dois added necessary,NFR,O
+wysiwyg editor support updating long form content,NFR,O
+system store external descriptions database,NFR,O
+system must able install neurohub dependencies ubuntu lts machine,NFR,O
+system offer customer support sales,NFR,O
+support bespoke custom metadata fields,NFR,O
+version management datasets must supported,NFR,O
+system must able integrate cris,NFR,O
+dataset instance must explorable apps,NFR,O
+system enable changes made existing applications,NFR,O
+platform must support variety text based formats,NFR,O
+system must able export set records associated files,NFR,O
+ability automate neurohub installation,NFR,O
+system must support import export data files netcdf format,NFR,O
+system must install default software packages automatically,NFR,O
+system must support wide range devices varying hardware specifications ensure seamless operation across multiple platforms,NFR,O
+system support direct integration stata,NFR,O
+system shall provide group level repository storing sharing research documents,NFR,O
+system must support real time updates experimental protocol data without requiring manual page reloads,NFR,O
+software must support automatic contrast adjustment scanned files,NFR,O
+provide step step instructions switching prototype fisma low hosting plan,NFR,O
+second method must support estimation values using powers etc,NFR,O
+system must allow researchers create manage user research protocols,NFR,O
+system must able inject implementation runtime,NFR,O
+system must able preserve maintain permanent digital archives,NFR,O
+system shall support derivation logic popocodes values forgn,NFR,O
+display user documentation within web application,NFR,O
+system must enable using packaged data analysis,NFR,O
+system must able load historical fpds data,NFR,O
+system must support backend changes functionality,NFR,O
+integration alfred system,NFR,O
+system must provide option replicating remotely,NFR,O
+system shall support hdf integration,NFR,O
+user must able export transcript csv file,NFR,O
+system must able handle concurrent access dataset management feature without compromising performance,NFR,O
+system must support addition storage large amounts custom metadata fields without compromising overall system performance,NFR,O
+system able provide information type data stored,NFR,O
+system must support fixing bugs making enhancements api,NFR,O
+system must integrate open refine,NFR,O
+system shall provide api called alfred,NFR,O
+system must able support implementation upgrade step dataset instances upgraded new version dataset type,NFR,O
+software must allow publishers embed interactive preview data website,NFR,O
+support multiple types health sensors,NFR,O
+system must support custom branding options embedded viewer,NFR,O
+system must provide link button access rss feed,NFR,O
+system must ensure downloaded data packages compatible users scripts systems,NFR,O
+system must validate input data format compatible mapping,NFR,O
+api functionality must implementable ios application,NFR,O
+system must able handle concurrent connections multiple external coordinators without compromising performance,NFR,O
+system must administrative interface setting managing subdomains,NFR,O
+system shall automatically update existing dataset instances use newly deployed version accessed deployment,NFR,O
+system must able handle file uploads larger gb,NFR,O
+frontend application must feature upload ead file,NFR,O
+system must support multiple types electronic devices     desktop laptop tablet smartphone,NFR,O
+system support file downloads web,NFR,O
+system read data fpds,NFR,O
+system must able connect user data repository,NFR,O
+display whether built fedora event audit services available,NFR,O
+integration operating system installation process,NFR,O
+system must support loading datasets varying sizes without significant degradation performance,NFR,O
+system include functionality generating csv file data used visualisations,NFR,O
+system support searching without requiring metadata,NFR,O
+application must function correctly internet explorer,NFR,O
+system shall provide stable access preserved material,NFR,O
+system must able process store metadata multiple experiments concurrently without significant degradation performance,NFR,O
+integration spss pipeline,NFR,O
+system must download function search results page,NFR,O
+system must allow developers design apps independently,NFR,O
+system must allow creating high quality digital scans images documents,NFR,O
+system must able import extracted metadata data catalogue,NFR,O
+system must ability migrate data,NFR,O
+api must provide necessary data implementing certain features,NFR,O
+system must simple web interface,NFR,O
+system provide option directly access imported data analysis visualization,NFR,O
+system must allow users import data without requiring conversion data formats,NFR,O
+system must display twitter tweets within neurohub platform,NFR,O
+system must allow performing custom administrative operations dataset instances ui,NFR,O
+system provide access olderpeople use alfred,NFR,O
+test file must able derive fields fabs robust manner,NFR,O
+software must accessible mobile device,NFR,O
+system must support integration active directory user authentication,NFR,O
+provide interface access fedora event audit services information,NFR,O
+system must integrated wormbase,NFR,O
+system shall integrate network file share     network drive,NFR,O
+system allow better logging capabilities,NFR,O
+integrate functionality snapshot serengeti platform,NFR,O
+system shall allow deposit maintenance datasets virtual research environments,NFR,O
+functionality accessible repository support team member,NFR,O
+support unit testing app development environment,NFR,O
+system must able extract metadata pointers data management plan dmp,NFR,O
+system must allow site administrators view visual designs similar organizations,NFR,O
+user create multiple files within one experimental run,NFR,O
+system shall provide alfred api enables developers achieve goals minimal effort,NFR,O
+software must capability integrate ldap,NFR,O
+system must display updated data package registry,NFR,O
+user interface running scripts exists,NFR,O
+system must support full text search functionality faqs,NFR,O
+system must able recognize support various types files,NFR,O
+app must generate openrefine reconciliation api endpoint,NFR,O
+system shall support concept user workspace,NFR,O
+system must provide mechanisms upgrading downgrading individual dataset types without affecting overall performance stability app,NFR,O
+system allow visual designer create share visual designs nsf project team,NFR,O
+system must feature run script installing neurohub node,NFR,O
+support multiple user devices computers tablets phones alfred installation,NFR,O
+system shall combine datapackage data single file,NFR,O
+system must support automatic speech recognition asr functionality,NFR,O
+system must provide way users perform custom administrative operations dataset instances,NFR,O
+integration interface repoadmin role symplectic elements software,NFR,O
+system must support adding cc license uploaded data files,NFR,O
+ability migrate data without losing existing functionality settings,NFR,O
+moderators must able save exported transcript locally,NFR,O
+system must enable features based stored archived data,NFR,O
+system must able encode videos storage,NFR,O
+script must able execute acceptance tests neurohub installation,NFR,O
+system must provide functionality validate published data,NFR,O
+system must able store manage historical data usage metrics allowing analysis reporting extended periods,NFR,O
+system support running migration procedure upgrading dataset instance new version,NFR,O
+system must able store inputs experiment,NFR,O
+data must packaged integrate mongodb,NFR,O
+system must able handle minimum active worm strains without significant degradation performance,NFR,O
+ability update website content dynamically,NFR,O
+system must check compatibility updating properties,NFR,O
+app access multiple os features api interface,NFR,O
+system must support exporting data ms sql,NFR,O
+system must support adding cc license uploaded data files,NFR,O
+system must support running python client command line,NFR,O
+system must provide interface analyzing visualizing imported data,NFR,O
+system must support dependency management normal dependency frameworks,NFR,O
+system must preserve older versions data package,NFR,O
+access test features multiple nonprod environments,NFR,O
+system must able display supported file formats,NFR,O
+system must able process multiple restriction updates concurrently file,NFR,O
+system ui api calls optimized fast rendering minimal latency,NFR,O
+software must able perform exploratory data analysis using  ,NFR,O
+data packages visible system undeletion,NFR,O
+system must able automatically analyze video footage worm watch labs,NFR,O
+system must support linked data interface repository,NFR,O
+data packaged data integrated pipelines use hdf,NFR,O
+system shall support import export data netcdf format without significant impact overall performance,NFR,O
+system shall provide interface deliver retrieved content various formats suitable different audiences occasions,NFR,O
+session information accessible single interface,NFR,O
+system shall display retrieved data usable format,NFR,O
+system must support staff review functionality,NFR,O
+ability implement custom administrative operations,NFR,O
+platform must support variety media file formats,NFR,O
+system must display data data package format suitable analysis visualization,NFR,O
+system must allow dependency interface dataset type,NFR,O
+compatibility various versions elasticsearch,NFR,O
+system must support adding custom dataset types specific business requirements,NFR,O
+application must store user data directly phone,NFR,O
+system shall enable successful updating transactional parcel pin reference gis layer,NFR,O
+system must allow deployment custom dataset types within apps inside plugins,NFR,O
+support integrating data packaged data feather,NFR,O
+system must able integrate dspace,NFR,O
+system must provide complete data related ppopcongressionaldistrict,NFR,O
+system provide videophone functionality,NFR,O
+support keyboard based navigation,NFR,O
+system must able perform automated checks files based formats,NFR,O
+system must support speech recognition technology,NFR,O
+system must able handle multiple instances customized wizards without degrading performance,NFR,O
+system must display overview csm home page,NFR,O
+version data package must installed separately,NFR,O
+system must store digital copies redundantly,NFR,O
+accounting functionality shall easy use,NFR,O
+system must able provide prototype strategy,NFR,O
+system must ability migrate applications,NFR,O
+system must support importing data google spreadsheet,NFR,O
+system provide easy use interface managing app pricing modalities,NFR,O
+system must able automatically generate dataset based specified dataset type deployment,NFR,O
+workflows supported system,NFR,O
+system must allow searching across multiple data packages owned single publisher,NFR,O
+application must function correctly firefox,NFR,O
+template already contain commonly entered meta data,NFR,O
+system shall enable removal fundingagencycode fabs sample file fabs longer requires,NFR,O
+system must able import excel spreadsheets,NFR,O
+restored data packages become immediately visible available viewing downloading,NFR,O
+system must able handle high volume file additions restrictions without significant degradation performance,NFR,O
+system must support multiple languages,NFR,O
+system must able store display metadata component including title dates languages relevant facets,NFR,O
+system must able extract products video content,NFR,O
+system must able accommodate larger amounts recyclable materials,NFR,O
+system must allow performing custom administrative operations dataset instances cli,NFR,O
+system allow deployment dataset types independently application,NFR,O
+system must integrate symplectic elements,NFR,O
+ability run custom scripts part system exists,NFR,O
+system must able accept import data packages publishers,NFR,O
+application deployed cloud gov,NFR,O
+system shall enable working dataset discoverable via openspending user interfaces,NFR,O
+packaged data must readable mongodb pipelines,NFR,O
+support pipelines using elasticsearch,NFR,O
+system must allow users access datapackage online interface,NFR,O
+system must support interaction revision control system,NFR,O
+system shall display supported data formats,NFR,O
+system must provide accurate data related ppopcode,NFR,O
+integration email client service,NFR,O
+system must allow packaging ml datasets data packages,NFR,O
+system must support author authority control functionality,NFR,O
+system must support easy importing packaged data ml platform,NFR,O
+system must display costs data management dmp,NFR,O
+system must maintain consistent metadata structure stored archived data across existing storage systems,NFR,O
+ability enable developers use data analysis visualizations importing node,NFR,O
+system must support integration fedora connector symplectic elements,NFR,O
+system must support concept dataset types deployment,NFR,O
+system must import data packages quickly,NFR,O
+system must provide good battery alfred,NFR,O
+system must support simple documented format input data metadata,NFR,O
+coding required create new dataset instance,NFR,O
+software must able display minimum viable product mvp concept,NFR,O
+support utilizing imported data analysis visualization tasks,NFR,O
+software must enable users save current data state,NFR,O
+modified sql code shall persisted reflected system database,NFR,O
+system support expandable customizable alfred artificial listener remote elderly disabled unit,NFR,O
+system must able process combine metadata multiple datasets real time,NFR,O
+support various metadata tools formats,NFR,O
+system provide user interface nsf administrator access view information cms implementation,NFR,O
+system must support resource acquisition planning,NFR,O
+software must ensure continuous availability public interface repository index updates,NFR,O
+system must support management multiple versions dataset,NFR,O
+saved visualizations must sharable,NFR,O
+system must provide mechanism storing displaying recorded dmp information,NFR,O
+landing page must allow navigation fabs dabs pages,NFR,O
+support varying levels permissions administrator accounts,NFR,O
+ability display two additional fields fpds data,NFR,O
+system able export data packages spss real time,NFR,O
+system shall enable exportation retrieved content metadata use external systems web pages,NFR,O
+system must able handle linking external data repositories without compromising overall performance,NFR,O
+system require manual conversion data formats packaging,NFR,O
+system must ensure deterministic deployment based datapackage schema changes,NFR,O
+system must allow storing archived data existing storage systems,NFR,O
+system must provide centralized location accessing related reports documentation,NFR,O
+system must allow direct storage archived data hcp object store,NFR,O
+system must able perform queries across entire archive,NFR,O
+explain simple datapackage format registry,NFR,O
+python client must allow adding data datastore bulk,NFR,O
+system must allow performing custom administrative operations dataset instances rest api,NFR,O
+system must provide command line tool validating data,NFR,O
+system must able store manage user blocking information ip address,NFR,O
+system must provide python client interacting datastore,NFR,O
+automatic conversion data formats required imported data,NFR,O
+system shall support   scripting exploratory data analysis,NFR,O
+user roles admin defined implemented software,NFR,O
+system must enable olderperson easily carry device,NFR,O
+system must allow developers utilize bootstrap development,NFR,O
+system must able handle deployment multiple apps different versions datasets without data inconsistencies,NFR,O
+system must allow integration data packaged data pipelines use dspace,NFR,O
+system must provide functionality use imported data packages analysis visualization,NFR,O
+publish button deactivated clicked derivation process,NFR,O
+system must include step counter functionality,NFR,O
+system must provide wearable device,NFR,O
+system must check compatibility existing dataset properties new dataset created,NFR,O
+section accessible page website,NFR,O
+platform must allow rapid prototyping html ideas,NFR,O
+system shall provide single interface website send emails trainers,NFR,O
+system must able handle publications stored within repository well external publications,NFR,O
+application deployable first iteration beta,NFR,O
+system must allow users view exported data format compatible excel,NFR,O
+system must accessible onestop shop managing research outputs,NFR,O
+library discovery system must integrated repository,NFR,O
+system allow implementation migration procedure,NFR,O
+integration   environment seamless data transfer,NFR,O
+system must support importing data json format,NFR,O
+system must translation feature eml data package,NFR,O
+system must cache data package,NFR,O
+system must able automatically embed metadata file headers,NFR,O
+system must sufficient processing power memory handle high traffic volumes without significant decrease performance,NFR,O
+system must able automatically detect image series,NFR,O
+software must support unicode,NFR,O
+system shall allow deploying new version dataset type part app deployment,NFR,O
+system must allow users visual troubles easily adapt alfred device,NFR,O
+app must support cleaning messy data,NFR,O
+system must able generate reports,NFR,O
+system must interface integrate data packaged data,NFR,O
+system must integrate normal ubuntu package management tools,NFR,O
+system must support detailed metadata attachment user created data entries,NFR,O
+system must support multiple video encoding formats,NFR,O
+system require local download datasets import,NFR,O
+software must able operationalize data analysis performed   using python,NFR,O
+system must support fedora,NFR,O
+downloaded file format format easily importable personal calendars     ical csv,NFR,O
+system must allow loading fpds data since,NFR,O
+user role dataset developer must supported,NFR,O
+system must provide options downloading saving images various formats     high resolution jpeg,NFR,O
+system shall provide text speech functionality,NFR,O
+system shall generate downloaded file sqlite database format,NFR,O
+system validate csv file,NFR,O
+system must able manage multiple versions data package,NFR,O
+integration excel data output,NFR,O
+system must eliminate back forth current licensing process,NFR,O
+system must support housing storing digital materials,NFR,O
+system must allow replication beyond primary remote site,NFR,O
+system able update     pages launch,NFR,O
+application must function correctly safari,NFR,O
+system must enable implementation beta site quickly without adhering established brand guidelines,NFR,O
+system shall accessible via mobile phones,NFR,O
+system must support searching across multiple trusted external systems,NFR,O
+system able install neurohub node ubuntu operating system,NFR,O
+user profile management olderperson,NFR,O
+system must able store retain added recycling center information time,NFR,O
+plugin artifact must contain code creating dataset instance,NFR,O
+system must provide wysiwyg see get editor,NFR,O
+support user authentication mechanism,NFR,O
+requirement achieved     dynamically generated urls needs happen,NFR,O
+system must able store manage resources different projects geographic areas,NFR,O
+system shall integrated zenodo,NFR,O
+ability create pipeline data input output,NFR,O
+system must able export dataset directly user reference management software,NFR,O
+system load extracted historical data fpds feed data historical fpds data loader,NFR,O
+filter functionality   quality aspects,NFR,O
+software must support automatic level adjustments scanned files,NFR,O
+system must provide services long term data curation,NFR,O
+app able handle different scenarios os features available others,NFR,O
+system support making enhancements api,NFR,O
+fabs must deployable production environment,NFR,O
+system must provide features easy website design using bootstrap,NFR,O
+encoded video files must analysable third party worm analysis software,NFR,O
+system support file types datasets slideshows,NFR,O
+system must able output information form received speech technology,NFR,O
+games must specifically designed older adults,NFR,O
+system must allow consumers download data packages single file,NFR,O
+system must able handle files size depositing,NFR,O
+system must allow referencing remote controlled vocabulary,NFR,O
+system must support harvesting metadata repository via oai,NFR,O
+software must include functionality enable auto completion form controls using core dataset,NFR,O
+system must support multiple types file formats audio material,NFR,O
+system support integration libreoffice openoffice,NFR,O
+user interface must provide option export data package directly excel,NFR,O
+system must able process analyze large datasets animal images real time,NFR,O
+software must digital recording feature user input,NFR,O
+system must enable enhancement existing data published dataset,NFR,O
+system must able read process data various dataset types,NFR,O
+system must utilize simple low level image features,NFR,O
+software must able interact existing university systems,NFR,O
+file upload functionality available independently attaching files log book pages,NFR,O
+system must enable integration packaged data pipelines utilize eprints,NFR,O
+functionality easily create uniform rights statements,NFR,O
+system must allow data package used node js library,NFR,O
+system must allow deployment new version dataset type independently existing versions dataset type,NFR,O
+software must allow searching repository,NFR,O
+system must support multiple file formats,NFR,O
+application must function correctly internet explorer,NFR,O
+system must provide sustainable linking capabilities,NFR,O
+system must able handle different types file descriptions,NFR,O
+system must able read data directly google spreadsheet without requiring intermediate conversion steps,NFR,O
+system shall handle concurrent user interactions without significant degradation performance,NFR,PE
+system shall respond search queries within seconds average,NFR,PE
+system shall respond user requests viewing updating inventory within seconds,NFR,PE
+system shall return search results within seconds query image records,NFR,PE
+system shall respond user requests browsing finding publishers within seconds,NFR,PE
+system performance support concurrent access multiple users without significant degradation response time,NFR,PE
+system shall display section submissions researchers within department within seconds,NFR,PE
+system support least concurrent searches per second,NFR,PE
+system must support concurrent access instance association resources resource components without significant degradation performance,NFR,PE
+system must capable assigning item multiple collections within seconds,NFR,PE
+system must able retrieve descriptions collected data sets within seconds data sets,NFR,PE
+system must reduce time taken video analysis,NFR,PE
+system must respond user input within seconds transactions,NFR,PE
+system performance must support concurrent deletion requests multiple users without significant degradation performance,NFR,PE
+system must able display creator submission within second reasonable sized dataset,NFR,PE
+system must able perform image prefiltering within seconds images moderate complexity,NFR,PE
+system must support least records per minute worm strain stock management database,NFR,PE
+system shall provide information estimated conservation period archived data within minute typical workload,NFR,PE
+system must handle least concurrent user interactions without significant degradation performance,NFR,PE
+system must display list users corresponding roles within seconds average user,NFR,PE
+system must display least previously recorded experimental protocols screen within seconds requesting,NFR,PE
+system shall respond unpublish request within seconds,NFR,PE
+system must speak slow pace,NFR,PE
+system shall process input preclassifying galaxy zoo images within seconds,NFR,PE
+system must perform versioning operations dataset types within seconds,NFR,PE
+system must able assign hearing date less seconds,NFR,PE
+system must able handle multiple concurrent conversations without noticeable decrease performance,NFR,PE
+system shall respond user queries within seconds initiating communication administrators,NFR,PE
+alfred must respond suggested recipes within seconds query made olderperson,NFR,PE
+system must respond within seconds creating new registration form staff kids,NFR,PE
+system shall process account setup deletion requests within seconds,NFR,PE
+system must respond user queries within seconds average,NFR,PE
+system must perform searches within seconds given set log books,NFR,PE
+system must able send reminders olderpeople less seconds initiate leaving homes,NFR,PE
+system must able process store tagged datapackages within seconds,NFR,PE
+system shall retrieve process data multiple datasets simultaneously,NFR,PE
+file upload must occur attachment log book page,NFR,PE
+system must able display user testing reports real time average response time less seconds,NFR,PE
+system must respond within seconds indicating whether statute pertains specific component regardless size repository,NFR,PE
+system must able handle multiple concurrent users accessing project materials without significant degradation performance,NFR,PE
+system shall able handle least concurrent users without noticeable degradation performance,NFR,PE
+system must process file assignment multiple types without significant degradation performance concurrent users,NFR,PE
+memory usage system recommendation algorithm must exceed available ram normal operating conditions,NFR,PE
+system shall allow concurrent recycling center registrations without performance degradation,NFR,PE
+system must able recover temporary failures spikes traffic within reasonable time frame     less minute,NFR,PE
+system shall respond updates recycling center information within seconds,NFR,PE
+notify developers immediately upon change app state,NFR,PE
+system must respond within seconds filtering data multiple dimensions,NFR,PE
+system must respond within seconds alerting user low battery,NFR,PE
+system must show current level feature completeness neurohub node,NFR,PE
+system must enable update parent information real time,NFR,PE
+system must allow creating new log book page within seconds user interaction,NFR,PE
+system must handle large number flexfields without noticeable performance impact,NFR,PE
+system must able handle minimum concurrent remote login requests faculty members given time,NFR,PE
+system must able handle least concurrent user submissions within response time less seconds,NFR,PE
+system must respond within seconds displaying list collections repository manager curatorial responsibility,NFR,PE
+system must respond user queries within seconds,NFR,PE
+system must display response time less seconds first load new prototype,NFR,PE
+system must handle large number active permissions restrictions without compromising performance,NFR,PE
+system must able handle least concurrent connections multiple users without significant degradation performance,NFR,PE
+system must verify integrity downloaded data real time,NFR,PE
+system shall maintain response time less second repeated use map functions,NFR,PE
+system must support multiple fee settings different user types within short time frame,NFR,PE
+system must able import data package libreoffice openoffice less second,NFR,PE
+system shall retrieve display dataset types previous deployments within seconds,NFR,PE
+system must able handle least concurrent user sessions without significant decrease performance,NFR,PE
+system shall respond clear concise instructions next steps within seconds successful account creation,NFR,PE
+system handle least concurrent requests view publisher profile without significant performance degradation,NFR,PE
+system must ensure openspending always displays current data,NFR,PE
+system must process marking session accepted within seconds,NFR,PE
+system must able respond quickly submitted tech support issues,NFR,PE
+system must process concurrent user classifications within seconds without significant performance degradation,NFR,PE
+system must able process least concurrent transaction updates within response time less seconds,NFR,PE
+system must able display basic information summit within seconds submitting relevant details,NFR,PE
+data retrieval display operations must complete within seconds projects fewer users,NFR,PE
+system must respond user interactions related dataset management within seconds,NFR,PE
+system must calculate display total amount recyclable waste generated users near real time,NFR,PE
+average response time system returning video recommendations new image uploaded must exceed seconds,NFR,PE
+system shall respond home page within seconds navigation page,NFR,PE
+system must display available activity fees within seconds navigation relevant page,NFR,PE
+system shall crash experience data loss high traffic periods     multiple recycling centers registering simultaneously,NFR,PE
+system must able handle least concurrent connections badcamp attendee tracking feature within seconds,NFR,PE
+system must process least records fabs fpds data within seconds,NFR,PE
+system must able send mass emails registered trainers within seconds,NFR,PE
+system shall integrate open refine within seconds minimize user wait time optimize overall processing speed,NFR,PE
+system shall respond user input within seconds updating enum list,NFR,PE
+system shall process file download requests search results page within seconds average concurrent users,NFR,PE
+system must respond within seconds displaying brand guideline development information,NFR,PE
+system must display location initial person meeting within seconds user login,NFR,PE
+system response time displaying list summits less seconds normal server load,NFR,PE
+system performance shall compromised using   python concurrently,NFR,PE
+system shall respond relevant questions knowledge base within seconds initiated user,NFR,PE
+system must respond within seconds queried user administrator role,NFR,PE
+system must respond user input within seconds,NFR,PE
+system must process bulk data additions within minute user initiation,NFR,PE
+system must support least concurrent api requests per second without significant performance degradation,NFR,PE
+system must allow rapid scrolling stories estimates previous rounds without significant delay impact overall performance,NFR,PE
+system must respond fabs user input related submitting citywide ppopzip within seconds,NFR,PE
+system shall respond within seconds least user interactions tracking feature,NFR,PE
+system must display newly uploaded fabs files within seconds publication,NFR,PE
+system must display report data within seconds initiating report generation process,NFR,PE
+system must provide real time data synchronization across users involved project,NFR,PE
+alfred shall process provide user heart rate determination within seconds,NFR,PE
+system must able import data package external source julia within seconds,NFR,PE
+system must display list administrators within seconds making request,NFR,PE
+system must respond user requests edit existing data model within seconds,NFR,PE
+system must able import data package python within second,NFR,PE
+system shall respond within seconds retrieving medication status patient,NFR,PE
+system must display file upload history specified time period within seconds,NFR,PE
+data transfer rates system remote locations sufficient real time collaboration,NFR,PE
+system must allow adding dataset hidden state within seconds,NFR,PE
+system must respond user queries within seconds,NFR,PE
+system must display assigned positions staff members within seconds login,NFR,PE
+system shall retrieve display archival content database within seconds user request,NFR,PE
+system must render corporate sponsor logo within seconds displayed corporate sponsors page,NFR,PE
+system must process data package input availability use developer second less,NFR,PE
+system must able handle concurrent requests automatic preclassification without significant degradation performance,NFR,PE
+validation results returned reasonable amount time,NFR,PE
+system shall respond user input within seconds,NFR,PE
+system must able handle least concurrent users assigning sponsors events trainings summits within seconds,NFR,PE
+system shall display work performance metrics real time support timely decision making,NFR,PE
+system must support least concurrent user sessions without significant performance degradation,NFR,PE
+system must respond search results within seconds full text searches faqs,NFR,PE
+system must able load render scrum section within seconds clicking link,NFR,PE
+indentation levels persist across editing sessions,NFR,PE
+system must handle concurrent additions administrative data archivist within seconds without degrading performance,NFR,PE
+system must respond within seconds user attempts alert camp worker inappropriate job performance,NFR,PE
+system shall handle concurrent requests archival content without significant degradation performance,NFR,PE
+system must handle concurrent imports multiple data packages without significant degradation performance,NFR,PE
+system must able handle multiple concurrent user requests without significant degradation performance,NFR,PE
+system must handle minimum concurrent requests without significant performance degradation,NFR,PE
+system must display sponsor listings within seconds user request,NFR,PE
+system speech must clear,NFR,PE
+system must display payment page within seconds navigation previous step registration process,NFR,PE
+system shall handle file uploads concurrently user interactions without significant performance degradation,NFR,PE
+system must able display metadata visual representations index cards within seconds user requests,NFR,PE
+system shall respond user searches within seconds queries matching results,NFR,PE
+system provide seamless user experience minimal latency accessing data campus collaborators,NFR,PE
+system must respond within seconds interacting user input,NFR,PE
+system must handle large number flexfields significant performance degradation,NFR,PE
+system must able export data package excel within seconds,NFR,PE
+system must respond result administrator verification within milliseconds least requests,NFR,PE
+system must process least images per minute average processing time less seconds per image,NFR,PE
+system must support simultaneous downloading files without significant degradation performance,NFR,PE
+system must able handle minimum concurrent users accessing repository dashboards simultaneously without significant performance degradation,NFR,PE
+system response time displaying meeting location must milliseconds,NFR,PE
+system must import large data package least mb libreoffice openoffice within seconds,NFR,PE
+system must able generate store persistent urls within seconds creating new dataset,NFR,PE
+system must send notifications timely manner update made,NFR,PE
+system must able alias map items collections within seconds collections less items,NFR,PE
+system must respond user queries within seconds searching custom metadata fields,NFR,PE
+system must display accurate complete citation information document within seconds page load navigation,NFR,PE
+system provide feature associate metadata point time bulk upload complete,NFR,PE
+system must handle maximum concurrent users attempting access payment page without experiencing significant decrease performance,NFR,PE
+system must generate periodic ir reminders,NFR,PE
+system must import data package   within second,NFR,PE
+wearable device must respond within seconds user interaction minimize perceived lag,NFR,PE
+system must able retrieve display user profiles within seconds site members,NFR,PE
+system support synchronization google calendar,NFR,PE
+system shall respond within seconds deleting account,NFR,PE
+system must support concurrent access multiple users without impacting response time,NFR,PE
+system must respond error message concurrent reports generated time,NFR,PE
+application must respond within seconds entering exiting superuser scope,NFR,PE
+system must support concurrent downloads multiple reports without significant degradation performance,NFR,PE
+system shall validate loan records zero blank values within seconds,NFR,PE
+time taken validation minimal,NFR,PE
+system must able export descriptive data within seconds datasets rows,NFR,PE
+system shall retrieve display data within seconds user request,NFR,PE
+system data loading process must completed time fabs go live,NFR,PE
+system make uploaded video tags accessible subsequent processing steps,NFR,PE
+system must able handle minimum concurrent user sessions without significant degradation performance,NFR,PE
+system must able handle minimum concurrent users linking datasets projects without noticeable performance degradation,NFR,PE
+embargoed data must inaccessible specified date time,NFR,PE
+system must allow users upload add videos articles within seconds,NFR,PE
+system must able handle least concurrent api calls mendeley without significant degradation performance,NFR,PE
+fabs must respond submission financial assistance data within seconds,NFR,PE
+payment page must load within seconds average device mid range processor internet connection speed mbps,NFR,PE
+system performance must degrade significantly large number users accessing accrual data simultaneously,NFR,PE
+system must able handle large number concurrent users without significant degradation performance,NFR,PE
+system shall retrieve display list training options within seconds average user standard internet connection,NFR,PE
+system response time handling large datasets external repositories exceed seconds average,NFR,PE
+system must able handle concurrent user sessions without significant degradation performance within seconds,NFR,PE
+system must return list subscribers specified report within seconds average across system loads,NFR,PE
+system must respond within seconds accessibility related tasks,NFR,PE
+system must respond within seconds displaying embedded visualizations accompanying textual descriptions,NFR,PE
+system must able process display digitized images within seconds,NFR,PE
+system shall display status monitored websites within seconds navigating dashboard page,NFR,PE
+system must restore deleted files within seconds deletion,NFR,PE
+system shall respond search queries within seconds average,NFR,PE
+system shall process new recycling center registrations within seconds submission,NFR,PE
+system must respond within seconds deleting camper record database,NFR,PE
+upgrade process must complete within reasonable timeframe     less minutes typical dataset sizes,NFR,PE
+system shall perform simultaneous posting content multiple social media platforms without significant degradation performance,NFR,PE
+system must detect least animals per minute standard desktop computer dual core processor gb ram,NFR,PE
+system shall retrieve related reports documentation within seconds,NFR,PE
+search results page must load within seconds typical user standard internet connection,NFR,PE
+system must able import large datasets gb external data centre within minutes,NFR,PE
+system shall process daily attendance logging within seconds less,NFR,PE
+system must respond updated dataset within seconds deploying new version dataset type,NFR,PE
+system performance shall allow visualization least files uploaded within day period without significant delay degradation,NFR,PE
+system must ensure customized sponsorship page loads within seconds standard internet connection,NFR,PE
+system shall able handle least concurrent users without significant decrease performance,NFR,PE
+system shall process user creation requests within seconds,NFR,PE
+system shall handle least concurrent collections transfers without experiencing significant degradation performance,NFR,PE
+system must retrieve display active permissions restrictions within reasonable time frame less second,NFR,PE
+system must able handle least concurrent user sessions acceptable response times,NFR,PE
+system must able handle least new condo units created simultaneously without significant performance degradation,NFR,PE
+system must respond within seconds configuring new client,NFR,PE
+system must respond within seconds user successfully update username,NFR,PE
+system must able load historical fabs data frec derivations within seconds,NFR,PE
+system must respond user interactions within seconds maximum requests peak usage hours,NFR,PE
+system shall provide real time data usage analytics within seconds user request,NFR,PE
+system must retrieve display archival plans funded researchers within seconds,NFR,PE
+system shall display list files associated error messages within seconds files,NFR,PE
+system shall display user twitter tweets real time within neurohub,NFR,PE
+system must able render dynamic varying layouts response user input within seconds,NFR,PE
+system must respond within seconds searching users names scope specific role,NFR,PE
+system must process video uploads tags within seconds average,NFR,PE
+system must respond within seconds conducting inspections validation purposes,NFR,PE
+system must able retrieve display issue data within seconds user input,NFR,PE
+user requests urgent help via alfred system must respond within seconds,NFR,PE
+system shall generate nametags within seconds entering camper name relevant information,NFR,PE
+system must able handle concurrent users accessing shared content within seconds login,NFR,PE
+system must respond user input within seconds,NFR,PE
+system must fail create application within seconds dataset creation fails,NFR,PE
+application must respond within acceptable time frame every action,NFR,PE
+app must able handle multiple simultaneous connections without significant degradation performance,NFR,PE
+system handle simultaneous search query users without significant performance degradation,NFR,PE
+system must respond download timestamp datapackage within seconds successful download,NFR,PE
+alfred respond within seconds older person related operations,NFR,PE
+system must able associate retrieve least metadata fields within response time seconds,NFR,PE
+system must able handle concurrent requests without significant degradation response time,NFR,PE
+system must able handle concurrent users requesting summarized report without significant degradation performance,NFR,PE
+system must display faqs page within seconds user navigation,NFR,PE
+system must able handle large number concurrent users without significant degradation performance,NFR,PE
+system must able process store datasets within response time less seconds,NFR,PE
+system must allow users track changes files time,NFR,PE
+system shall perform insertion archon source record ids aspace record within milliseconds average,NFR,PE
+system must respond within seconds displaying pricing information alfred,NFR,PE
+system shall able display linked items repository seconds,NFR,PE
+uploading large videos mb system must hang freeze seconds,NFR,PE
+average time taken system upload single gb file exceed seconds,NFR,PE
+system must respond within seconds searching alfred user,NFR,PE
+system must able process store gtas window data within response time less seconds,NFR,PE
+system must handle employee records without significant performance degradation,NFR,PE
+system must update user profiles within seconds completing necessary validation checks,NFR,PE
+ability monitor changes workload real time,NFR,PE
+system shall display complete list components given object within seconds,NFR,PE
+system must able display user statistics near real time,NFR,PE
+system must able display publisher profile less seconds average user,NFR,PE
+system notify alert user certain conservation period approaching,NFR,PE
+system must process eprints integration tasks within seconds ensure responsive performance user experience,NFR,PE
+system must able retrieve restricted files within seconds,NFR,PE
+system must able display manipulate metadata least projects simultaneously without significant impact performance,NFR,PE
+system shall notify developers within seconds app state change,NFR,PE
+system shall display copyright information image within seconds,NFR,PE
+app response time must remain consistent varying loads operating conditions,NFR,PE
+updating permitted restricted acts active dates system must update relevant information within seconds,NFR,PE
+game usage metrics must update automatically every minutes without requiring manual intervention,NFR,PE
+system must respond user input within seconds stored agreements,NFR,PE
+system must store historical data minimum days allow analysis trend identification,NFR,PE
+system must able handle minimum concurrent user invites within seconds without significant performance degradation,NFR,PE
+system must respond within seconds retrieving updating faq entry,NFR,PE
+system must able process minimum concurrent user sessions without noticeable impact performance,NFR,PE
+system must handle association content file object object component within seconds,NFR,PE
+system must able process verify payment corporate membership within minutes,NFR,PE
+system must able generate display notice violation within seconds user input,NFR,PE
+system must respond within seconds creating predicted link two files average size mb,NFR,PE
+system must able generate display reports research data usage within seconds dataset containing records,NFR,PE
+system must allow multiple concurrent searches different data packages without significant degradation performance,NFR,PE
+system must support concurrent uploads multiple ead files without significant degradation performance,NFR,PE
+system must respond within seconds query operations,NFR,PE
+system must able display list employees respective information within seconds loading,NFR,PE
+system must able process handle least concurrent requests per minute image upload recommendation,NFR,PE
+system must able retrieve publication information internal repository external sources seconds,NFR,PE
+system must handle concurrent user sessions without significant degradation performance,NFR,PE
+system shall detect plankton sizes orientations image data within seconds,NFR,PE
+system shall process display recommended recycling centers within seconds uploading weekly schedule,NFR,PE
+system must respond within seconds retrieving archiving time estimates,NFR,PE
+system must display view attendee information given training node within seconds,NFR,PE
+system must respond user interactions within seconds creating editing single rights management statement,NFR,PE
+system must able return results within maximum seconds use cases,NFR,PE
+system shall process update patient exercises within seconds user input,NFR,PE
+system must respond within seconds reminding user items brought,NFR,PE
+system must able handle concurrent users performing crud operations metadata within seconds,NFR,PE
+system must able render comparison multiple dmps within seconds,NFR,PE
+system must support multiple users logged simultaneously without noticeable performance degradation,NFR,PE
+system must respond api queries within seconds,NFR,PE
+system shall process display notice violation within seconds,NFR,PE
+system must process high resolution images within minutes,NFR,PE
+system shall retrieve display language change history collection object object component within seconds,NFR,PE
+route planning system shall respond user requests within seconds average,NFR,PE
+system must enable forward backward navigation within application minimal latency ms subsequent request,NFR,PE
+system must able handle increased load concurrent data uploads without significant degradation performance,NFR,PE
+system must respond updated metadata within seconds adding new data,NFR,PE
+system must handle concurrent access multiple users without significant degradation response time,NFR,PE
+system shall send email notification password reset instructions within minutes receiving request,NFR,PE
+system must able handle minimum concurrent users viewing acquisitions roadmap simultaneously without noticeable degradation performance,NFR,PE
+system must respond request indicating licenses within seconds,NFR,PE
+system must respond within seconds sending email member member contact form,NFR,PE
+system shall respond less second latency creating new protocol assigning metadata stag,NFR,PE
+system must respond within seconds extending existing job advertisement,NFR,PE
+system shall able retrieve funding information given project within seconds,NFR,PE
+system must perform data validation within seconds submitting user input publishing,NFR,PE
+system must display object components within seconds receiving request user average system configuration,NFR,PE
+system must handle concurrent client configurations without performance degradation,NFR,PE
+system must able handle concurrent requests single publisher profile without degradation performance,NFR,PE
+app must respond within seconds user input scenarios,NFR,PE
+system must render preview data less seconds clicking preview button,NFR,PE
+system must process worm watch lab video seconds detecting time egg laying,NFR,PE
+payment processing functionality must complete within seconds initiating payment submission,NFR,PE
+system shall ensure tweets refreshed automatically every minutes demand,NFR,PE
+system must respond within seconds voice commands users including olderpersons calling assistance via alfred system,NFR,PE
+system must able process dataset uploads seconds,NFR,PE
+system must able process update metadata multiple records simultaneously without significant degradation overall system performance,NFR,PE
+system must able retrieve archived news articles within seconds,NFR,PE
+system must display component parts object within seconds object selected,NFR,PE
+system shall respond user input within seconds submissions,NFR,PE
+system shall update group information real time near real time minimize data inconsistencies ensure accuracy,NFR,PE
+system must able handle minimum concurrent job postings without significant performance degradation,NFR,PE
+system must respond user input within seconds proposing games,NFR,PE
+system must able display user error logs within time frame less seconds,NFR,PE
+customization increase response time seconds compared default wizard,NFR,PE
+system must able handle least concurrent application assignments per minute without significant degradation performance,NFR,PE
+system must display results search real time,NFR,PE
+system must able generate reports within seconds requesting,NFR,PE
+system shall maintain login history least last days including login timestamps user ids,NFR,PE
+system shall respond reminder notifications within seconds setting new reminder,NFR,PE
+system must able generate reports webmaster workflow real time,NFR,PE
+system must respond researcher search query within seconds,NFR,PE
+system must render html content real time edited user,NFR,PE
+system must able render wig prototype within seconds,NFR,PE
+adding video system must refresh article preview less seconds,NFR,PE
+system must allow one atomic action multiple steps required reconfiguring dataset,NFR,PE
+system must reset minute timer automatically estimation,NFR,PE
+validation process excessively slow,NFR,PE
+system must able handle concurrent users subscribing rss feeds within seconds without significant performance degradation,NFR,PE
+system file restoration process impact overall system performance terms response time throughput,NFR,PE
+system shall display events related component within seconds request submission,NFR,PE
+system shall respond within seconds displaying app development support,NFR,PE
+system must allow downloading entire dataset single file within seconds,NFR,PE
+system must handle concurrent access meeting location information without significant performance degradation,NFR,PE
+system must handle minimum concurrent users viewing experimental protocol data without significant performance degradation,NFR,PE
+system shall respond queries within seconds,NFR,PE
+system must able reset environment permissions less seconds environments users,NFR,PE
+system must able package distribute reproducible steps achieve specific data state within minutes,NFR,PE
+system performance must ensure roadmap refreshed within seconds update underlying data,NFR,PE
+system must enable recruiting users real time website,NFR,PE
+system must respond within seconds displaying list authenticated anonymous users,NFR,PE
+system responds within second entering invalid zip code,NFR,PE
+system shall display alfred output wearable device within seconds initiating interaction,NFR,PE
+system shall respond list search results within seconds image queries simultaneously,NFR,PE
+indicating related subjects object system must respond within seconds,NFR,PE
+system must respond user queries within seconds,NFR,PE
+system must provide mechanism track changes made datasets time,NFR,PE
+system must respond user interactions within seconds requests,NFR,PE
+zoonibot generates comment must less seconds,NFR,PE
+system must resolve technical support issues within hour,NFR,PE
+system must able import ead files within minutes files mb size,NFR,PE
+system shall display allow configuration data access controls within seconds navigating relevant page,NFR,PE
+system must retrieve file metadata within seconds browsing collection files,NFR,PE
+system shall minimize impact errors failures one repository redundant copies within specified time frame,NFR,PE
+system must maintain response time less seconds subscription requests,NFR,PE
+searches data packages must completed within seconds less concurrent searches,NFR,PE
+system must display metadata description within seconds requesting,NFR,PE
+system must able process doi requests within seconds less,NFR,PE
+system must process request unpublish data package within seconds,NFR,PE
+system must resolve tech support issues reasonable timeframe,NFR,PE
+system shall minimize complexity accounting tasks,NFR,PE
+system must able retrieve display required information collection object object component within seconds,NFR,PE
+system must respond within seconds publishing large datasets,NFR,PE
+system must handle least concurrent updates usernames without experiencing significant decrease performance,NFR,PE
+software must support concurrent creation multiple deposit forms different collections without significant degradation performance,NFR,PE
+system must display error codes date,NFR,PE
+system must able handle minimum concurrent user sessions peak hours without significant degradation response time,NFR,PE
+system must respond user input within seconds interactions,NFR,PE
+system shall able generate access derivatives digital objects within seconds batch items,NFR,PE
+system shall respond within seconds submitting form user interface,NFR,PE
+system must respond results within seconds standard query,NFR,PE
+system must display estimates real time,NFR,PE
+system respond within seconds browsing files collection less items,NFR,PE
+system must handle multiple requests unpublish data package concurrently without degradation performance,NFR,PE
+system must display publisher profile within seconds navigating,NFR,PE
+system must maintain response time less second displaying component parts objects fewer components,NFR,PE
+system shall respond user requests accessing digital files within seconds,NFR,PE
+system must calculate display result assessment within reasonable time frame,NFR,PE
+system shall respond within seconds error occurs import providing clear explanation cause,NFR,PE
+system shall process user requests approval within seconds less,NFR,PE
+system shall allow users log personal accounts within seconds average,NFR,PE
+system shall respond accurate timely feedback incorrect exercise performance detected within seconds,NFR,PE
+fetch update news real time,NFR,PE
+system must perform automatic metadata insertion minimal latency new data additions,NFR,PE
+system allow nsf administrator view progress cms implementation real time,NFR,PE
+system shall provide real time updates acquisition roadmap within minutes data change,NFR,PE
+system must respond list sponsors within seconds records,NFR,PE
+system must respond list summits within seconds users concurrently,NFR,PE
+system must respond within seconds queries involving multiple versions objects metadata,NFR,PE
+system shall respond user interactions within seconds support efficient navigation rounds editing,NFR,PE
+system shall respond user queries within seconds,NFR,PE
+system must respond within seconds user input,NFR,PE
+system shall authenticate authorize user logins within seconds average,NFR,PE
+system shall able handle minimum concurrent introduction conversations alfred without significant degradation system performance,NFR,PE
+system must respond user requests within seconds queries,NFR,PE
+system must display list etds repository within seconds,NFR,PE
+system must respond plugin upgrades within seconds,NFR,PE
+system must able load historical fpds data within reasonable time frame,NFR,PE
+system must display configured properties dataset instance within seconds navigating corresponding view,NFR,PE
+system shall respond within seconds displaying early indications hypotheses designer,NFR,PE
+system must derive required data elements within seconds submitting request,NFR,PE
+system must process license applications datasets within seconds submission,NFR,PE
+system must prevent one registration per day authenticated user,NFR,SE
+user account information including passwords expire,NFR,SE
+system must notify subscribers new information available without requiring visit site,NFR,SE
+system must generate planning related reports,NFR,SE
+passwords must stored securely sent cleartext,NFR,SE
+system must enable users work data location,NFR,SE
+secure access control hr department employees,NFR,SE
+user authentication access data,NFR,SE
+publishers must publisher account publish data packages,NFR,SE
+easy management user settings functionality,NFR,SE
+user must able access section without logging,NFR,SE
+system must provide users ability control data access rights,NFR,SE
+system must enable data reusability anonymization,NFR,SE
+user authentication authorization restrict access collections,NFR,SE
+ability submit financial assistance data system must exist,NFR,SE
+system must authenticate users allowing perform transactions,NFR,SE
+system must retrieve cached data package even original data moved removed,NFR,SE
+ability perform data migration integrity testing,NFR,SE
+support multiple jurisdictions respective copyright laws regulations,NFR,SE
+system must authenticate application administrators allowing reset passwords,NFR,SE
+database must prevent unauthorized access personal information,NFR,SE
+system must ensure changes dataset compromise research integrity,NFR,SE
+system shall provide notifications users mendeley new content added shared repository,NFR,SE
+ability detect areas flooding,NFR,SE
+enable keyboard navigation users mobility dexterity impairments,NFR,SE
+system require manual intervention creating access copies,NFR,SE
+system shall ensure preservation data robust manner,NFR,SE
+system must provide transparency user personal data used,NFR,SE
+system must ensure legality reused data,NFR,SE
+system must enforce rules camp workers,NFR,SE
+system shall maintain audit trail unpublishing requests corresponding status,NFR,SE
+system must allow medical caregivers initiate video calls emergency situations,NFR,SE
+site output must accessible users accessibility issues,NFR,SE
+system shall allow users access files via network drive,NFR,SE
+system allow administrators approve reject scheduled data disposal,NFR,SE
+automatic propagation updates relevant places,NFR,SE
+system must allow users provide input data metadata,NFR,SE
+system must track display data security status data set,NFR,SE
+user authentication mechanism parents,NFR,SE
+user authentication authorization place ensure team members view first hypothesis,NFR,SE
+user authentication authorization ensure authorized archivists perform task,NFR,SE
+system must allow users control access vital data,NFR,SE
+system shall allow staff view specific security requirements based type data,NFR,SE
+system shall ensure unpublished reports datasets longer accessible via public api calls,NFR,SE
+ability redact information digital files,NFR,SE
+system must failover mechanism providing access repository primary server fails,NFR,SE
+system must provide post ingest alerting non conformant files,NFR,SE
+system must offer support ticket system olderpersons report issues system functionality,NFR,SE
+data encryption mechanism secure sharing,NFR,SE
+display data security information pis,NFR,SE
+system must allow archivists access metadata associated index cards,NFR,SE
+system must preserve existing metadata file moved new location,NFR,SE
+edit existing rights management statements,NFR,SE
+system must allow users link twitter account neurohub account,NFR,SE
+system must require explicit permission user sharing personal data,NFR,SE
+system must notify users fabs record updates made,NFR,SE
+system must display fabs banner messages fabs users,NFR,SE
+system must enable administrators change password added security,NFR,SE
+user authentication authorization mechanism lab administrators,NFR,SE
+system protect ip rights depositors proper license application,NFR,SE
+secure communication protocol remote access,NFR,SE
+system must ensure fast access archived data existing storage systems,NFR,SE
+system must allow public access certain project materials,NFR,SE
+notification mechanism administrators alert volunteers interruption time,NFR,SE
+provide mechanism users contact administrators,NFR,SE
+system must able distinguish digital objects digitized preservation standards created access purposes,NFR,SE
+authenticated user system must display job board,NFR,SE
+system allows users capture metadata file,NFR,SE
+system must prevent modification uploaded data files,NFR,SE
+system must grant write permissions fabs users dabs database,NFR,SE
+data managers must notified certain usage thresholds reached significant increase access particular dataset,NFR,SE
+system must ensure data lost time,NFR,SE
+ability check functionality fedora event audit services,NFR,SE
+system must ensure data accessible external coordinator regardless physical location,NFR,SE
+users view session information without authentication,NFR,SE
+system must verify user email address linked profile sending temporary password,NFR,SE
+ability create private data packages,NFR,SE
+usaspending must support filtering grant records,NFR,SE
+system shall notify repository manager changes made notes related object components,NFR,SE
+ability establish remote access neurohub node,NFR,SE
+system must enable recording location based information,NFR,SE
+system allow data managers track view data usage,NFR,SE
+provide functionality parents voice concerns,NFR,SE
+encryption method must prevent unauthorized access case server breach attack,NFR,SE
+system must enforce specified minimum set metadata stored data,NFR,SE
+training coordinators need provide login information environment setup,NFR,SE
+system must notify preservation managers object updated newer file format,NFR,SE
+system must allow editing updating uploaded data files,NFR,SE
+user archive management privileges marks file restricted system must prevent file shared via interface,NFR,SE
+system shall enable administrator manage     edit delete dataset published user within view,NFR,SE
+system allow administrators publish created blog posts publicly,NFR,SE
+system shall authenticate authorize access   drive designated archivists,NFR,SE
+system must provide way administrators view user error logs,NFR,SE
+system allow enforcement staff members issue notice violation,NFR,SE
+ability force application inject dataset code runtime,NFR,SE
+link home page must accessible anonymous user,NFR,SE
+system must allow checking necessary information available,NFR,SE
+must barrier     login viewing articles unregistered user,NFR,SE
+notify users new content subscribed rss feeds,NFR,SE
+app able request receive permission user access specific os features,NFR,SE
+support screen reader integration visually impaired users,NFR,SE
+system must allow users create persistent web links articles underlying datasets,NFR,SE
+database must store personal information securely,NFR,SE
+system must allow access statistics repository level,NFR,SE
+system must allow staff members access information,NFR,SE
+ability remove background noise distracting sounds audio files,NFR,SE
+system must allow deployment new dataset type part app artifact without affecting existing dataset types,NFR,SE
+system must ensure users required permissions view dataset instances created hydrator pipelines,NFR,SE
+system shall authenticate authorize access user workspace,NFR,SE
+system require intermediaries mediators accessing materials,NFR,SE
+system prevent duplicate requests causing performance issues,NFR,SE
+system must notify preservation manager changes file checksums occurred since last registration,NFR,SE
+data files uploaded user must read,NFR,SE
+system must allow users retain metadata storing data plaintext format,NFR,SE
+system shall provide long term access preserved material,NFR,SE
+system must store uploaded data securely privately,NFR,SE
+system require knowledge properties order update property,NFR,SE
+system must monitor prevent overloading existing storage systems archived data,NFR,SE
+ability consumers import data packages directly  ,NFR,SE
+system must alert user attempting delete sensitive data without specified disposal policy,NFR,SE
+ability restrict access published dataset users required,NFR,SE
+users able access downloaded reports immediately,NFR,SE
+ability import agent subject information marcxml records,NFR,SE
+system must enable users perform management actions datasets,NFR,SE
+system must allow administrators easily identify data inappropriate missing security level,NFR,SE
+system must able retrieve previously entered information institutional systems,NFR,SE
+system must accept input data metadata users,NFR,SE
+system must prevent loss paper based consent forms,NFR,SE
+system must authenticate users allowing access objects,NFR,SE
+system must identify authenticate users,NFR,SE
+system must allow publishers verify integrity updated data,NFR,SE
+system shall preserve content within repository,NFR,SE
+system must allow users record intention share data specific licence terms,NFR,SE
+system must provide easy access data relevant user needs,NFR,SE
+system shall validate uploaded error messages accuracy,NFR,SE
+ability control access private data packages specific teams,NFR,SE
+system must enable users connect users badcamp,NFR,SE
+system must allow users disable explore functionality datasets previously configured,NFR,SE
+user able configure installation individual components,NFR,SE
+ability users access listen news using alfred,NFR,SE
+system must enable users easily access government stored data,NFR,SE
+system must enable access data campus locations,NFR,SE
+user accesses scholarly work associated files accessible,NFR,SE
+system must allow users hide bad data view,NFR,SE
+system must provide information data considered invalid,NFR,SE
+system generate notifications updates keep nsf administrator informed changes cms implementation,NFR,SE
+system must check duns registered sam,NFR,SE
+ability access documentation training github usage,NFR,SE
+ability read data write data repository bidirectionally,NFR,SE
+system must enable users access downloaded files remotely,NFR,SE
+application allow parents establish contact staff emergency situations,NFR,SE
+system shall allow users access fabs dabs sites,NFR,SE
+user authentication functionality,NFR,SE
+system must provide notifications repository manager changes made languages associated collection object object component,NFR,SE
+method batch ingesting etds proquest exists,NFR,SE
+system must allow data manager view verify data security,NFR,SE
+system must provide ability detect whether data updated fpds database,NFR,SE
+system include objects components search library policies,NFR,SE
+user authentication mechanism verify user identity allowing access privacy data settings,NFR,SE
+users must able easily access uploaded consent forms,NFR,SE
+create rights management statements,NFR,SE
+system must capability make video calls,NFR,SE
+system must allow administrators specify enforce open standards data deposition,NFR,SE
+system must alert user suspicious activity detected,NFR,SE
+system must allow administrators reset password forgotten,NFR,SE
+accessibility features impaired cognition,NFR,SE
+system must support online access ui ux lessons developers,NFR,SE
+documentation rights must accessible data manager,NFR,SE
+system must allow customers create portal user account,NFR,SE
+ability view edit user privacy data settings,NFR,SE
+system allow quick access broker application data,NFR,SE
+system shall retrieve data applications,NFR,SE
+file size limit depositing,NFR,SE
+system shall enable staff members track maintain records communications applicants,NFR,SE
+system must allow easy access digitized files,NFR,SE
+provide functionality users subscribe rss feed,NFR,SE
+system must enable staff members approve deny applications based compliance,NFR,SE
+system must enable publishers track changes made data,NFR,SE
+package visibility removed users upon unpublishing,NFR,SE
+system shall enable checking compliance requirements hearings,NFR,SE
+system must provide transparency changes made version dataset,NFR,SE
+system must feature identify mark files made publicly available,NFR,SE
+access rights management ensure lab administrators view edit user information,NFR,SE
+bad data must remain stored within system,NFR,SE
+system must allow claims transparency commitments,NFR,SE
+system must enable site administrators make changes existing member profiles,NFR,SE
+system must generate reports director research integrity containing details research projects sensitive highly sensitive data,NFR,SE
+system must allow users view blog without requiring login credentials,NFR,SE
+system must access digitized textual documents,NFR,SE
+system must allow users initiate contact curators directly within repository,NFR,SE
+user authentication authorization older adults,NFR,SE
+system must support sharing generated url various social networks,NFR,SE
+system must replicate encrypted file remote storage,NFR,SE
+system must maintain record deposited files,NFR,SE
+user authentication site admin required deletion,NFR,SE
+software must ensure embedded preview clearly indicates shows publisher data,NFR,SE
+system must inform users usage permissions file based assigned license,NFR,SE
+system must provide access county services information,NFR,SE
+system must provide executive access relevant company data,NFR,SE
+user authentication olderpeople,NFR,SE
+system must provide access delivered streaming media streamed,NFR,SE
+system performance must degrade significantly storing displaying large numbers components extensive metadata,NFR,SE
+provide data output inform ethics decisions,NFR,SE
+system must allow users access imported data,NFR,SE
+user authentication authorization sponsors,NFR,SE
+system must deny deposit user accept selected license,NFR,SE
+system must allow users download csv file data used visualisations,NFR,SE
+system must able protect privacy research participants highest degree possible,NFR,SE
+system must preserve existing public hidden status dataset changing visibility,NFR,SE
+system must automatically unpublish jobs older days,NFR,SE
+system must allow researchers within outside centre access use metadata,NFR,SE
+system must track changes made library policies applied objects components,NFR,SE
+system generate provide temporary password users request,NFR,SE
+list must accessible without user authentication,NFR,SE
+system must allow users view historical data,NFR,SE
+system must enable tracking kids attendance,NFR,SE
+system must allow authenticated users update profiles,NFR,SE
+user notified data issues found validation,NFR,SE
+system must provide information basic services required based data usage,NFR,SE
+data security information must accessible authorized personnel,NFR,SE
+dataset instance must available apps,NFR,SE
+system must encrypt user data,NFR,SE
+system must enable setting sharing permissions based data sensitivity,NFR,SE
+system must ensure data consistency maintained across operations mongodb database,NFR,SE
+users able make existing public datasets private hidden,NFR,SE
+system must store links way prevents becoming invalid due link rot,NFR,SE
+system shall preserve metadata within repository,NFR,SE
+system must display dabs banner messages dabs users,NFR,SE
+system must check user permissions allowing non duke researchers edit metadata,NFR,SE
+need programmer involvement setting annual fees,NFR,SE
+system must enable validation stakeholder ui improvement requests,NFR,SE
+alfred device must respond commands olderperson associated,NFR,SE
+option users opt sharing certain personal data system,NFR,SE
+system must ensure least deleted files successfully restored upon request,NFR,SE
+system must notify preservation managers objects integrity authenticity issues,NFR,SE
+system administrators ability override embargos certain circumstances,NFR,SE
+system must allow users remotely open front door,NFR,SE
+system must track manage access rights dataset instances created hydrator pipelines,NFR,SE
+user account status must checked ensure permission upload data,NFR,SE
+system must allow external coordinators access data bath collaborators,NFR,SE
+users able share logbook entries groups directly,NFR,SE
+profile marked private system must hide information except user name,NFR,SE
+system shall store cached copy resource data,NFR,SE
+uploaded application accessible everyone internet connection,NFR,SE
+website must api access,NFR,SE
+system must allow administrators create manage personal accounts,NFR,SE
+option share private data packages within team,NFR,SE
+system allow library staff communicate availability repository system researchers,NFR,SE
+system must allow administrators specify minimum set required metadata,NFR,SE
+system prevent destruction data approved retention,NFR,SE
+system prevent unapproved help wanted ads displayed site,NFR,SE
+system shall allow administrators perform image pre filtering,NFR,SE
+system must provide reliable fast remote access neurohub node regardless user location,NFR,SE
+system shall allow users configure mendeley clients access shared repository,NFR,SE
+user enter credentials username password,NFR,SE
+system must detect report poorly formed files,NFR,SE
+system must inform user changes saved,NFR,SE
+system must provide data similar organizations handle content,NFR,SE
+system must allow csms create profile without registering members,NFR,SE
+system shall generate new social media wireframe,NFR,SE
+ensure secure access control shared data,NFR,SE
+system must feature identify block spamming activities websites,NFR,SE
+system must preserve original integrity collection files,NFR,SE
+system must provide access publicly available property information,NFR,SE
+system must allow external collaborators privileged access project data,NFR,SE
+user identity hidden notification,NFR,SE
+system shall support mapping federalactionobligation atom feed,NFR,SE
+directory attached log book page must contain multiple files,NFR,SE
+system must allow users collect store data library,NFR,SE
+system must allow users access shared calendars mobile devices,NFR,SE
+user authentication mechanism identify anonymous users,NFR,SE
+system must provide error detection mechanisms identify issues data updates,NFR,SE
+system must allow users access view item metadata even item currently embargo,NFR,SE
+system must track store information software technology used data production consumption,NFR,SE
+system must mechanism users designate authorized individuals access vital data,NFR,SE
+user must able access generated reports,NFR,SE
+system must prevent files shared restriction end dates reached,NFR,SE
+system must allow users easily access dataset viewing doi,NFR,SE
+system must enable inclusion explicit contract clauses related repository longevity,NFR,SE
+system must provide assurance downloaded data reliable,NFR,SE
+user must authenticated accessing payment page,NFR,SE
+role based access control system restrict data sharing,NFR,SE
+system must enable users manipulate wrangle downloaded data packages,NFR,SE
+user authentication mechanism olderpeople,NFR,SE
+system must display privacy security requirements data,NFR,SE
+system must enable users access stored data throughout various stages data lifecycle,NFR,SE
+system must enable users send messages emails authors directly system,NFR,SE
+system shall notify repository manager changes made notes related objects,NFR,SE
+system must enable data managers access detailed usage support scenarios researchers,NFR,SE
+files must describable,NFR,SE
+system shall enable tracking service levels quality requirements,NFR,SE
+read data health sensors connected system,NFR,SE
+system must provide access tracked data administrative personnel decision making,NFR,SE
+alfred capable contacting nearest caregiver behalf user,NFR,SE
+system shall enable sending information updates emails,NFR,SE
+system must allow customers request inspections,NFR,SE
+system must identify whether user administrator privileges,NFR,SE
+system must able send emergency notification specified contact,NFR,SE
+user access control view downloads,NFR,SE
+system shall enable users view access shared documents repository,NFR,SE
+system must provide remote access user data,NFR,SE
+authorized personnel must able view data security status,NFR,SE
+system must mechanism enable disable listening mode user request,NFR,SE
+system must continuously monitor redundant copies unwanted changes,NFR,SE
+recorded information stored neurohub log book,NFR,SE
+members publisher authorization publish data packages,NFR,SE
+system must store results non identifiable way,NFR,SE
+system must feature document rights necessary managing data,NFR,SE
+deleting published dataset system must remove entirely openspending platform,NFR,SE
+system shall ensure accuracy information database,NFR,SE
+system must authenticate users via shibboleth,NFR,SE
+user authentication authorization mechanism,NFR,SE
+authenticate user credentials,NFR,SE
+corporate sponsors page must exist system,NFR,SE
+user must able subscribe rss feed,NFR,SE
+determine displaying objects would require license,NFR,SE
+system must allow authorized staff access electronic versions collection files,NFR,SE
+system must allow users access information,NFR,SE
+system must send alert unattached files workspace,NFR,SE
+environment settings must allow overriding current permissions staging max permissions,NFR,SE
+system must allow users selectively share specific data others,NFR,SE
+system must allow users access electronic device,NFR,SE
+user authentication authorization mechanism,NFR,SE
+system recognize user identity olderperson,NFR,SE
+system must provide mechanism administrators verify security level data,NFR,SE
+system must authenticate authorize access external systems,NFR,SE
+system must provide guarantees data integrity,NFR,SE
+user authentication system allows olderpersons access alfred system,NFR,SE
+system must enable users receive video calls even logged,NFR,SE
+system must provide functionality retract remove access previously published data,NFR,SE
+documentation accessible users web app,NFR,SE
+system must ensure consistency university data storage,NFR,SE
+system must ensure changes made one dataset impact datasets type terms data storage retrieval processing,NFR,SE
+system must allow admins read user complaints,NFR,SE
+system must allow site administrators view information similar organizations,NFR,SE
+data security status information must easily retrievable personnel,NFR,SE
+allow olderperson use alfred make payments small amounts,NFR,SE
+system must provide file level error messages uploading files incorrect extensions,NFR,SE
+integrate data sharing functionality user authentication,NFR,SE
+system must accept speech input users,NFR,SE
+system must user registration form,NFR,SE
+system must provide way data permanent online home,NFR,SE
+system must able identify access metadata held systems,NFR,SE
+system must support sending reports via email another communication channel,NFR,SE
+system must support user level file access restrictions,NFR,SE
+system must allow repository managers grant universal access dams managers,NFR,SE
+user authentication authorization mechanism,NFR,SE
+user role archivist permission perform action,NFR,SE
+system shall allow users initiate call using alfred,NFR,SE
+system must allow users securely access data remotely,NFR,SE
+system must prepopulate dmp retrieved information,NFR,SE
+applying hold must prevent staff members performing actions system related issue,NFR,SE
+user authentication ip address validation,NFR,SE
+system specify conditions file restricted group shared,NFR,SE
+system must allow private access project materials internal group use,NFR,SE
+dmp must ensure prepopulated information accurate,NFR,SE
+system must provide persistent url dataset,NFR,SE
+users upload files without attached log book page,NFR,SE
+registry shall able retrieve cached copy case publisher original data lost broken,NFR,SE
+system must enable initiation service application via online portal,NFR,SE
+system must allow director research integrity access reports,NFR,SE
+system must provide read access dabs database fabs users,NFR,SE
+system must record license information metadata,NFR,SE
+system must ensure stored archived data exceed capacity limits existing storage systems,NFR,SE
+system must allow corporate membership fees paid,NFR,SE
+user authentication authorization restrict access,NFR,SE
+system shall ensure authorized functions accessible successful login,NFR,SE
+system must allow consumers download specific versions data packages,NFR,SE
+system must authenticate authorize external collaborators based roles permissions,NFR,SE
+users different roles archivists donor representatives different permissions accessing files,NFR,SE
+system prevent automatic propagation threats one repository redundant copies,NFR,SE
+user authentication authorization system,NFR,SE
+trainers access multiple training nodes without needing separate login credentials,NFR,SE
+system must able identify anonymous users,NFR,SE
+system shall provide alert notification mechanism issues affecting recruiter setup functionality,NFR,SE
+system must allow authenticated user edit session,NFR,SE
+user identity tracked recorded,NFR,SE
+system must allow users share links files social media,NFR,SE
+system must allow users apply license rights statement,NFR,SE
+system provide information permissions restrictions reusing files repository,NFR,SE
+system must prevent accidental breaches laws collaboration agreements due improper disposal data,NFR,SE
+system must guarantee future availability stored data,NFR,SE
+system administrator able initiate backups,NFR,SE
+system must alert user issues detected downloaded data,NFR,SE
+system verify selected file exists allowing linked,NFR,SE
+system must provide information source dataset,NFR,SE
+system must create account registered users,NFR,SE
+system must notify authorities case security breach,NFR,SE
+system must provide information user role privileges,NFR,SE
+ability manually remove permissions users,NFR,SE
+system shall provide report detailing security requirements stored data,NFR,SE
+system must remember user credentials successful authentication via github google,NFR,SE
+system must generate files new updated data available fpds database,NFR,SE
+system must allow unregistered users view least articles,NFR,SE
+system must allow website users access published fabs files,NFR,SE
+system must allow incremental harvesting metadata,NFR,SE
+user authentication authorization restrict access based role,NFR,SE
+system must allow anonymous users view public information,NFR,SE
+system must provide access general information various processes,NFR,SE
+option override automated processing specific etds exists,NFR,SE
+user authentication system olderpersons,NFR,SE
+user marks email address private hidden users public profile,NFR,SE
+system must support concurrent access update research documents without compromising performance,NFR,SE
+restoration deleted files occur automatically without user intervention,NFR,SE
+user authentication functionality,NFR,SE
+system must allow administrators configure use active directory credentials login,NFR,SE
+system enable administrators access historical data previous years,NFR,SE
+system must provide information legal compliance related data security,NFR,SE
+system must grant access cornell campus content authenticated users,NFR,SE
+system must provide easy access previously stored camper records,NFR,SE
+estimation user stories able done minimal effort without loss previous data,NFR,US
+system must allow junior researchers access knowledge within group,NFR,US
+special announcements limited news articles,NFR,US
+system must display instructions user recover password reset administrator,NFR,US
+system must enable logging customer portal creating account,NFR,US
+user ability add additional details profile page,NFR,US
+system must able detect incorrect exercises performed user,NFR,US
+system allow users better manage ig requests,NFR,US
+system must allow olderpersons guided exercises alfred,NFR,US
+system able detect report content file large download,NFR,US
+system must enable correct citation data,NFR,US
+system must allow funders view costs data management,NFR,US
+user able upload application platform,NFR,US
+system must ensure displaying available estimates impact performance responsive,NFR,US
+system must ensure accuracy ordinance information,NFR,US
+system must allow developers watch participate ui ux lessons,NFR,US
+system must support attaching video behavioral observations,NFR,US
+system must facilitate communication parents staff emergencies,NFR,US
+system must able search digital items external system,NFR,US
+error messages must helpful informative agency users,NFR,US
+system must allow users understand specific role workflow would affected different cms decisions,NFR,US
+support users mild cognitive impairments,NFR,US
+system must notify selected agencies new report submitted email app notification,NFR,US
+system must support creation management style guide,NFR,US
+collections able limited items provenance,NFR,US
+system must support working datasets referenced contextual constraints,NFR,US
+system must able check object components restricted library policy,NFR,US
+system must allow creation custom queries reports outside common querying reporting functionality,NFR,US
+system performance must ensure verification notification processes significantly impact user experience,NFR,US
+user must able sign badcamp newsletter,NFR,US
+system allow customization reminder frequency timing,NFR,US
+error messages accurate representative actual fabs errors,NFR,US
+system must allow administrators share resources users based project specific geographical criteria,NFR,US
+system must enable users add alfred application mobile phone home screen easy access,NFR,US
+system must allow users take pictures directly within system,NFR,US
+aflred device solely focus ict tool interaction,NFR,US
+application must provide option search files separately log book pages,NFR,US
+system must provide great user experience ux,NFR,US
+system shall facilitate addition metadata easy use manner,NFR,US
+administrator able add new users,NFR,US
+system must require manual intervention generating derivatives,NFR,US
+system enable faculty members use uploaded content teaching purposes,NFR,US
+brokers able submit data efficiently system,NFR,US
+system must able display countdown timer visible participants within minutes initiating,NFR,US
+system must allow staff members perform completeness reviews,NFR,US
+system must integrate activity insight,NFR,US
+invited user must able sign publisher one click invitation link,NFR,US
+users able schedule inspections,NFR,US
+textual descriptions easily readable users,NFR,US
+system must able provide information social activities user neighborhood,NFR,US
+language settings configurable per user,NFR,US
+users create new records repository,NFR,US
+user shall able view project description project metadata,NFR,US
+system must enable users purchase level sponsorship,NFR,US
+user must required know html use wysiwyg editor,NFR,US
+users able log specific issues related submissions functions,NFR,US
+system must notify user password reset provide guidance next steps,NFR,US
+system must notify relevant users including collection owners changes made collections,NFR,US
+system must able handle simultaneous searches multiple users without significant decrease performance,NFR,US
+system enable communication olderpeople friends family,NFR,US
+link button navigate home page shall easily accessible,NFR,US
+successful verification user redirected main application screen,NFR,US
+system must able identify snapshot serengeti images,NFR,US
+system must able provide corrective feedback users incorrect exercise performance,NFR,US
+upon ingesting data system system shall allow validation data using data https data mendeley com,NFR,US
+system provide incentives feedback mechanisms encourage users adopt open standards,NFR,US
+system must able notify zooniverse admins zoonibot ready comment subject,NFR,US
+system shall provide mechanism prepare users nsf future research work documentation means,NFR,US
+system must allow users customise icon,NFR,US
+system must provide comprehensive tracking statistics,NFR,US
+system must allow users study analyze stored data,NFR,US
+system shall provide instant response assessing audio material edited prior uploading,NFR,US
+system must able retrieve display search results digital items trusted external system timely manner,NFR,US
+determine necessary functionalites based software technology used,NFR,US
+system must able distinguish multiple users name,NFR,US
+system allow users select upload files larger gb size,NFR,US
+regular load testing performed system identify address potential performance bottlenecks impact user experience,NFR,US
+system enable understanding needs future nsf gov website educators science influencers,NFR,US
+user able drag drop files log book page,NFR,US
+system must ensure seamless shibboleth authentication success rate least,NFR,US
+system must provide functionality user check dmp implemented,NFR,US
+results asr processing accurately matched relevant content items,NFR,US
+system provide clear instructions users,NFR,US
+system must able recognize pain stress,NFR,US
+system must allow users view details data,NFR,US
+archetypes used help developers package datasets correctly,NFR,US
+system must enable users feel confident accuracy results,NFR,US
+software must feature customize branding,NFR,US
+supervisors view manage student submitted feedback forms,NFR,US
+allow users upload data package user interface ui,NFR,US
+enable ethics managers check data sensitivity,NFR,US
+content section easily understandable,NFR,US
+users able access downloaded reports future,NFR,US
+system must able handle situations user lost,NFR,US
+user able see data package without download first,NFR,US
+users able override default settings behavior specific features,NFR,US
+system must ensure olderpersons always informed upcoming events,NFR,US
+system allow correction mistakes made editing,NFR,US
+system must fetch display real time date data public recycling bins around user area,NFR,US
+system must able analyze harvested metadata determine effectiveness funding strategy,NFR,US
+users must able edit spreadsheet,NFR,US
+system must able identify mandatory similar topics across data management plans dmps,NFR,US
+system must allow users add tags labels images better organization searching,NFR,US
+system must show user information member name profile picture relevant details single page,NFR,US
+platform must showcase intellectual output school,NFR,US
+system must track user interactions faq section     views clicks,NFR,US
+ability test features environments staging,NFR,US
+system must minimize number clicks required validate research data,NFR,US
+system must display user interface element     indicator button allows admins trigger assessment,NFR,US
+system must enable alfred use sensors capture health data exercises,NFR,US
+updated information reflected accurately system,NFR,US
+system must support searching across multiple departments schools,NFR,US
+multiple users must able collaborate editing calculating costs simultaneously,NFR,US
+system must provide functionality users verify created specific page,NFR,US
+system must able detect transient objects images,NFR,US
+system must handle concurrent searches multiple users without impacting overall responsiveness,NFR,US
+system must enable publication staff report according business rules,NFR,US
+system must provide functionality understand meaning attached metadata,NFR,US
+system must allow planning staff members evaluate consistency comprehensive plan,NFR,US
+system must provide mechanism library staff submit tech support issues,NFR,US
+system able perform actions related controlling heating,NFR,US
+system must able provide directions desired location,NFR,US
+system must display required information reusing data,NFR,US
+system must display articles easily accessible manner,NFR,US
+must functionality camp administrators report suspected inappropriate behavior camp workers,NFR,US
+search results google must accessible within discovery system,NFR,US
+system must provide instructions obtain doi,NFR,US
+publishers must able publish data packages registry,NFR,US
+system able send notifications reminders testers advance,NFR,US
+system shall display notification admin pending recycling center registrations,NFR,US
+system must able provide directions day event,NFR,US
+system must able differentiate computer files document types,NFR,US
+system must enable future users understand associated metadata,NFR,US
+system determine appropriateness creating links,NFR,US
+user attach link detailed page class,NFR,US
+system must display thumbnails images collection easy browsing,NFR,US
+users able restore deleted files manually,NFR,US
+allow users send feedback administrators,NFR,US
+system must allow users customise primary color,NFR,US
+allow users appropriate role view edit fields,NFR,US
+publisher receive feedback specific data invalid incorrect,NFR,US
+system must image classification algorithm detect animals,NFR,US
+system must able identify accept existing datasets different properties,NFR,US
+system must allow checking consistency metadata,NFR,US
+system must display feature admins view user feedback,NFR,US
+system must ensure effective collaboration productivity even physically present lab,NFR,US
+system allow customization certain functions,NFR,US
+system provide way users easily add type information data,NFR,US
+user option set privacy level logbook entry,NFR,US
+system must provide way user navigate view details content file,NFR,US
+application must guide employees neighbourhood,NFR,US
+allow users configure time live uniformly across dataset types,NFR,US
+system must display feature functionality allows medical caregivers search users alfred system,NFR,US
+system must enable conveying issues concerns recycling facility staff site admins,NFR,US
+system must search functionality,NFR,US
+users able view additional details profile page,NFR,US
+system must track revisions made library staff members,NFR,US
+publishers entitled features services based selected pricing plan,NFR,US
+system must allow faculty data stewards review assess expertise data management,NFR,US
+system must display translated text real time user interacts interface,NFR,US
+application must allow employees access route planning system working,NFR,US
+system shall provide users incentives use website,NFR,US
+system must provide link full details training,NFR,US
+user mike able view metrics,NFR,US
+users able download files even uploaded faculty member,NFR,US
+system must enable verification csm certification employers others,NFR,US
+app must provide guidance create fiscal data visualizations using openspending,NFR,US
+system must display three types media text images videos used interact volunteers,NFR,US
+system must provide real time feedback updates status ongoing collection mapping operations,NFR,US
+app must able create proxy data packages,NFR,US
+statistics must presentable non technical users faculty,NFR,US
+ability repoadmin role communicate symplectic elements,NFR,US
+system shall provide way adapt alfred device users hearing trouble,NFR,US
+system must identify highlight updateable properties dataset,NFR,US
+system must repeat last spoken phrase requested user,NFR,US
+system must able send email password reminder,NFR,US
+system must allow olderpeople watch movies using alfred,NFR,US
+system must support standardization data,NFR,US
+system must able track report data usage metrics near real time,NFR,US
+user request urgent help alfred,NFR,US
+user must able analyze data generated reports,NFR,US
+user able edit profile,NFR,US
+system must able generate basic statistics dataset,NFR,US
+must rules place app development,NFR,US
+system must allow versioning extension brochures faqs,NFR,US
+provide link contextual help accessible authenticated users,NFR,US
+system must provide tools features olderpeople track body weight,NFR,US
+system must provide clear instructions usage features assist olderpersons,NFR,US
+system send notifications users time exercise,NFR,US
+members able send emails using form,NFR,US
+system must provide feedback user performance games,NFR,US
+users register data university without reupload another location,NFR,US
+system allow customization user preferences functionality,NFR,US
+system must enable users better control navigation within map views,NFR,US
+system must enable sponsors make real time changes sponsorship page without requiring manual intervention,NFR,US
+user preferences customizable per functionality basis,NFR,US
+system assist users experience difficulties,NFR,US
+system must able validate input data publishing,NFR,US
+ability create manage different user roles,NFR,US
+system must allow users staff researchers easily access tagged working papers,NFR,US
+system must send confirmation message email verify user subscription,NFR,US
+system must display section website explaining basics scrum,NFR,US
+system must able display least items list upcoming courses without noticeable performance degradation,NFR,US
+system shall allow users adjust audio settings improved accessibility,NFR,US
+alfred must able identify suggest games combine mental physical exercise,NFR,US
+system must provide games combine mental physical exercise,NFR,US
+system must recognize index metadata various sources,NFR,US
+system must allow users create edit personal profile pages,NFR,US
+system must feature book assistance using public transport,NFR,US
+users requirements preferences reminders configurable alfred system,NFR,US
+system must allow users select languages component,NFR,US
+user must able refer documents time present future,NFR,US
+system must render thumbnails participants photos real time play cards,NFR,US
+command line tool must able validate data context user workflow,NFR,US
+system must validate conformity data associated data package profile,NFR,US
+user must able click publish button multiple times submission,NFR,US
+system must display accurate informative error codes,NFR,US
+system must able identify objects components copyright,NFR,US
+system must able track report success outreach efforts mailing lists,NFR,US
+system must create dataset selected type deploying app,NFR,US
+system shall provide mechanism staff members ensure compliance approved proffers,NFR,US
+users archivists able share linked electronic publications researchers,NFR,US
+system must able confirm recruiter set working properly,NFR,US
+app must able take tabular data package input,NFR,US
+system shall provide turn turn directions given location room campus minimal navigation steps,NFR,US
+system must provide option sign via github,NFR,US
+system must provide interface sponsors view sponsored summit details,NFR,US
+system must provide reports based user defined criteria,NFR,US
+system must display latest recycling center information users,NFR,US
+application must generate sensible predictable urls,NFR,US
+payment page individual sponsorships must displayed least two steps registration process,NFR,US
+system must able track bond information throughout project lifecycle,NFR,US
+system user roles specific access levels,NFR,US
+software must provide transparency methodology execution,NFR,US
+user must able access location anywhere,NFR,US
+system must allow users use imported data analysis visualization,NFR,US
+system make external descriptions accessible users,NFR,US
+system enable creation issuance formal communication responsible party,NFR,US
+system must validate downloaded data making available use,NFR,US
+system must able provide user information type media text image video required educating volunteers,NFR,US
+system must allow library staff members quickly edit uploaded documents,NFR,US
+users able view created courses events,NFR,US
+system must allow platform administrators select target language translation,NFR,US
+ability capture general concerns parents,NFR,US
+system must activate csm certification status approved practitioner status,NFR,US
+system must allow older people use send messages,NFR,US
+system able measure track effectiveness user centered content design,NFR,US
+system must provide information user role,NFR,US
+faculty members must able facilitate linking content repository,NFR,US
+user must able view tasks activities scheduled,NFR,US
+system must optimize query performance using created database indexes,NFR,US
+system shall notify admins need educating volunteers,NFR,US
+users must able calculate costs using spreadsheet,NFR,US
+system must inform archivist purpose digital object,NFR,US
+system must able send email new password,NFR,US
+allow users view subscribed rss feeds readable format,NFR,US
+system must explain nature error detail,NFR,US
+system provides day knowledge users,NFR,US
+system must able display information format easily understood older person,NFR,US
+user settings easily configurable developers,NFR,US
+system must display customer feedback easily accessible format,NFR,US
+system must provide feedback user data preparation formatting mapping,NFR,US
+display fees information user friendly format,NFR,US
+system must require users create new account lots information upon sign,NFR,US
+system must require manual downloading descriptors resources,NFR,US
+site visitors must able access faqs quickly,NFR,US
+user role nsf employee required permissions schedule final workshop,NFR,US
+system allow users hear voice repeated back real time,NFR,US
+software must enable browsing repository contents,NFR,US
+system must provide features options assist users visual impairments,NFR,US
+must mechanism site admins review confirm quality job postings,NFR,US
+system must provide altmetrics,NFR,US
+system must able support multiplayer games caregivers users,NFR,US
+system must inform user identified data types,NFR,US
+system provide editorial planning recommendations,NFR,US
+alfred provide proposed training promotes complex thinking,NFR,US
+information faculty member areas expertise research interests easily viewable,NFR,US
+system must able detect user performing exercise much way harmful,NFR,US
+system must provide necessary information users update scripts accordingly,NFR,US
+system enable identification trends data use among staff postgraduate students,NFR,US
+system must provide semi structured format users describe,NFR,US
+ability validate generated files fabs fpds data,NFR,US
+system must correctly identify utilize dataset type code included deploying app new dataset instances,NFR,US
+system provide regular summary reports research data,NFR,US
+project metadata must able accurately uniquely described,NFR,US
+system must allow dataset developer configure customize upgrade process needed including specifying dependencies constraints,NFR,US
+system must enable communication project goals stakeholders,NFR,US
+system must allow users interact using voice based interface,NFR,US
+error pages must informative provide helpful hints resolving issues,NFR,US
+others able rerun saved methodology,NFR,US
+system shall provide link button every page navigate directly home page,NFR,US
+system must allow sponsors customize summit branding,NFR,US
+system motivate olderpersons engage physical activity,NFR,US
+provide voice assistance text speech functionality easier navigation,NFR,US
+system must allow trainers add additional details profile pages,NFR,US
+system must verify applicant qualifications granting csp cst status,NFR,US
+system provide information data reproducibility,NFR,US
+system shall keep track user demand usage patterns,NFR,US
+system must provide loading indicator retrieving large amount data inform user system working request,NFR,US
+system must ensure data used correctly,NFR,US
+system must provide analytics reporting faq section usage,NFR,US
+system allow users configure customize pricing settings apps,NFR,US
+automated processing indexing ingested etds happens,NFR,US
+system must notify alert developer new version plugin deployed pipeline using plugin needs updated,NFR,US
+system must ensure capturing relevant information person interviews,NFR,US
+system must provide information data used,NFR,US
+system must provide relevant article recommendations users,NFR,US
+system must allow users normalize measures gini,NFR,US
+system must able track use photo,NFR,US
+user shall able view activity fees without need manual intervention,NFR,US
+system must able detect moving objects images,NFR,US
+system must allow customers provide feedback app,NFR,US
+system must allow staff members validate compliance applications zoning ordinance,NFR,US
+reminders sent user timely manner appointment,NFR,US
+system must differentiate fabs dabs users,NFR,US
+system must allow users quickly verify validity usefulness data,NFR,US
+users must able input data paper based forms,NFR,US
+system must able track display whether photo already scanned,NFR,US
+system must enable users drag drop selected files within file browser,NFR,US
+system feature track verify data availability persistence publication,NFR,US
+ability configure email templates without requiring programming skills,NFR,US
+system shall validate data publishing,NFR,US
+system must enable customization embedded visualizations apis,NFR,US
+adaptation process shall easy follow,NFR,US
+system must enforce rules campers,NFR,US
+user must able view available reference services,NFR,US
+system must able detect falls,NFR,US
+user shall able view roadmap document next months beyond,NFR,US
+system allow easy demonstration user centered content design results metrics,NFR,US
+software must allow users input validate schema   headers fabs files,NFR,US
+system allow users manually override output automated processing tools,NFR,US
+users must able attach add visual content moodboard,NFR,US
+ability interact alfred using voice commands,NFR,US
+ability easily maintain apps marketplace,NFR,US
+system must able use skin conduction sensors detect pain stress,NFR,US
+system must ability schedule messages displayed page repository,NFR,US
+display events associated object throughout entire lifecycle system,NFR,US
+alfred provide goals missions olderpersons,NFR,US
+users able access previous versions item,NFR,US
+allow parents view access child photos,NFR,US
+aflred device must encourage human human interaction,NFR,US
+users must prevented using adapting outdated versions extension brochures faqs,NFR,US
+system must allow user initiate conversation alfred,NFR,US
+system must provide feature ui designers report user testing results,NFR,US
+system must functionality track changes made tasks events,NFR,US
+system must redirect users page url provided game,NFR,US
+system must provide feature purchase alfred discounted promotional price suitable olderpeople,NFR,US
+system must able filter images without classifiable animals,NFR,US
+system must provide users existing digital information matching search criteria,NFR,US
+users able define relationships objects     one file analysis another,NFR,US
+system provide non pharmacological advice improving physical mental well,NFR,US
+system must able categorize research project data sensitive highly sensitive,NFR,US
+user must able input basic information summit,NFR,US
+system must allow users view custom metadata fields created library staff members,NFR,US
+system allow researchers centre view user twitter activity,NFR,US
+system shall allow conducting user definition workshops,NFR,US
+system must provide information use public transportation,NFR,US
+system must allow users create participate games leverage imagination,NFR,US
+user deal details api components,NFR,US
+system shall enable developers create customized version wizard,NFR,US
+workflows easy understand,NFR,US
+users must way view multiple trainers ratings,NFR,US
+system must user role zooniverse admins,NFR,US
+system must provide information someone would want csm home page,NFR,US
+system must provide learning material downloadable formats users convenience,NFR,US
+system must provide drill capabilities detailed analysis specific workflow stages tasks,NFR,US
+user able view checksum checksum method specific master file context object,NFR,US
+system must validate selected data type ensure stored,NFR,US
+administrators must able fix review issues error logs,NFR,US
+analysis results require manual intervention,NFR,US
+system must make users feel university systems joined,NFR,US
+allow users access download files via web interface,NFR,US
+system must provide mechanisms researchers verify validity data,NFR,US
+user must able configure metadata embedded,NFR,US
+users able delete files steps,NFR,US
+system must enable checking data package functionality sharing,NFR,US
+system shall display maps visual cues     labels markers,NFR,US
+system must able track compare user exercise performance expected norms,NFR,US
+faculty members influence within academic community must trackable expansible,NFR,US
+search functionality must effective finding relevant information,NFR,US
+system provide way users view read textual descriptions accompanying visualizations,NFR,US
+system able interpret user intent voice input,NFR,US
+system must allow olderpersons view manage activities,NFR,US
+system must able detect respond voice commands,NFR,US
+system allow users input display characters language,NFR,US
+system must able accept process metadata quickly enough new file created shortly entering metadata,NFR,US
+must single button calling caregiver,NFR,US
+system shall able store manage least pieces archival content without impacting user experience,NFR,US
+users able upload files steps,NFR,US
+system must able track involvement external collaborators specific projects,NFR,US
+system must allow api users change colors embedded visualizations,NFR,US
+feedback include metrics related memory physical health,NFR,US
+system must enable coordinator provide positive feedback presenters,NFR,US
+software must enable users interact embedded preview publisher data,NFR,US
+system must allow users select export files format suitable sharing social media,NFR,US
+system shall allow users adjust display settings improved readability,NFR,US
+system must display day time training,NFR,US
+system provide way demonstrate impact datasets outside academia,NFR,US
+goals missions encourage olderpersons leave homes,NFR,US
+must mechanism creating managing dataset specific archetypes,NFR,US
+system must provide recommendations based user profile information,NFR,US
+system must enable users generate new insights manipulated data packages,NFR,US
+users able assemble collections collections objects,NFR,US
+system must allow library staff members quickly edit uploaded metadata,NFR,US
+system must able support customization wizards without affecting overall performance,NFR,US
+researchers must able easily locate previously accessed materials using citation information,NFR,US
+system must enable validation application completeness,NFR,US
+user must authenticated view sponsorship options,NFR,US
+system enable learning experienced researchers,NFR,US
+system must remind users good body posture,NFR,US

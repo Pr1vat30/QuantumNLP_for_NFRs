@@ -1,4 +1,4 @@
- Loaded 1064 rows from ../dataset/ARTA/gold/ARTA_Req_balanced.csv
+Loaded 1056 rows from ../../dataset/ARTA/gold/ARTA_Req_balanced.csv
 
 🔹 Running TF-IDF embedding...
 🔸 Evaluating models for TF-IDF...
@@ -6,23 +6,23 @@
 === Evaluating TF-IDF embeddings ===
 
                              Accuracy  Balanced Accuracy  ... F1 Score  Time Taken
-Model                                                     ...                     
-BernoulliNB                      0.71               0.71  ...     0.71        0.04
-NearestCentroid                  0.70               0.70  ...     0.70        0.04
-PassiveAggressiveClassifier      0.68               0.68  ...     0.68        0.22
-CalibratedClassifierCV           0.68               0.68  ...     0.68       32.11
-LogisticRegression               0.68               0.68  ...     0.68        0.05
+Model                                                     ...
+Perceptron                       0.73               0.73  ...     0.73        0.08
+PassiveAggressiveClassifier      0.73               0.73  ...     0.73        0.21
+SGDClassifier                    0.73               0.72  ...     0.72        0.12
+LogisticRegression               0.72               0.72  ...     0.71        0.06
+NearestCentroid                  0.72               0.72  ...     0.71        0.04
 
 
-Best model for TF-IDF: BernoulliNB
+Best model for TF-IDF: Perceptron
 Detailed classification report for TF-IDF:
 
   class  precision  recall  f1-score
-      O       0.63    0.78      0.70
-     PE       0.79    0.65      0.71
-     SE       0.78    0.80      0.79
-     US       0.81    0.75      0.78
-Average       0.75    0.74      0.74
+      O       0.66    0.70      0.68
+     PE       0.78    0.68      0.73
+     SE       0.75    0.79      0.77
+     US       0.81    0.83      0.82
+Average       0.75    0.75      0.75
 
 
 🔹 Running Word2Vec embedding...
@@ -30,24 +30,24 @@ Average       0.75    0.74      0.74
 
 === Evaluating Word2Vec embeddings ===
 
-                Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken
-Model                                                                    
-SVC                 0.79               0.79    None      0.79        0.07
-NuSVC               0.78               0.78    None      0.78        0.08
-XGBClassifier       0.77               0.77    None      0.77        1.21
-SGDClassifier       0.77               0.77    None      0.77        0.04
-LGBMClassifier      0.75               0.75    None      0.75        2.48
+                             Accuracy  Balanced Accuracy  ... F1 Score  Time Taken
+Model                                                     ...
+XGBClassifier                    0.78               0.78  ...     0.78        1.22
+SVC                              0.76               0.76  ...     0.76        0.06
+NuSVC                            0.75               0.75  ...     0.75        0.07
+PassiveAggressiveClassifier      0.74               0.74  ...     0.74        0.11
+LGBMClassifier                   0.74               0.74  ...     0.74        2.27
 
 
-Best model for Word2Vec: SVC
+Best model for Word2Vec: XGBClassifier
 Detailed classification report for Word2Vec:
 
   class  precision  recall  f1-score
-      O       0.79    0.75      0.77
-     PE       0.75    0.82      0.79
-     SE       0.74    0.78      0.76
-     US       0.89    0.80      0.84
-Average       0.79    0.79      0.79
+      O       0.68    0.75      0.71
+     PE       0.70    0.70      0.70
+     SE       0.78    0.74      0.76
+     US       0.82    0.77      0.80
+Average       0.74    0.74      0.74
 
 
 🔹 Running GloVe embedding...
@@ -56,22 +56,22 @@ Average       0.79    0.79      0.79
 === Evaluating GloVe embeddings ===
 
                       Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken
-Model                                                                          
-NuSVC                     0.79               0.79    None      0.79        0.08
-SVC                       0.79               0.79    None      0.79        0.06
-LGBMClassifier            0.76               0.76    None      0.76        2.47
-ExtraTreesClassifier      0.75               0.75    None      0.75        0.16
-XGBClassifier             0.75               0.75    None      0.75        1.18
+Model
+SVC                       0.74               0.74    None      0.74        0.06
+NuSVC                     0.73               0.73    None      0.74        0.07
+LogisticRegression        0.72               0.72    None      0.72        0.02
+ExtraTreesClassifier      0.71               0.71    None      0.71        0.15
+SGDClassifier             0.71               0.71    None      0.71        0.03
 
-Best model for GloVe: NuSVC
+
+Best model for GloVe: SVC
 Detailed classification report for GloVe:
-
   class  precision  recall  f1-score
-      O       0.72    0.78      0.75
-     PE       0.72    0.78      0.75
-     SE       0.79    0.65      0.71
-     US       0.78    0.80      0.79
-Average       0.75    0.75      0.75
+      O       0.70    0.85      0.77
+     PE       0.73    0.68      0.71
+     SE       0.81    0.81      0.81
+     US       0.80    0.70      0.75
+Average       0.76    0.76      0.76
 
 
 🔹 Running FastText embedding...
@@ -80,23 +80,23 @@ Average       0.75    0.75      0.75
 === Evaluating FastText embeddings ===
 
                         Accuracy  Balanced Accuracy  ... F1 Score  Time Taken
-Model                                                ...                     
-NuSVC                       0.76               0.76  ...     0.76        0.08
-LogisticRegression          0.76               0.76  ...     0.76        0.02
-SVC                         0.76               0.76  ...     0.76        0.07
-SGDClassifier               0.75               0.75  ...     0.75        0.05
-CalibratedClassifierCV      0.73               0.73  ...     0.73        6.83
+Model                                                ...
+SVC                         0.76               0.76  ...     0.76        0.06
+NuSVC                       0.75               0.75  ...     0.76        0.07
+LogisticRegression          0.74               0.74  ...     0.74        0.02
+RandomForestClassifier      0.73               0.73  ...     0.73        0.41
+LGBMClassifier              0.73               0.73  ...     0.73        2.06
 
 
-Best model for FastText: NuSVC
+Best model for FastText: SVC
 Detailed classification report for FastText:
 
   class  precision  recall  f1-score
-      O       0.73    0.82      0.78
-     PE       0.83    0.75      0.79
-     SE       0.79    0.75      0.77
-     US       0.83    0.85      0.84
-Average       0.80    0.79      0.79
+      O       0.77    0.83      0.80
+     PE       0.84    0.70      0.76
+     SE       0.77    0.83      0.80
+     US       0.74    0.75      0.75
+Average       0.78    0.78      0.78
 
 
 🔹 Running BERT embedding...
@@ -104,213 +104,206 @@ Average       0.80    0.79      0.79
 
 === Evaluating BERT embeddings ===
 
-                        Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken
+                      Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken
 Model
-NuSVC                       0.74               0.74    None      0.74       0.31
-SVC                         0.73               0.73    None      0.73       0.31
-SGDClassifier               0.72               0.73    None      0.73       0.16
-RandomForestClassifier      0.72               0.72    None      0.72       1.93
-ExtraTreesClassifier        0.72               0.72    None      0.72       0.87
+XGBClassifier             0.77               0.77    None      0.76       25.42
+LGBMClassifier            0.74               0.74    None      0.74       34.54
+NuSVC                     0.73               0.73    None      0.73       0.36
+ExtraTreesClassifier      0.73               0.73    None      0.72       0.61
+SVC                       0.73               0.73    None      0.73       0.32
 
 
-Best model for BERT: NuSVC
+Best model for BERT: XGBClassifier
 Detailed classification report for BERT:
 
   class  precision  recall  f1-score
-      O       0.67    0.82      0.74
-     PE       0.86    0.78      0.82
-     SE       0.74    0.72      0.73
-     US       0.86    0.78      0.82
-Average       0.78    0.78      0.78
-
+      O       0.65    0.72      0.68
+     PE       0.76    0.72      0.74
+     SE       0.67    0.70      0.68
+     US       0.78    0.70      0.74
+Average       0.71    0.71      0.71
 
 
 Risultati per TF-IDF (ordinati per Accuracy):
-
                         Model  Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken Embedding
-                  BernoulliNB      0.71               0.71    None      0.71        0.04    TF-IDF
-              NearestCentroid      0.70               0.70    None      0.70        0.04    TF-IDF
-  PassiveAggressiveClassifier      0.68               0.68    None      0.68        0.22    TF-IDF
-       CalibratedClassifierCV      0.68               0.68    None      0.68       32.11    TF-IDF
-           LogisticRegression      0.68               0.68    None      0.68        0.05    TF-IDF
-                    LinearSVC      0.68               0.68    None      0.68        7.75    TF-IDF
-                   Perceptron      0.68               0.68    None      0.67        0.10    TF-IDF
-                        NuSVC      0.68               0.68    None      0.67        0.37    TF-IDF
-                SGDClassifier      0.66               0.66    None      0.66        0.16    TF-IDF
-         ExtraTreesClassifier      0.65               0.65    None      0.65        0.33    TF-IDF
-            RidgeClassifierCV      0.65               0.65    None      0.65        0.12    TF-IDF
-              RidgeClassifier      0.65               0.65    None      0.65        0.05    TF-IDF
-            BaggingClassifier      0.64               0.64    None      0.64        0.27    TF-IDF
-       RandomForestClassifier      0.64               0.64    None      0.64        0.26    TF-IDF
-                          SVC      0.64               0.64    None      0.64        0.36    TF-IDF
-                XGBClassifier      0.62               0.62    None      0.62        0.71    TF-IDF
-       DecisionTreeClassifier      0.61               0.61    None      0.61        0.07    TF-IDF
-               LGBMClassifier      0.61               0.61    None      0.61        1.64    TF-IDF
+                   Perceptron      0.73               0.73    None      0.73        0.08    TF-IDF
+  PassiveAggressiveClassifier      0.73               0.73    None      0.73        0.21    TF-IDF
+                SGDClassifier      0.73               0.72    None      0.72        0.12    TF-IDF
+           LogisticRegression      0.72               0.72    None      0.71        0.06    TF-IDF
+              NearestCentroid      0.72               0.72    None      0.71        0.04    TF-IDF
+       RandomForestClassifier      0.71               0.71    None      0.71        0.25    TF-IDF
+                    LinearSVC      0.71               0.71    None      0.70        6.44    TF-IDF
+       CalibratedClassifierCV      0.71               0.71    None      0.71       26.37    TF-IDF
+         ExtraTreesClassifier      0.70               0.70    None      0.70        0.30    TF-IDF
+                  BernoulliNB      0.69               0.69    None      0.69        0.04    TF-IDF
+                        NuSVC      0.68               0.68    None      0.68        0.29    TF-IDF
+            RidgeClassifierCV      0.68               0.68    None      0.67        0.10    TF-IDF
+              RidgeClassifier      0.68               0.68    None      0.67        0.05    TF-IDF
+                          SVC      0.64               0.64    None      0.64        0.28    TF-IDF
+            BaggingClassifier      0.61               0.61    None      0.61        0.23    TF-IDF
                    GaussianNB      0.61               0.61    None      0.60        0.05    TF-IDF
-   LinearDiscriminantAnalysis      0.59               0.59    None      0.60        0.23    TF-IDF
-          ExtraTreeClassifier      0.59               0.59    None      0.59        0.03    TF-IDF
-               LabelSpreading      0.48               0.48    None      0.46        0.05    TF-IDF
-             LabelPropagation      0.48               0.48    None      0.46        0.05    TF-IDF
-QuadraticDiscriminantAnalysis      0.41               0.41    None      0.42        0.17    TF-IDF
-           AdaBoostClassifier      0.40               0.40    None      0.37        0.32    TF-IDF
-         KNeighborsClassifier      0.38               0.38    None      0.33        0.11    TF-IDF
+                XGBClassifier      0.61               0.61    None      0.60        0.74    TF-IDF
+   LinearDiscriminantAnalysis      0.59               0.59    None      0.59        0.22    TF-IDF
+          ExtraTreeClassifier      0.57               0.57    None      0.56        0.04    TF-IDF
+               LGBMClassifier      0.56               0.56    None      0.55        1.44    TF-IDF
+       DecisionTreeClassifier      0.56               0.56    None      0.55        0.07    TF-IDF
+               LabelSpreading      0.44               0.43    None      0.40        0.05    TF-IDF
+             LabelPropagation      0.44               0.43    None      0.40        0.05    TF-IDF
+         KNeighborsClassifier      0.40               0.40    None      0.35        0.12    TF-IDF
+           AdaBoostClassifier      0.40               0.40    None      0.36        0.29    TF-IDF
+QuadraticDiscriminantAnalysis      0.35               0.35    None      0.34        0.17    TF-IDF
               DummyClassifier      0.25               0.25    None      0.10        0.03    TF-IDF
 
 
 Risultati per Word2Vec (ordinati per Accuracy):
-
                         Model  Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken Embedding
-                          SVC      0.79               0.79    None      0.79        0.07  Word2Vec
-                        NuSVC      0.78               0.78    None      0.78        0.08  Word2Vec
-                XGBClassifier      0.77               0.77    None      0.77        1.21  Word2Vec
-                SGDClassifier      0.77               0.77    None      0.77        0.04  Word2Vec
-               LGBMClassifier      0.75               0.75    None      0.75        2.48  Word2Vec
-         ExtraTreesClassifier      0.74               0.74    None      0.74        0.16  Word2Vec
-           LogisticRegression      0.73               0.73    None      0.73        0.02  Word2Vec
-       CalibratedClassifierCV      0.72               0.72    None      0.72        7.76  Word2Vec
-       RandomForestClassifier      0.72               0.72    None      0.72        0.47  Word2Vec
-                   Perceptron      0.72               0.72    None      0.72        0.04  Word2Vec
-  PassiveAggressiveClassifier      0.72               0.72    None      0.72        0.13  Word2Vec
-                    LinearSVC      0.70               0.70    None      0.70        1.59  Word2Vec
-            BaggingClassifier      0.66               0.66    None      0.66        0.67  Word2Vec
-                   GaussianNB      0.66               0.66    None      0.65        0.01  Word2Vec
-              NearestCentroid      0.63               0.63    None      0.63        0.01  Word2Vec
-                  BernoulliNB      0.63               0.63    None      0.63        0.01  Word2Vec
-         KNeighborsClassifier      0.59               0.59    None      0.59        0.02  Word2Vec
-            RidgeClassifierCV      0.59               0.59    None      0.59        0.03  Word2Vec
-           AdaBoostClassifier      0.59               0.59    None      0.59        0.87  Word2Vec
-   LinearDiscriminantAnalysis      0.58               0.58    None      0.58        0.04  Word2Vec
-              RidgeClassifier      0.58               0.58    None      0.58        0.01  Word2Vec
-       DecisionTreeClassifier      0.58               0.58    None      0.58        0.12  Word2Vec
-          ExtraTreeClassifier      0.54               0.54    None      0.54        0.01  Word2Vec
-QuadraticDiscriminantAnalysis      0.54               0.54    None      0.54        0.04  Word2Vec
-               LabelSpreading      0.48               0.48    None      0.46        0.02  Word2Vec
-             LabelPropagation      0.48               0.48    None      0.46        0.02  Word2Vec
+                XGBClassifier      0.78               0.78    None      0.78        1.22  Word2Vec
+                          SVC      0.76               0.76    None      0.76        0.06  Word2Vec
+                        NuSVC      0.75               0.75    None      0.75        0.07  Word2Vec
+  PassiveAggressiveClassifier      0.74               0.74    None      0.74        0.11  Word2Vec
+               LGBMClassifier      0.74               0.74    None      0.74        2.27  Word2Vec
+       CalibratedClassifierCV      0.73               0.73    None      0.73        7.98  Word2Vec
+                SGDClassifier      0.73               0.73    None      0.73        0.03  Word2Vec
+       RandomForestClassifier      0.73               0.73    None      0.72        0.42  Word2Vec
+           LogisticRegression      0.72               0.72    None      0.72        0.02  Word2Vec
+         ExtraTreesClassifier      0.71               0.71    None      0.71        0.15  Word2Vec
+                    LinearSVC      0.70               0.70    None      0.70        1.73  Word2Vec
+                   Perceptron      0.70               0.70    None      0.70        0.03  Word2Vec
+                   GaussianNB      0.67               0.67    None      0.67        0.01  Word2Vec
+                  BernoulliNB      0.67               0.67    None      0.67        0.01  Word2Vec
+            RidgeClassifierCV      0.66               0.66    None      0.66        0.03  Word2Vec
+              NearestCentroid      0.66               0.66    None      0.66        0.01  Word2Vec
+              RidgeClassifier      0.63               0.63    None      0.63        0.01  Word2Vec
+   LinearDiscriminantAnalysis      0.63               0.63    None      0.62        0.04  Word2Vec
+            BaggingClassifier      0.60               0.60    None      0.60        0.58  Word2Vec
+         KNeighborsClassifier      0.59               0.59    None      0.59        0.01  Word2Vec
+           AdaBoostClassifier      0.56               0.56    None      0.56        0.76  Word2Vec
+       DecisionTreeClassifier      0.55               0.54    None      0.54        0.10  Word2Vec
+          ExtraTreeClassifier      0.53               0.53    None      0.53        0.01  Word2Vec
+QuadraticDiscriminantAnalysis      0.52               0.52    None      0.53        0.03  Word2Vec
+               LabelSpreading      0.43               0.43    None      0.39        0.02  Word2Vec
+             LabelPropagation      0.43               0.43    None      0.39        0.02  Word2Vec
               DummyClassifier      0.25               0.25    None      0.10        0.01  Word2Vec
 
 
 Risultati per GloVe (ordinati per Accuracy):
-
                         Model  Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken Embedding
-                        NuSVC      0.79               0.79    None      0.79        0.08     GloVe
-                          SVC      0.79               0.79    None      0.79        0.06     GloVe
-               LGBMClassifier      0.76               0.76    None      0.76        2.47     GloVe
-         ExtraTreesClassifier      0.75               0.75    None      0.75        0.16     GloVe
-                XGBClassifier      0.75               0.75    None      0.75        1.18     GloVe
-                SGDClassifier      0.74               0.74    None      0.74        0.05     GloVe
-       RandomForestClassifier      0.74               0.74    None      0.74        0.46     GloVe
-           LogisticRegression      0.71               0.71    None      0.71        0.02     GloVe
-       CalibratedClassifierCV      0.71               0.71    None      0.71        5.03     GloVe
-                    LinearSVC      0.68               0.68    None      0.68        1.37     GloVe
-                   Perceptron      0.68               0.68    None      0.68        0.03     GloVe
-            RidgeClassifierCV      0.67               0.67    None      0.67        0.03     GloVe
+                          SVC      0.74               0.74    None      0.74        0.06     GloVe
+                        NuSVC      0.73               0.73    None      0.74        0.07     GloVe
+           LogisticRegression      0.72               0.72    None      0.72        0.02     GloVe
+         ExtraTreesClassifier      0.71               0.71    None      0.71        0.15     GloVe
+                SGDClassifier      0.71               0.71    None      0.71        0.03     GloVe
+       RandomForestClassifier      0.71               0.71    None      0.71        0.41     GloVe
+       CalibratedClassifierCV      0.71               0.71    None      0.71        4.95     GloVe
+               LGBMClassifier      0.70               0.70    None      0.70        2.20     GloVe
+                   Perceptron      0.70               0.70    None      0.69        0.03     GloVe
+                XGBClassifier      0.69               0.69    None      0.69        1.25     GloVe
+                    LinearSVC      0.69               0.69    None      0.69        1.09     GloVe
   PassiveAggressiveClassifier      0.67               0.67    None      0.67        0.13     GloVe
-                   GaussianNB      0.64               0.64    None      0.63        0.01     GloVe
-   LinearDiscriminantAnalysis      0.64               0.64    None      0.64        0.02     GloVe
-              RidgeClassifier      0.64               0.64    None      0.64        0.01     GloVe
-                  BernoulliNB      0.62               0.63    None      0.62        0.01     GloVe
-           AdaBoostClassifier      0.62               0.62    None      0.62        0.84     GloVe
-            BaggingClassifier      0.62               0.62    None      0.62        0.66     GloVe
-              NearestCentroid      0.61               0.61    None      0.60        0.01     GloVe
-         KNeighborsClassifier      0.60               0.60    None      0.60        0.01     GloVe
-       DecisionTreeClassifier      0.59               0.59    None      0.59        0.12     GloVe
-QuadraticDiscriminantAnalysis      0.53               0.53    None      0.53        0.03     GloVe
-          ExtraTreeClassifier      0.48               0.48    None      0.48        0.01     GloVe
-               LabelSpreading      0.47               0.47    None      0.45        0.02     GloVe
-             LabelPropagation      0.47               0.47    None      0.45        0.02     GloVe
+            RidgeClassifierCV      0.66               0.66    None      0.66        0.03     GloVe
+            BaggingClassifier      0.66               0.66    None      0.66        0.59     GloVe
+                   GaussianNB      0.65               0.65    None      0.65        0.01     GloVe
+              NearestCentroid      0.64               0.65    None      0.64        0.01     GloVe
+              RidgeClassifier      0.64               0.63    None      0.64        0.01     GloVe
+                  BernoulliNB      0.63               0.63    None      0.62        0.01     GloVe
+           AdaBoostClassifier      0.61               0.61    None      0.60        0.79     GloVe
+   LinearDiscriminantAnalysis      0.60               0.60    None      0.60        0.02     GloVe
+         KNeighborsClassifier      0.54               0.54    None      0.54        0.01     GloVe
+          ExtraTreeClassifier      0.54               0.54    None      0.53        0.01     GloVe
+       DecisionTreeClassifier      0.51               0.51    None      0.51        0.09     GloVe
+QuadraticDiscriminantAnalysis      0.50               0.50    None      0.49        0.03     GloVe
+               LabelSpreading      0.43               0.43    None      0.39        0.02     GloVe
+             LabelPropagation      0.43               0.43    None      0.39        0.02     GloVe
               DummyClassifier      0.25               0.25    None      0.10        0.01     GloVe
 
 
 Risultati per FastText (ordinati per Accuracy):
-
                         Model  Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken Embedding
-                        NuSVC      0.76               0.76    None      0.76        0.08  FastText
-                          SVC      0.76               0.76    None      0.76        0.07  FastText
-           LogisticRegression      0.76               0.76    None      0.76        0.02  FastText
-                SGDClassifier      0.75               0.75    None      0.75        0.05  FastText
-       CalibratedClassifierCV      0.73               0.73    None      0.73        6.83  FastText
-       RandomForestClassifier      0.72               0.72    None      0.72        0.46  FastText
-         ExtraTreesClassifier      0.72               0.72    None      0.72        0.16  FastText
-                   Perceptron      0.72               0.72    None      0.72        0.03  FastText
-                XGBClassifier      0.71               0.71    None      0.71        1.18  FastText
-               LGBMClassifier      0.71               0.71    None      0.71        2.47  FastText
-  PassiveAggressiveClassifier      0.71               0.71    None      0.70        0.15  FastText
-                    LinearSVC      0.71               0.71    None      0.70        1.64  FastText
-            RidgeClassifierCV      0.66               0.66    None      0.66        0.03  FastText
-           AdaBoostClassifier      0.63               0.63    None      0.63        0.86  FastText
-            BaggingClassifier      0.63               0.63    None      0.63        0.67  FastText
-                   GaussianNB      0.63               0.63    None      0.63        0.01  FastText
-              RidgeClassifier      0.62               0.62    None      0.62        0.01  FastText
-   LinearDiscriminantAnalysis      0.62               0.62    None      0.62        0.02  FastText
-         KNeighborsClassifier      0.60               0.60    None      0.60        0.01  FastText
-              NearestCentroid      0.58               0.58    None      0.58        0.01  FastText
-                  BernoulliNB      0.57               0.57    None      0.57        0.01  FastText
-       DecisionTreeClassifier      0.54               0.54    None      0.53        0.11  FastText
-QuadraticDiscriminantAnalysis      0.53               0.53    None      0.53        0.03  FastText
-               LabelSpreading      0.47               0.47    None      0.45        0.02  FastText
-             LabelPropagation      0.47               0.47    None      0.45        0.02  FastText
-          ExtraTreeClassifier      0.47               0.47    None      0.47        0.01  FastText
+                          SVC      0.76               0.76    None      0.76        0.06  FastText
+                        NuSVC      0.75               0.75    None      0.76        0.07  FastText
+           LogisticRegression      0.74               0.74    None      0.74        0.02  FastText
+       RandomForestClassifier      0.73               0.73    None      0.73        0.41  FastText
+               LGBMClassifier      0.73               0.73    None      0.73        2.06  FastText
+       CalibratedClassifierCV      0.73               0.73    None      0.73        7.00  FastText
+                XGBClassifier      0.72               0.72    None      0.72        1.18  FastText
+                SGDClassifier      0.72               0.72    None      0.72        0.04  FastText
+                   Perceptron      0.71               0.71    None      0.71        0.04  FastText
+  PassiveAggressiveClassifier      0.70               0.70    None      0.70        0.11  FastText
+         ExtraTreesClassifier      0.70               0.70    None      0.70        0.16  FastText
+                    LinearSVC      0.69               0.69    None      0.69        1.35  FastText
+            RidgeClassifierCV      0.67               0.67    None      0.67        0.03  FastText
+            BaggingClassifier      0.66               0.66    None      0.66        0.58  FastText
+   LinearDiscriminantAnalysis      0.65               0.65    None      0.65        0.03  FastText
+              RidgeClassifier      0.64               0.63    None      0.63        0.01  FastText
+              NearestCentroid      0.61               0.61    None      0.61        0.01  FastText
+           AdaBoostClassifier      0.61               0.61    None      0.61        0.74  FastText
+                   GaussianNB      0.61               0.61    None      0.61        0.01  FastText
+                  BernoulliNB      0.59               0.59    None      0.59        0.01  FastText
+         KNeighborsClassifier      0.58               0.58    None      0.58        0.01  FastText
+       DecisionTreeClassifier      0.55               0.55    None      0.54        0.10  FastText
+          ExtraTreeClassifier      0.55               0.55    None      0.54        0.01  FastText
+QuadraticDiscriminantAnalysis      0.47               0.47    None      0.47        0.03  FastText
+               LabelSpreading      0.43               0.43    None      0.39        0.02  FastText
+             LabelPropagation      0.43               0.43    None      0.39        0.02  FastText
               DummyClassifier      0.25               0.25    None      0.10        0.01  FastText
 
 
 Risultati per BERT (ordinati per Accuracy):
-
                         Model  Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken Embedding
-                        NuSVC      0.74               0.74    None      0.74        0.31      BERT
-                          SVC      0.73               0.73    None      0.73        0.31      BERT
-                SGDClassifier      0.72               0.73    None      0.73        0.16      BERT
-       RandomForestClassifier      0.72               0.72    None      0.72        1.93      BERT
-         ExtraTreesClassifier      0.72               0.72    None      0.72        0.87      BERT
-               LGBMClassifier      0.71               0.71    None      0.71       41.08      BERT
-  PassiveAggressiveClassifier      0.69               0.69    None      0.69        0.35      BERT
-                XGBClassifier      0.69               0.69    None      0.69       21.63      BERT
-                   Perceptron      0.69               0.69    None      0.69        0.13      BERT
-       CalibratedClassifierCV      0.68               0.68    None      0.68       12.87      BERT
-           LogisticRegression      0.68               0.68    None      0.68        0.55      BERT
-                    LinearSVC      0.66               0.66    None      0.66        2.91      BERT
-            BaggingClassifier      0.62               0.62    None      0.62        4.08      BERT
-            RidgeClassifierCV      0.62               0.62    None      0.62        0.35      BERT
-                   GaussianNB      0.57               0.57    None      0.56        0.08      BERT
-           AdaBoostClassifier      0.57               0.57    None      0.56        5.20      BERT
-         KNeighborsClassifier      0.56               0.56    None      0.55        0.08      BERT
-                  BernoulliNB      0.55               0.55    None      0.54        0.07      BERT
-              NearestCentroid      0.55               0.55    None      0.54        0.08      BERT
-QuadraticDiscriminantAnalysis      0.55               0.55    None      0.55        0.18      BERT
-          ExtraTreeClassifier      0.54               0.54    None      0.54        0.07      BERT
-              RidgeClassifier      0.52               0.52    None      0.51        0.20      BERT
-       DecisionTreeClassifier      0.51               0.51    None      0.51        0.84      BERT
-               LabelSpreading      0.47               0.47    None      0.45        0.23      BERT
-             LabelPropagation      0.47               0.47    None      0.45        0.16      BERT
-   LinearDiscriminantAnalysis      0.43               0.43    None      0.41        0.55      BERT
-              DummyClassifier      0.25               0.25    None      0.10        0.07      BERT
+                XGBClassifier      0.77               0.77    None      0.76       25.42      BERT
+               LGBMClassifier      0.74               0.74    None      0.74       34.54      BERT
+                        NuSVC      0.73               0.73    None      0.73        0.36      BERT
+         ExtraTreesClassifier      0.73               0.73    None      0.72        0.61      BERT
+                          SVC      0.73               0.73    None      0.73        0.32      BERT
+                SGDClassifier      0.73               0.73    None      0.73        0.20      BERT
+           LogisticRegression      0.72               0.72    None      0.72        0.76      BERT
+                   Perceptron      0.70               0.70    None      0.70        0.16      BERT
+       CalibratedClassifierCV      0.70               0.70    None      0.70       13.46      BERT
+       RandomForestClassifier      0.68               0.69    None      0.68        1.99      BERT
+  PassiveAggressiveClassifier      0.68               0.68    None      0.68        0.39      BERT
+                    LinearSVC      0.66               0.67    None      0.66        3.75      BERT
+            RidgeClassifierCV      0.63               0.63    None      0.63        0.41      BERT
+            BaggingClassifier      0.62               0.62    None      0.62        4.15      BERT
+       DecisionTreeClassifier      0.58               0.58    None      0.58        0.69      BERT
+         KNeighborsClassifier      0.58               0.58    None      0.58        0.06      BERT
+              NearestCentroid      0.58               0.58    None      0.57        0.10      BERT
+                  BernoulliNB      0.56               0.56    None      0.56        0.08      BERT
+          ExtraTreeClassifier      0.56               0.56    None      0.56        0.04      BERT
+                   GaussianNB      0.54               0.55    None      0.54        0.05      BERT
+              RidgeClassifier      0.54               0.54    None      0.54        0.20      BERT
+           AdaBoostClassifier      0.51               0.51    None      0.50        6.24      BERT
+QuadraticDiscriminantAnalysis      0.49               0.49    None      0.49        0.19      BERT
+               LabelSpreading      0.48               0.48    None      0.46        0.12      BERT
+             LabelPropagation      0.48               0.48    None      0.46        0.10      BERT
+   LinearDiscriminantAnalysis      0.46               0.46    None      0.45        0.60      BERT
+              DummyClassifier      0.25               0.25    None      0.10        0.05      BERT
 
 
-
-Loaded 892 rows from ../dataset/ReqExp_PURE/gold/PURE_Req_balanced.csv
+Loaded 876 rows from ../../dataset/ReqExp_PURE/gold/PURE_Req_balanced.csv
 
 🔹 Running TF-IDF embedding...
 🔸 Evaluating models for TF-IDF...
 
 === Evaluating TF-IDF embeddings ===
 
-                        Accuracy  Balanced Accuracy  ... F1 Score  Time Taken
-Model                                                ...                     
-BernoulliNB                 0.66               0.66  ...     0.67        0.04
-ExtraTreesClassifier        0.60               0.60  ...     0.61        0.30
-NearestCentroid             0.60               0.60  ...     0.60        0.04
-NuSVC                       0.60               0.60  ...     0.60        0.30
-CalibratedClassifierCV      0.58               0.58  ...     0.58       26.06
+                             Accuracy  Balanced Accuracy  ... F1 Score  Time Taken
+Model                                                     ...
+BernoulliNB                      0.72               0.72  ...     0.72        0.03
+NearestCentroid                  0.68               0.68  ...     0.68        0.03
+PassiveAggressiveClassifier      0.67               0.67  ...     0.67        0.16
+Perceptron                       0.67               0.67  ...     0.67        0.07
+CalibratedClassifierCV           0.66               0.66  ...     0.66       17.83
 
 
 Best model for TF-IDF: BernoulliNB
 Detailed classification report for TF-IDF:
 
   class  precision  recall  f1-score
-      O       0.62    0.59      0.61
-     PE       0.86    0.76      0.81
-     SE       0.82    0.79      0.81
-     US       0.55    0.67      0.60
-Average       0.71    0.70      0.71
+      O       0.68    0.68      0.68
+     PE       0.78    0.89      0.83
+     SE       0.67    0.66      0.67
+     US       0.67    0.59      0.63
+Average       0.70    0.70      0.70
 
 
 🔹 Running Word2Vec embedding...
@@ -319,23 +312,23 @@ Average       0.71    0.70      0.71
 === Evaluating Word2Vec embeddings ===
 
                         Accuracy  Balanced Accuracy  ... F1 Score  Time Taken
-Model                                                ...                     
-LGBMClassifier              0.70               0.70  ...     0.70        2.25
-CalibratedClassifierCV      0.69               0.69  ...     0.69        5.29
-RandomForestClassifier      0.68               0.68  ...     0.68        0.41
-LogisticRegression          0.68               0.68  ...     0.68        0.02
-NuSVC                       0.66               0.66  ...     0.66        0.06
+Model                                                ...
+LogisticRegression          0.81               0.81  ...     0.80        0.02
+SGDClassifier               0.79               0.79  ...     0.79        0.03
+CalibratedClassifierCV      0.77               0.77  ...     0.76        5.67
+Perceptron                  0.75               0.76  ...     0.75        0.02
+NuSVC                       0.75               0.75  ...     0.74        0.05
 
 
-Best model for Word2Vec: LGBMClassifier
+Best model for Word2Vec: LogisticRegression
 Detailed classification report for Word2Vec:
 
   class  precision  recall  f1-score
-      O       0.70    0.68      0.69
-     PE       0.75    0.73      0.74
-     SE       0.71    0.79      0.75
-     US       0.71    0.67      0.69
-Average       0.72    0.72      0.72
+      O       0.70    0.59      0.64
+     PE       0.72    0.77      0.75
+     SE       0.56    0.66      0.60
+     US       0.65    0.59      0.62
+Average       0.66    0.65      0.65
 
 
 🔹 Running GloVe embedding...
@@ -343,24 +336,24 @@ Average       0.72    0.72      0.72
 
 === Evaluating GloVe embeddings ===
 
-                        Accuracy  Balanced Accuracy  ... F1 Score  Time Taken
-Model                                                ...                     
-NuSVC                       0.70               0.70  ...     0.70        0.06
-RandomForestClassifier      0.66               0.66  ...     0.66        0.40
-SVC                         0.66               0.66  ...     0.67        0.05
-ExtraTreesClassifier        0.65               0.65  ...     0.65        0.15
-NearestCentroid             0.65               0.65  ...     0.65        0.01
+                    Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken
+Model
+NuSVC                   0.76               0.76    None      0.76        0.05
+SVC                     0.73               0.73    None      0.72        0.05
+LogisticRegression      0.73               0.73    None      0.72        0.02
+SGDClassifier           0.71               0.71    None      0.71        0.03
+XGBClassifier           0.71               0.71    None      0.71        1.05
 
 
 Best model for GloVe: NuSVC
 Detailed classification report for GloVe:
 
   class  precision  recall  f1-score
-      O       0.80    0.71      0.75
-     PE       0.83    0.73      0.77
-     SE       0.74    0.76      0.75
-     US       0.70    0.85      0.77
-Average       0.77    0.76      0.76
+      O       0.80    0.64      0.71
+     PE       0.75    0.89      0.81
+     SE       0.72    0.59      0.65
+     US       0.62    0.75      0.68
+Average       0.72    0.72      0.71
 
 
 🔹 Running FastText embedding...
@@ -369,23 +362,23 @@ Average       0.77    0.76      0.76
 === Evaluating FastText embeddings ===
 
                         Accuracy  Balanced Accuracy  ... F1 Score  Time Taken
-Model                                                ...                     
-CalibratedClassifierCV      0.70               0.70  ...     0.70        4.64
-Perceptron                  0.69               0.69  ...     0.69        0.03
-SGDClassifier               0.69               0.69  ...     0.69        0.03
-LogisticRegression          0.69               0.69  ...     0.68        0.02
-XGBClassifier               0.69               0.69  ...     0.68        1.08
+Model                                                ...
+NuSVC                       0.76               0.76  ...     0.76        0.05
+LogisticRegression          0.76               0.76  ...     0.76        0.02
+SVC                         0.75               0.75  ...     0.75        0.04
+SGDClassifier               0.74               0.74  ...     0.74        0.03
+CalibratedClassifierCV      0.73               0.73  ...     0.73        5.20
 
 
-Best model for FastText: CalibratedClassifierCV
+Best model for FastText: NuSVC
 Detailed classification report for FastText:
 
   class  precision  recall  f1-score
-      O       0.77    0.79      0.78
-     PE       0.81    0.79      0.80
-     SE       0.68    0.76      0.72
-     US       0.79    0.70      0.74
-Average       0.77    0.76      0.76
+      O       0.74    0.73      0.74
+     PE       0.82    0.93      0.87
+     SE       0.77    0.68      0.72
+     US       0.73    0.73      0.73
+Average       0.77    0.77      0.76
 
 
 🔹 Running BERT embedding...
@@ -393,182 +386,456 @@ Average       0.77    0.76      0.76
 
 === Evaluating BERT embeddings ===
 
-                             Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken
+                      Accuracy  Balanced Accuracy ROC AUC  F1 Score   Time Taken
 Model
-NuSVC                            0.74               0.74    None      0.74          0.24
-SVC                              0.73               0.73    None      0.73          0.22
-PassiveAggressiveClassifier      0.72               0.72    None      0.72          0.36
-LinearSVC                        0.71               0.71    None      0.71          2.95
-CalibratedClassifierCV           0.71               0.71    None      0.71          7.77
+ExtraTreesClassifier      0.72               0.72    None      0.71         0.55
+SVC                       0.71               0.71    None      0.70         0.27
+LGBMClassifier            0.69               0.70    None      0.69         26.12
+XGBClassifier             0.69               0.70    None      0.69         18.94
+NuSVC                     0.69               0.70    None      0.69         0.26
 
 
-Best model for BERT: NuSVC
+Best model for BERT: ExtraTreesClassifier
 Detailed classification report for BERT:
 
   class  precision  recall  f1-score
-      O       0.79    0.76      0.78
-     PE       0.90    0.82      0.86
-     SE       0.82    0.82      0.82
-     US       0.70    0.79      0.74
-Average       0.80    0.80      0.80
-
+      O       0.58    0.55      0.56
+     PE       0.70    0.79      0.74
+     SE       0.58    0.42      0.49
+     US       0.65    0.79      0.71
+Average       0.63    0.64      0.63
 
 
 Risultati per TF-IDF (ordinati per Accuracy):
-
                         Model  Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken Embedding
-                  BernoulliNB      0.66               0.66    None      0.67        0.04    TF-IDF
-         ExtraTreesClassifier      0.60               0.60    None      0.61        0.30    TF-IDF
-              NearestCentroid      0.60               0.60    None      0.60        0.04    TF-IDF
-                        NuSVC      0.60               0.60    None      0.60        0.30    TF-IDF
-       CalibratedClassifierCV      0.58               0.58    None      0.58       26.06    TF-IDF
-            RidgeClassifierCV      0.57               0.57    None      0.58        0.09    TF-IDF
-              RidgeClassifier      0.57               0.57    None      0.58        0.04    TF-IDF
-                SGDClassifier      0.55               0.55    None      0.55        0.08    TF-IDF
-  PassiveAggressiveClassifier      0.55               0.55    None      0.55        0.21    TF-IDF
-                    LinearSVC      0.54               0.54    None      0.55        6.82    TF-IDF
-       RandomForestClassifier      0.54               0.54    None      0.54        0.23    TF-IDF
-           LogisticRegression      0.54               0.54    None      0.54        0.04    TF-IDF
-                   Perceptron      0.53               0.53    None      0.53        0.09    TF-IDF
-                XGBClassifier      0.51               0.51    None      0.51        0.69    TF-IDF
-                          SVC      0.51               0.51    None      0.51        0.28    TF-IDF
-            BaggingClassifier      0.49               0.49    None      0.49        0.19    TF-IDF
-                   GaussianNB      0.49               0.48    None      0.48        0.04    TF-IDF
-          ExtraTreeClassifier      0.47               0.47    None      0.48        0.04    TF-IDF
-               LGBMClassifier      0.46               0.46    None      0.46        1.22    TF-IDF
-   LinearDiscriminantAnalysis      0.46               0.46    None      0.45        0.19    TF-IDF
-       DecisionTreeClassifier      0.44               0.44    None      0.45        0.06    TF-IDF
-           AdaBoostClassifier      0.43               0.42    None      0.42        0.28    TF-IDF
-QuadraticDiscriminantAnalysis      0.31               0.32    None      0.30        0.16    TF-IDF
-               LabelSpreading      0.27               0.27    None      0.15        0.05    TF-IDF
-             LabelPropagation      0.27               0.27    None      0.15        0.04    TF-IDF
+                  BernoulliNB      0.72               0.72    None      0.72        0.03    TF-IDF
+              NearestCentroid      0.68               0.68    None      0.68        0.03    TF-IDF
+  PassiveAggressiveClassifier      0.67               0.67    None      0.67        0.16    TF-IDF
+                   Perceptron      0.67               0.67    None      0.67        0.07    TF-IDF
+       CalibratedClassifierCV      0.66               0.66    None      0.66       17.83    TF-IDF
+                SGDClassifier      0.66               0.66    None      0.65        0.06    TF-IDF
+           LogisticRegression      0.65               0.65    None      0.65        0.04    TF-IDF
+                        NuSVC      0.65               0.65    None      0.65        0.22    TF-IDF
+                    LinearSVC      0.64               0.64    None      0.64        5.22    TF-IDF
+                          SVC      0.61               0.61    None      0.61        0.21    TF-IDF
+         ExtraTreesClassifier      0.61               0.61    None      0.61        0.24    TF-IDF
+            RidgeClassifierCV      0.60               0.60    None      0.60        0.07    TF-IDF
+              RidgeClassifier      0.60               0.60    None      0.60        0.04    TF-IDF
+       RandomForestClassifier      0.59               0.59    None      0.60        0.20    TF-IDF
+                   GaussianNB      0.57               0.57    None      0.56        0.03    TF-IDF
+                XGBClassifier      0.56               0.56    None      0.56        0.65    TF-IDF
+       DecisionTreeClassifier      0.54               0.54    None      0.54        0.05    TF-IDF
+            BaggingClassifier      0.53               0.53    None      0.53        0.16    TF-IDF
+           AdaBoostClassifier      0.51               0.51    None      0.51        0.22    TF-IDF
+               LGBMClassifier      0.49               0.49    None      0.49        1.06    TF-IDF
+   LinearDiscriminantAnalysis      0.47               0.47    None      0.47        0.16    TF-IDF
+         KNeighborsClassifier      0.45               0.44    None      0.42        0.03    TF-IDF
+          ExtraTreeClassifier      0.42               0.42    None      0.42        0.03    TF-IDF
+               LabelSpreading      0.26               0.26    None      0.11        0.04    TF-IDF
+             LabelPropagation      0.26               0.26    None      0.11        0.04    TF-IDF
+QuadraticDiscriminantAnalysis      0.25               0.25    None      0.23        0.11    TF-IDF
               DummyClassifier      0.25               0.25    None      0.10        0.03    TF-IDF
-         KNeighborsClassifier      0.25               0.25    None      0.12        0.03    TF-IDF
 
 
 Risultati per Word2Vec (ordinati per Accuracy):
-
                         Model  Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken Embedding
-               LGBMClassifier      0.70               0.70    None      0.70        2.25  Word2Vec
-       CalibratedClassifierCV      0.69               0.69    None      0.69        5.29  Word2Vec
-       RandomForestClassifier      0.68               0.68    None      0.68        0.41  Word2Vec
-           LogisticRegression      0.68               0.68    None      0.68        0.02  Word2Vec
-                        NuSVC      0.66               0.66    None      0.66        0.06  Word2Vec
-                SGDClassifier      0.66               0.66    None      0.66        0.03  Word2Vec
-            RidgeClassifierCV      0.65               0.65    None      0.65        0.03  Word2Vec
-                   Perceptron      0.64               0.64    None      0.64        0.03  Word2Vec
-         ExtraTreesClassifier      0.64               0.64    None      0.64        0.15  Word2Vec
-                          SVC      0.63               0.63    None      0.63        0.06  Word2Vec
-              NearestCentroid      0.63               0.63    None      0.63        0.01  Word2Vec
-                  BernoulliNB      0.63               0.63    None      0.63        0.01  Word2Vec
-                XGBClassifier      0.63               0.63    None      0.63        1.18  Word2Vec
-              RidgeClassifier      0.62               0.62    None      0.62        0.01  Word2Vec
-  PassiveAggressiveClassifier      0.61               0.61    None      0.61        0.12  Word2Vec
-   LinearDiscriminantAnalysis      0.60               0.60    None      0.60        0.02  Word2Vec
-                    LinearSVC      0.60               0.60    None      0.60        0.98  Word2Vec
-                   GaussianNB      0.60               0.60    None      0.59        0.01  Word2Vec
-         KNeighborsClassifier      0.59               0.59    None      0.59        0.01  Word2Vec
-            BaggingClassifier      0.52               0.52    None      0.52        0.55  Word2Vec
-           AdaBoostClassifier      0.48               0.48    None      0.48        0.77  Word2Vec
-          ExtraTreeClassifier      0.40               0.40    None      0.40        0.01  Word2Vec
-       DecisionTreeClassifier      0.34               0.34    None      0.35        0.10  Word2Vec
-QuadraticDiscriminantAnalysis      0.26               0.27    None      0.17        0.03  Word2Vec
-               LabelSpreading      0.26               0.26    None      0.14        0.02  Word2Vec
-             LabelPropagation      0.26               0.26    None      0.14        0.01  Word2Vec
+           LogisticRegression      0.81               0.81    None      0.80        0.02  Word2Vec
+                SGDClassifier      0.79               0.79    None      0.79        0.03  Word2Vec
+       CalibratedClassifierCV      0.77               0.77    None      0.76        5.67  Word2Vec
+                   Perceptron      0.75               0.76    None      0.75        0.02  Word2Vec
+                        NuSVC      0.75               0.75    None      0.74        0.05  Word2Vec
+                          SVC      0.74               0.74    None      0.74        0.04  Word2Vec
+  PassiveAggressiveClassifier      0.73               0.73    None      0.73        0.08  Word2Vec
+               LGBMClassifier      0.72               0.72    None      0.72        1.70  Word2Vec
+                    LinearSVC      0.71               0.72    None      0.71        1.18  Word2Vec
+       RandomForestClassifier      0.70               0.70    None      0.70        0.35  Word2Vec
+              NearestCentroid      0.70               0.70    None      0.69        0.01  Word2Vec
+                XGBClassifier      0.69               0.69    None      0.68        0.95  Word2Vec
+                   GaussianNB      0.67               0.68    None      0.67        0.01  Word2Vec
+            RidgeClassifierCV      0.67               0.67    None      0.67        0.03  Word2Vec
+         ExtraTreesClassifier      0.67               0.67    None      0.66        0.13  Word2Vec
+                  BernoulliNB      0.66               0.66    None      0.65        0.01  Word2Vec
+   LinearDiscriminantAnalysis      0.65               0.65    None      0.65        0.02  Word2Vec
+              RidgeClassifier      0.64               0.64    None      0.64        0.01  Word2Vec
+           AdaBoostClassifier      0.61               0.61    None      0.60        0.65  Word2Vec
+            BaggingClassifier      0.61               0.61    None      0.60        0.43  Word2Vec
+         KNeighborsClassifier      0.57               0.57    None      0.55        0.01  Word2Vec
+       DecisionTreeClassifier      0.47               0.47    None      0.47        0.07  Word2Vec
+          ExtraTreeClassifier      0.38               0.38    None      0.38        0.01  Word2Vec
+             LabelPropagation      0.26               0.26    None      0.11        0.01  Word2Vec
+               LabelSpreading      0.26               0.26    None      0.11        0.01  Word2Vec
+              DummyClassifier      0.25               0.25    None      0.10        0.01  Word2Vec
+QuadraticDiscriminantAnalysis      0.25               0.25    None      0.16        0.02  Word2Vec
+
+
+Risultati per GloVe (ordinati per Accuracy):
+                        Model  Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken Embedding
+                        NuSVC      0.76               0.76    None      0.76        0.05     GloVe
+           LogisticRegression      0.73               0.73    None      0.72        0.02     GloVe
+                          SVC      0.73               0.73    None      0.72        0.05     GloVe
+                SGDClassifier      0.71               0.71    None      0.71        0.03     GloVe
+                XGBClassifier      0.71               0.71    None      0.71        1.05     GloVe
+       CalibratedClassifierCV      0.68               0.68    None      0.68        3.77     GloVe
+                   Perceptron      0.68               0.68    None      0.68        0.03     GloVe
+               LGBMClassifier      0.67               0.68    None      0.67        1.80     GloVe
+                  BernoulliNB      0.67               0.68    None      0.67        0.01     GloVe
+              NearestCentroid      0.67               0.67    None      0.66        0.01     GloVe
+                    LinearSVC      0.67               0.67    None      0.67        0.79     GloVe
+  PassiveAggressiveClassifier      0.67               0.67    None      0.67        0.09     GloVe
+            RidgeClassifierCV      0.66               0.66    None      0.66        0.03     GloVe
+              RidgeClassifier      0.65               0.65    None      0.65        0.01     GloVe
+         ExtraTreesClassifier      0.65               0.65    None      0.64        0.14     GloVe
+       RandomForestClassifier      0.65               0.65    None      0.64        0.35     GloVe
+                   GaussianNB      0.64               0.64    None      0.63        0.01     GloVe
+           AdaBoostClassifier      0.63               0.64    None      0.63        0.66     GloVe
+   LinearDiscriminantAnalysis      0.62               0.62    None      0.62        0.02     GloVe
+         KNeighborsClassifier      0.58               0.58    None      0.58        0.01     GloVe
+            BaggingClassifier      0.55               0.56    None      0.55        0.46     GloVe
+       DecisionTreeClassifier      0.50               0.50    None      0.50        0.08     GloVe
+          ExtraTreeClassifier      0.46               0.46    None      0.46        0.01     GloVe
+QuadraticDiscriminantAnalysis      0.30               0.30    None      0.20        0.02     GloVe
+               LabelSpreading      0.26               0.26    None      0.11        0.01     GloVe
+             LabelPropagation      0.26               0.26    None      0.11        0.01     GloVe
+              DummyClassifier      0.25               0.25    None      0.10        0.01     GloVe
+
+
+Risultati per FastText (ordinati per Accuracy):
+                        Model  Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken Embedding
+                        NuSVC      0.76               0.76    None      0.76        0.05  FastText
+           LogisticRegression      0.76               0.76    None      0.76        0.02  FastText
+                          SVC      0.75               0.75    None      0.75        0.04  FastText
+                SGDClassifier      0.74               0.74    None      0.74        0.03  FastText
+       CalibratedClassifierCV      0.73               0.73    None      0.73        5.20  FastText
+         ExtraTreesClassifier      0.70               0.70    None      0.70        0.13  FastText
+              NearestCentroid      0.70               0.70    None      0.69        0.01  FastText
+                  BernoulliNB      0.70               0.70    None      0.69        0.01  FastText
+       RandomForestClassifier      0.70               0.70    None      0.69        0.35  FastText
+  PassiveAggressiveClassifier      0.70               0.70    None      0.70        0.08  FastText
+                    LinearSVC      0.70               0.70    None      0.70        1.01  FastText
+                XGBClassifier      0.68               0.68    None      0.67        1.03  FastText
+               LGBMClassifier      0.67               0.68    None      0.67        1.79  FastText
+                   GaussianNB      0.67               0.67    None      0.67        0.01  FastText
+                   Perceptron      0.66               0.66    None      0.66        0.02  FastText
+           AdaBoostClassifier      0.65               0.65    None      0.64        0.71  FastText
+         KNeighborsClassifier      0.63               0.63    None      0.62        0.01  FastText
+            RidgeClassifierCV      0.61               0.61    None      0.61        0.03  FastText
+            BaggingClassifier      0.55               0.55    None      0.55        0.45  FastText
+              RidgeClassifier      0.54               0.54    None      0.54        0.01  FastText
+   LinearDiscriminantAnalysis      0.54               0.54    None      0.54        0.02  FastText
+          ExtraTreeClassifier      0.46               0.46    None      0.46        0.01  FastText
+       DecisionTreeClassifier      0.43               0.44    None      0.43        0.09  FastText
+QuadraticDiscriminantAnalysis      0.33               0.33    None      0.22        0.02  FastText
+               LabelSpreading      0.26               0.26    None      0.11        0.02  FastText
+             LabelPropagation      0.26               0.26    None      0.11        0.01  FastText
+              DummyClassifier      0.25               0.25    None      0.10        0.01  FastText
+
+
+Risultati per BERT (ordinati per Accuracy):
+                        Model  Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken Embedding
+         ExtraTreesClassifier      0.72               0.72    None      0.71        0.55      BERT
+                          SVC      0.71               0.71    None      0.70        0.27      BERT
+               LGBMClassifier      0.69               0.70    None      0.69       26.12      BERT
+                XGBClassifier      0.69               0.70    None      0.69       18.94      BERT
+                        NuSVC      0.69               0.70    None      0.69        0.26      BERT
+       RandomForestClassifier      0.69               0.69    None      0.68        2.16      BERT
+              NearestCentroid      0.67               0.67    None      0.66        0.10      BERT
+                SGDClassifier      0.66               0.67    None      0.66        0.22      BERT
+                   GaussianNB      0.64               0.64    None      0.64        0.05      BERT
+           LogisticRegression      0.63               0.64    None      0.63        0.68      BERT
+                   Perceptron      0.63               0.64    None      0.62        0.14      BERT
+                  BernoulliNB      0.63               0.64    None      0.63        0.07      BERT
+            BaggingClassifier      0.63               0.63    None      0.62        3.55      BERT
+  PassiveAggressiveClassifier      0.62               0.62    None      0.61        0.36      BERT
+                    LinearSVC      0.62               0.62    None      0.61        2.41      BERT
+           AdaBoostClassifier      0.62               0.62    None      0.62        5.54      BERT
+       CalibratedClassifierCV      0.60               0.60    None      0.59       10.00      BERT
+         KNeighborsClassifier      0.58               0.58    None      0.58        0.05      BERT
+            RidgeClassifierCV      0.53               0.53    None      0.53        0.63      BERT
+       DecisionTreeClassifier      0.50               0.50    None      0.49        0.63      BERT
+              RidgeClassifier      0.47               0.47    None      0.46        0.23      BERT
+          ExtraTreeClassifier      0.44               0.44    None      0.44        0.04      BERT
+   LinearDiscriminantAnalysis      0.43               0.43    None      0.43        0.28      BERT
+             LabelPropagation      0.25               0.25    None      0.10        0.11      BERT
+               LabelSpreading      0.25               0.25    None      0.10        0.10      BERT
+QuadraticDiscriminantAnalysis      0.25               0.25    None      0.10        0.15      BERT
+              DummyClassifier      0.24               0.25    None      0.10        0.05      BERT
+
+
+Loaded 1640 rows from ../../dataset/USoR/gold/USoR_balanced.csv
+
+🔹 Running TF-IDF embedding...
+🔸 Evaluating models for TF-IDF...
+
+=== Evaluating TF-IDF embeddings ===
+
+                      Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken
+Model
+BernoulliNB               0.72               0.72    None      0.72        0.04
+ExtraTreesClassifier      0.71               0.71    None      0.71        0.38
+XGBClassifier             0.69               0.69    None      0.69        0.73
+NearestCentroid           0.69               0.69    None      0.69        0.04
+SGDClassifier             0.69               0.69    None      0.68        0.21
+
+Best model for TF-IDF: BernoulliNB
+Detailed classification report for TF-IDF:
+
+  class  precision  recall  f1-score
+      O       0.67    0.76      0.71
+     PE       0.91    0.95      0.93
+     SE       0.71    0.74      0.73
+     US       0.75    0.59      0.66
+Average       0.76    0.76      0.76
+
+
+🔹 Running Word2Vec embedding...
+🔸 Evaluating models for Word2Vec...
+
+=== Evaluating Word2Vec embeddings ===
+
+                      Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken
+Model
+SVC                       0.76               0.76    None      0.76        0.11
+NuSVC                     0.76               0.76    None      0.76        0.14
+ExtraTreesClassifier      0.75               0.75    None      0.75        0.21
+LGBMClassifier            0.75               0.75    None      0.75        2.74
+NearestCentroid           0.75               0.75    None      0.75        0.01
+
+Best model for Word2Vec: SVC
+Detailed classification report for Word2Vec:
+
+  class  precision  recall  f1-score
+      O       0.76    0.78      0.77
+     PE       0.95    0.95      0.95
+     SE       0.78    0.70      0.74
+     US       0.70    0.76      0.73
+Average       0.80    0.80      0.80
+
+
+🔹 Running GloVe embedding...
+🔸 Evaluating models for GloVe...
+
+=== Evaluating GloVe embeddings ===
+
+                      Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken
+Model
+SVC                       0.78               0.78    None      0.78        0.10
+NuSVC                     0.75               0.75    None      0.75        0.14
+BernoulliNB               0.75               0.75    None      0.75        0.01
+NearestCentroid           0.74               0.74    None      0.74        0.01
+ExtraTreesClassifier      0.73               0.73    None      0.73        0.20
+
+
+Best model for GloVe: SVC
+Detailed classification report for GloVe:
+
+  class  precision  recall  f1-score
+      O       0.77    0.80      0.79
+     PE       0.93    0.96      0.95
+     SE       0.75    0.67      0.71
+     US       0.71    0.73      0.72
+Average       0.79    0.79      0.79
+
+
+🔹 Running FastText embedding...
+🔸 Evaluating models for FastText...
+
+=== Evaluating FastText embeddings ===
+
+                Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken
+Model
+SVC                 0.76               0.76    None      0.76        0.11
+NuSVC               0.74               0.74    None      0.74        0.14
+LGBMClassifier      0.74               0.74    None      0.74        2.79
+GaussianNB          0.73               0.73    None      0.73        0.01
+Perceptron          0.73               0.73    None      0.73        0.05
+
+
+Best model for FastText: SVC
+Detailed classification report for FastText:
+
+  class  precision  recall  f1-score
+      O       0.72    0.79      0.76
+     PE       0.95    0.98      0.96
+     SE       0.77    0.60      0.67
+     US       0.72    0.79      0.76
+Average       0.79    0.79      0.79
+
+
+🔹 Running BERT embedding...
+🔸 Evaluating models for BERT...
+
+=== Evaluating BERT embeddings ===
+
+                      Accuracy  Balanced Accuracy ROC AUC  F1 Score     Time Taken
+Model
+SGDClassifier             0.78               0.78    None      0.78         0.38
+SVC                       0.77               0.77    None      0.78         0.66
+LGBMClassifier            0.77               0.77    None      0.77         45.92
+ExtraTreesClassifier      0.77               0.77    None      0.77         0.87
+NuSVC                     0.76               0.76    None      0.77         0.76
+
+
+Best model for BERT: SGDClassifier
+Detailed classification report for BERT:
+
+  class  precision  recall  f1-score
+      O       0.68    0.76      0.72
+     PE       0.98    0.85      0.91
+     SE       0.74    0.68      0.71
+     US       0.66    0.72      0.69
+Average       0.76    0.75      0.76
+
+
+Risultati per TF-IDF (ordinati per Accuracy):
+                        Model  Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken Embedding
+                  BernoulliNB      0.72               0.72    None      0.72        0.04    TF-IDF
+         ExtraTreesClassifier      0.71               0.71    None      0.71        0.38    TF-IDF
+                XGBClassifier      0.69               0.69    None      0.69        0.73    TF-IDF
+              NearestCentroid      0.69               0.69    None      0.69        0.04    TF-IDF
+                SGDClassifier      0.69               0.69    None      0.68        0.21    TF-IDF
+       RandomForestClassifier      0.68               0.68    None      0.68        0.31    TF-IDF
+           LogisticRegression      0.66               0.66    None      0.65        0.07    TF-IDF
+            BaggingClassifier      0.66               0.66    None      0.66        0.28    TF-IDF
+  PassiveAggressiveClassifier      0.65               0.65    None      0.64        0.27    TF-IDF
+       CalibratedClassifierCV      0.64               0.64    None      0.64       31.74    TF-IDF
+                    LinearSVC      0.64               0.64    None      0.63        8.38    TF-IDF
+                   Perceptron      0.64               0.64    None      0.63        0.11    TF-IDF
+                        NuSVC      0.62               0.62    None      0.61        0.66    TF-IDF
+       DecisionTreeClassifier      0.62               0.62    None      0.62        0.07    TF-IDF
+               LGBMClassifier      0.61               0.61    None      0.61        1.84    TF-IDF
+            RidgeClassifierCV      0.59               0.59    None      0.59        0.23    TF-IDF
+                          SVC      0.58               0.58    None      0.58        0.64    TF-IDF
+              RidgeClassifier      0.55               0.55    None      0.55        0.06    TF-IDF
+          ExtraTreeClassifier      0.52               0.52    None      0.53        0.04    TF-IDF
+           AdaBoostClassifier      0.49               0.49    None      0.50        0.40    TF-IDF
+                   GaussianNB      0.48               0.48    None      0.48        0.05    TF-IDF
+         KNeighborsClassifier      0.43               0.43    None      0.34        0.07    TF-IDF
+   LinearDiscriminantAnalysis      0.38               0.38    None      0.37        0.43    TF-IDF
+               LabelSpreading      0.26               0.26    None      0.12        0.06    TF-IDF
+             LabelPropagation      0.26               0.26    None      0.12        0.06    TF-IDF
+              DummyClassifier      0.25               0.25    None      0.10        0.04    TF-IDF
+QuadraticDiscriminantAnalysis      0.23               0.23    None      0.23        0.21    TF-IDF
+
+
+Risultati per Word2Vec (ordinati per Accuracy):
+                        Model  Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken Embedding
+                          SVC      0.76               0.76    None      0.76        0.11  Word2Vec
+                        NuSVC      0.76               0.76    None      0.76        0.14  Word2Vec
+         ExtraTreesClassifier      0.75               0.75    None      0.75        0.21  Word2Vec
+               LGBMClassifier      0.75               0.75    None      0.75        2.74  Word2Vec
+              NearestCentroid      0.75               0.75    None      0.75        0.01  Word2Vec
+                SGDClassifier      0.74               0.74    None      0.75        0.08  Word2Vec
+                  BernoulliNB      0.73               0.73    None      0.73        0.01  Word2Vec
+                   Perceptron      0.72               0.72    None      0.72        0.04  Word2Vec
+                   GaussianNB      0.72               0.72    None      0.72        0.01  Word2Vec
+           LogisticRegression      0.72               0.72    None      0.72        0.02  Word2Vec
+       CalibratedClassifierCV      0.71               0.71    None      0.71        5.19  Word2Vec
+                XGBClassifier      0.71               0.71    None      0.72        1.36  Word2Vec
+  PassiveAggressiveClassifier      0.71               0.71    None      0.71        0.11  Word2Vec
+   LinearDiscriminantAnalysis      0.70               0.70    None      0.70        0.03  Word2Vec
+            RidgeClassifierCV      0.70               0.70    None      0.70        0.04  Word2Vec
+       RandomForestClassifier      0.70               0.70    None      0.70        0.67  Word2Vec
+                    LinearSVC      0.70               0.70    None      0.69        1.29  Word2Vec
+              RidgeClassifier      0.69               0.69    None      0.69        0.01  Word2Vec
+           AdaBoostClassifier      0.65               0.65    None      0.65        1.23  Word2Vec
+            BaggingClassifier      0.60               0.60    None      0.60        0.97  Word2Vec
+         KNeighborsClassifier      0.59               0.59    None      0.58        0.01  Word2Vec
+       DecisionTreeClassifier      0.49               0.49    None      0.49        0.17  Word2Vec
+          ExtraTreeClassifier      0.44               0.44    None      0.44        0.01  Word2Vec
+QuadraticDiscriminantAnalysis      0.27               0.27    None      0.14        0.04  Word2Vec
+               LabelSpreading      0.26               0.26    None      0.11        0.03  Word2Vec
+             LabelPropagation      0.26               0.26    None      0.11        0.03  Word2Vec
               DummyClassifier      0.25               0.25    None      0.10        0.01  Word2Vec
 
 
 Risultati per GloVe (ordinati per Accuracy):
-
                         Model  Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken Embedding
-                        NuSVC      0.70               0.70    None      0.70        0.06     GloVe
-       RandomForestClassifier      0.66               0.66    None      0.66        0.40     GloVe
-                          SVC      0.66               0.66    None      0.67        0.05     GloVe
-         ExtraTreesClassifier      0.65               0.65    None      0.65        0.15     GloVe
-              NearestCentroid      0.65               0.65    None      0.65        0.01     GloVe
-               LGBMClassifier      0.64               0.64    None      0.64        2.09     GloVe
-                  BernoulliNB      0.63               0.63    None      0.63        0.01     GloVe
-                XGBClassifier      0.62               0.62    None      0.62        1.11     GloVe
-       CalibratedClassifierCV      0.60               0.60    None      0.61        3.31     GloVe
-           LogisticRegression      0.60               0.60    None      0.60        0.02     GloVe
-                SGDClassifier      0.60               0.60    None      0.60        0.04     GloVe
-            RidgeClassifierCV      0.59               0.59    None      0.59        0.03     GloVe
-                   GaussianNB      0.59               0.59    None      0.58        0.01     GloVe
-   LinearDiscriminantAnalysis      0.58               0.58    None      0.59        0.02     GloVe
-              RidgeClassifier      0.57               0.57    None      0.58        0.01     GloVe
-         KNeighborsClassifier      0.57               0.57    None      0.57        0.01     GloVe
-                   Perceptron      0.54               0.54    None      0.54        0.04     GloVe
-  PassiveAggressiveClassifier      0.53               0.53    None      0.53        0.15     GloVe
-           AdaBoostClassifier      0.53               0.53    None      0.53        0.74     GloVe
-                    LinearSVC      0.52               0.52    None      0.53        0.64     GloVe
-       DecisionTreeClassifier      0.52               0.52    None      0.52        0.10     GloVe
-            BaggingClassifier      0.47               0.47    None      0.47        0.54     GloVe
-          ExtraTreeClassifier      0.34               0.34    None      0.34        0.01     GloVe
-               LabelSpreading      0.26               0.26    None      0.14        0.01     GloVe
-             LabelPropagation      0.26               0.26    None      0.14        0.01     GloVe
+                          SVC      0.78               0.78    None      0.78        0.10     GloVe
+                        NuSVC      0.75               0.75    None      0.75        0.14     GloVe
+                  BernoulliNB      0.75               0.75    None      0.75        0.01     GloVe
+              NearestCentroid      0.74               0.74    None      0.74        0.01     GloVe
+         ExtraTreesClassifier      0.73               0.73    None      0.73        0.20     GloVe
+                   GaussianNB      0.73               0.73    None      0.73        0.01     GloVe
+       CalibratedClassifierCV      0.70               0.70    None      0.70        4.47     GloVe
+               LGBMClassifier      0.69               0.69    None      0.69        2.70     GloVe
+                XGBClassifier      0.69               0.69    None      0.69        1.37     GloVe
+            RidgeClassifierCV      0.69               0.69    None      0.69        0.04     GloVe
+       RandomForestClassifier      0.69               0.69    None      0.69        0.66     GloVe
+                SGDClassifier      0.69               0.69    None      0.69        0.09     GloVe
+  PassiveAggressiveClassifier      0.68               0.68    None      0.68        0.12     GloVe
+                    LinearSVC      0.68               0.68    None      0.68        0.80     GloVe
+                   Perceptron      0.68               0.68    None      0.68        0.05     GloVe
+   LinearDiscriminantAnalysis      0.67               0.67    None      0.67        0.03     GloVe
+           LogisticRegression      0.67               0.67    None      0.67        0.03     GloVe
+              RidgeClassifier      0.67               0.67    None      0.67        0.01     GloVe
+         KNeighborsClassifier      0.62               0.62    None      0.60        0.01     GloVe
+           AdaBoostClassifier      0.62               0.62    None      0.62        1.21     GloVe
+            BaggingClassifier      0.57               0.57    None      0.57        0.96     GloVe
+       DecisionTreeClassifier      0.52               0.52    None      0.52        0.16     GloVe
+          ExtraTreeClassifier      0.45               0.45    None      0.45        0.01     GloVe
+               LabelSpreading      0.26               0.26    None      0.11        0.02     GloVe
+             LabelPropagation      0.26               0.26    None      0.11        0.02     GloVe
               DummyClassifier      0.25               0.25    None      0.10        0.01     GloVe
-QuadraticDiscriminantAnalysis      0.23               0.23    None      0.15        0.02     GloVe
+QuadraticDiscriminantAnalysis      0.24               0.24    None      0.12        0.04     GloVe
 
 
 Risultati per FastText (ordinati per Accuracy):
-
                         Model  Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken Embedding
-       CalibratedClassifierCV      0.70               0.70    None      0.70        4.64  FastText
-                   Perceptron      0.69               0.69    None      0.69        0.03  FastText
-                SGDClassifier      0.69               0.69    None      0.69        0.03  FastText
-           LogisticRegression      0.69               0.69    None      0.68        0.02  FastText
-                XGBClassifier      0.69               0.69    None      0.68        1.08  FastText
-       RandomForestClassifier      0.68               0.68    None      0.68        0.39  FastText
-                    LinearSVC      0.68               0.68    None      0.68        1.08  FastText
-                        NuSVC      0.67               0.67    None      0.68        0.06  FastText
-            RidgeClassifierCV      0.67               0.67    None      0.67        0.03  FastText
-         ExtraTreesClassifier      0.67               0.67    None      0.67        0.14  FastText
-   LinearDiscriminantAnalysis      0.65               0.65    None      0.65        0.02  FastText
-               LGBMClassifier      0.65               0.65    None      0.64        2.07  FastText
-  PassiveAggressiveClassifier      0.65               0.65    None      0.65        0.13  FastText
-              RidgeClassifier      0.65               0.65    None      0.65        0.01  FastText
-                          SVC      0.65               0.65    None      0.66        0.05  FastText
-         KNeighborsClassifier      0.64               0.64    None      0.64        0.01  FastText
-              NearestCentroid      0.63               0.63    None      0.63        0.01  FastText
-                  BernoulliNB      0.62               0.62    None      0.61        0.01  FastText
-           AdaBoostClassifier      0.59               0.59    None      0.59        0.75  FastText
-            BaggingClassifier      0.58               0.58    None      0.58        0.55  FastText
-                   GaussianNB      0.55               0.55    None      0.55        0.01  FastText
-       DecisionTreeClassifier      0.49               0.48    None      0.48        0.10  FastText
-          ExtraTreeClassifier      0.44               0.44    None      0.44        0.01  FastText
-               LabelSpreading      0.26               0.26    None      0.14        0.01  FastText
-             LabelPropagation      0.26               0.26    None      0.14        0.01  FastText
+                          SVC      0.76               0.76    None      0.76        0.11  FastText
+                        NuSVC      0.74               0.74    None      0.74        0.14  FastText
+               LGBMClassifier      0.74               0.74    None      0.74        2.79  FastText
+                   GaussianNB      0.73               0.73    None      0.73        0.01  FastText
+                   Perceptron      0.73               0.73    None      0.73        0.05  FastText
+                XGBClassifier      0.73               0.73    None      0.72        1.56  FastText
+                SGDClassifier      0.72               0.72    None      0.72        0.07  FastText
+                  BernoulliNB      0.72               0.72    None      0.72        0.02  FastText
+              NearestCentroid      0.71               0.71    None      0.71        0.01  FastText
+       CalibratedClassifierCV      0.71               0.71    None      0.71        5.53  FastText
+           LogisticRegression      0.70               0.70    None      0.70        0.03  FastText
+            RidgeClassifierCV      0.70               0.70    None      0.69        0.04  FastText
+  PassiveAggressiveClassifier      0.70               0.70    None      0.69        0.15  FastText
+              RidgeClassifier      0.70               0.70    None      0.69        0.01  FastText
+         ExtraTreesClassifier      0.69               0.69    None      0.69        0.21  FastText
+   LinearDiscriminantAnalysis      0.69               0.69    None      0.69        0.03  FastText
+                    LinearSVC      0.68               0.68    None      0.68        1.13  FastText
+       RandomForestClassifier      0.66               0.66    None      0.66        0.73  FastText
+           AdaBoostClassifier      0.62               0.62    None      0.62        1.24  FastText
+            BaggingClassifier      0.60               0.60    None      0.60        1.04  FastText
+         KNeighborsClassifier      0.56               0.56    None      0.54        0.01  FastText
+       DecisionTreeClassifier      0.49               0.49    None      0.49        0.17  FastText
+          ExtraTreeClassifier      0.42               0.42    None      0.41        0.01  FastText
+QuadraticDiscriminantAnalysis      0.29               0.29    None      0.18        0.04  FastText
+               LabelSpreading      0.26               0.26    None      0.11        0.03  FastText
+             LabelPropagation      0.26               0.26    None      0.11        0.02  FastText
               DummyClassifier      0.25               0.25    None      0.10        0.01  FastText
-QuadraticDiscriminantAnalysis      0.23               0.23    None      0.15        0.02  FastText
 
 
 Risultati per BERT (ordinati per Accuracy):
-
                         Model  Accuracy  Balanced Accuracy ROC AUC  F1 Score  Time Taken Embedding
-                        NuSVC      0.74               0.74    None      0.74        0.24      BERT
-                          SVC      0.73               0.73    None      0.73        0.22      BERT
-  PassiveAggressiveClassifier      0.72               0.72    None      0.72        0.36      BERT
-                    LinearSVC      0.71               0.71    None      0.71        2.95      BERT
-       CalibratedClassifierCV      0.71               0.71    None      0.71        7.77      BERT
-           LogisticRegression      0.70               0.70    None      0.70        0.64      BERT
-               LGBMClassifier      0.70               0.70    None      0.70       25.55      BERT
-         ExtraTreesClassifier      0.69               0.69    None      0.69        0.54      BERT
-                SGDClassifier      0.69               0.69    None      0.69        0.19      BERT
-                   Perceptron      0.68               0.68    None      0.68        0.15      BERT
-                XGBClassifier      0.68               0.68    None      0.68       20.89      BERT
-                  BernoulliNB      0.67               0.67    None      0.67        0.06      BERT
-              NearestCentroid      0.66               0.66    None      0.66        0.07      BERT
-            RidgeClassifierCV      0.65               0.65    None      0.65        0.32      BERT
-       RandomForestClassifier      0.65               0.65    None      0.65        1.70      BERT
-                   GaussianNB      0.65               0.65    None      0.65        0.05      BERT
-         KNeighborsClassifier      0.63               0.63    None      0.63        0.05      BERT
-              RidgeClassifier      0.60               0.60    None      0.60        0.21      BERT
-            BaggingClassifier      0.58               0.58    None      0.58        4.15      BERT
-           AdaBoostClassifier      0.51               0.51    None      0.51        4.63      BERT
-   LinearDiscriminantAnalysis      0.50               0.50    None      0.50        0.46      BERT
-       DecisionTreeClassifier      0.41               0.41    None      0.41        0.64      BERT
-          ExtraTreeClassifier      0.40               0.40    None      0.40        0.04      BERT
-QuadraticDiscriminantAnalysis      0.28               0.29    None      0.19        0.14      BERT
-             LabelPropagation      0.26               0.26    None      0.14        0.09      BERT
-               LabelSpreading      0.26               0.26    None      0.14        0.10      BERT
-              DummyClassifier      0.25               0.25    None      0.10        0.04      BERT
+                SGDClassifier      0.78               0.78    None      0.78        0.38      BERT
+                          SVC      0.77               0.77    None      0.78        0.66      BERT
+               LGBMClassifier      0.77               0.77    None      0.77       45.92      BERT
+         ExtraTreesClassifier      0.77               0.77    None      0.77        0.87      BERT
+                        NuSVC      0.76               0.76    None      0.77        0.76      BERT
+       RandomForestClassifier      0.76               0.76    None      0.76        4.08      BERT
+           LogisticRegression      0.74               0.74    None      0.74        1.15      BERT
+              NearestCentroid      0.73               0.73    None      0.73        0.12      BERT
+                  BernoulliNB      0.73               0.73    None      0.74        0.09      BERT
+                XGBClassifier      0.73               0.73    None      0.73       31.80      BERT
+                   GaussianNB      0.71               0.71    None      0.71        0.06      BERT
+       CalibratedClassifierCV      0.71               0.71    None      0.71      125.91      BERT
+  PassiveAggressiveClassifier      0.70               0.70    None      0.70        0.90      BERT
+                    LinearSVC      0.70               0.70    None      0.70       27.04      BERT
+                   Perceptron      0.70               0.70    None      0.70        0.34      BERT
+            RidgeClassifierCV      0.67               0.67    None      0.67        0.76      BERT
+           AdaBoostClassifier      0.67               0.67    None      0.67        9.46      BERT
+            BaggingClassifier      0.63               0.63    None      0.62        8.84      BERT
+   LinearDiscriminantAnalysis      0.59               0.59    None      0.60        0.49      BERT
+              RidgeClassifier      0.59               0.59    None      0.59        0.21      BERT
+         KNeighborsClassifier      0.58               0.58    None      0.58        0.09      BERT
+       DecisionTreeClassifier      0.49               0.49    None      0.49        1.31      BERT
+          ExtraTreeClassifier      0.41               0.41    None      0.41        0.07      BERT
+               LabelSpreading      0.26               0.26    None      0.12        0.19      BERT
+             LabelPropagation      0.26               0.26    None      0.12        0.17      BERT
+QuadraticDiscriminantAnalysis      0.25               0.25    None      0.10        0.60      BERT
+              DummyClassifier      0.25               0.25    None      0.10        0.06      BERT
