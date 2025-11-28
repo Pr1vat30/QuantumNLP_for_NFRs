@@ -1,4 +1,4 @@
-from lambeq import BobcatParser, Dataset, PytorchModel, PytorchTrainer, cups_reader
+from lambeq import BobcatParser, Dataset, PytorchModel, PytorchTrainer, cups_reader, SpiderAnsatz
 from lambeq import AtomicType, TensorAnsatz
 from lambeq.backend.tensor import Dim
 from sympy import default_sort_key
@@ -13,7 +13,7 @@ but never completes the first epoch. To fix this we manually identify and remove
 From ARTA_Req_balanced.csv, the following entry must be removed:
     --> cma report shall returned later 60 second user entered cma report criterion,NFR,PE
 
-From PURE_Req_balanced2.csv, the following entries must be removed:
+From PURE_Req_balanced.csv, the following entries must be removed:
     --> claus system shall maintain dynamic library data least seven day,NFR,PE
     --> npc sm shall archive security audit data offline minimum two year,NFR,SE
 
@@ -24,33 +24,34 @@ these entries are malformed or overly complex, leading the model to stall during
 to_remove = [
     "cma report shall returned later 60 second user entered cma report criterion",
     "claus system shall maintain dynamic library data least seven day",
-    "npc sm shall archive security audit data offline minimum two year"
+    "npc sm shall archive security audit data offline minimum two year",
+    "encoded video files must analysable third party worm analysis software",
 ]
 
 # ============================================================
 # Evaluation metrics
 # ============================================================
 
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
 
 def single_label_accuracy(y_hat: torch.Tensor, y_true) -> float:
-    preds = torch.argmax(y_hat, dim=1).cpu().numpy()
-    y = torch.argmax(torch.as_tensor(y_true), dim=1).cpu().numpy()
+    preds = torch.argmax(y_hat, dim=1).numpy()
+    y = torch.argmax(torch.as_tensor(y_true), dim=1).numpy()
     return accuracy_score(y, preds)
 
 def single_label_precision(y_hat: torch.Tensor, y_true) -> float:
-    preds = torch.argmax(y_hat, dim=1).cpu().numpy()
-    y = torch.argmax(torch.as_tensor(y_true), dim=1).cpu().numpy()
+    preds = torch.argmax(y_hat, dim=1).numpy()
+    y = torch.argmax(torch.as_tensor(y_true), dim=1).numpy()
     return precision_score(y, preds, average='macro', zero_division=0)
 
 def single_label_recall(y_hat: torch.Tensor, y_true) -> float:
-    preds = torch.argmax(y_hat, dim=1).cpu().numpy()
-    y = torch.argmax(torch.as_tensor(y_true), dim=1).cpu().numpy()
+    preds = torch.argmax(y_hat, dim=1).numpy()
+    y = torch.argmax(torch.as_tensor(y_true), dim=1).numpy()
     return recall_score(y, preds, average='macro', zero_division=0)
 
 def single_label_f1(y_hat: torch.Tensor, y_true) -> float:
-    preds = torch.argmax(y_hat, dim=1).cpu().numpy()
-    y = torch.argmax(torch.as_tensor(y_true), dim=1).cpu().numpy()
+    preds = torch.argmax(y_hat, dim=1).numpy()
+    y = torch.argmax(torch.as_tensor(y_true), dim=1).numpy()
     return f1_score(y, preds, average='macro', zero_division=0)
 
 eval_metrics = {
@@ -79,7 +80,7 @@ def load_dataset(csv_path: str, text_col: str, label_col: str):
 
 def split_dataset(df: pd.DataFrame, label_col: str):
     X_train, X_temp, y_train, y_temp = train_test_split(
-        df["Requirement"], df[label_col], test_size=0.3, random_state=42, stratify=df[label_col]
+        df["Requirement"], df[label_col], test_size=0.4, random_state=42, stratify=df[label_col]
     )
     X_val, X_test, y_val, y_test = train_test_split(
         X_temp, y_temp, test_size=0.5, random_state=42, stratify=y_temp
@@ -96,12 +97,12 @@ def generate_diagrams(data, parser_model: str = "Bobcat"):
     print(f"\nParsing sentences into diagrams...")
 
     if parser_model == "Bobcat":
-        parser = BobcatParser(verbose='progress')
+        parser = BobcatParser(verbose='progress', device='mps')
+        diagrams = parser.sentences2diagrams(data, suppress_exceptions=True)
     elif parser_model == "CupsReader":
-        parser = cups_reader
+        diagrams = cups_reader.sentences2diagrams(data)
     else: raise ValueError(f"Unknown model '{parser_model}'.")
 
-    diagrams = parser.sentences2diagrams(data)
     print("Parsed sentences successfully.")
     # diagrams[0].draw(figsize=(7, 3))
 
@@ -110,10 +111,10 @@ def generate_diagrams(data, parser_model: str = "Bobcat"):
 def generate_circuits(diagrams, labels):
     print("\nGenerating circuits...")
 
-    ansatz = TensorAnsatz({
+    ansatz = SpiderAnsatz({
         AtomicType.NOUN: Dim(4),
         AtomicType.SENTENCE: Dim(4)
-    })
+    }, max_order=10)
 
     valid_circuits, valid_labels = [], []
 
@@ -135,7 +136,7 @@ def generate_circuits(diagrams, labels):
             # circuits contraction into tensor
             result = subbed_diagram.eval(contractor=tn.contractors.auto)
             if isinstance(result, torch.Tensor):
-                result = result.detach().cpu().numpy()
+                result = result.detach().numpy()
 
             # check coherency of dtype
             if result.dtype != 'float32':
@@ -210,8 +211,10 @@ def run_training(
     print("\nStarting training...")
 
     trainer.fit(
-        train_dataset, val_dataset, early_stopping_criterion='accuracy',
-        early_stopping_interval=10, minimize_criterion=False
+        train_dataset, val_dataset,
+        early_stopping_criterion='accuracy',
+        early_stopping_interval=10,
+        minimize_criterion=False
     )
 
     return trainer, model
@@ -263,16 +266,38 @@ def plot_training_metrics(trainer):
 
     # ======== early stop marker ========
     best_epoch = int(np.argmax(trainer.val_eval_results[main_metric]))
+
+    # Segna il punto di early stopping in tutti i grafici
     for ax_row in axes:
         for ax in ax_row:
             ax.plot(
-                best_epoch + 1, ax.lines[0].get_ydata()[best_epoch], 'o', color='black', fillstyle='none'
+                best_epoch + 1,
+                ax.lines[0].get_ydata()[best_epoch],
+                'o',
+                color='black',
+                fillstyle='none'
             )
 
+    # Asse principale di validazione
     last_row = metrics.index(main_metric) + 1 if main_metric in metrics else 1
     ax_val_main = axes[last_row, 1]
     y_best = trainer.val_eval_results[main_metric][best_epoch]
-    ax_val_main.text(best_epoch + 1.2, y_best, 'early stopping', va='center')
+
+    # Calcolo spostamento proporzionale
+    ymin, ymax = ax_val_main.get_ylim()
+    yrange = ymax - ymin
+    xmax = len(trainer.val_eval_results[main_metric])
+
+    # Aggiunge testo con offset proporzionale
+    ax_val_main.text(
+        best_epoch + 0.02 * xmax,  # 2% più a destra
+        y_best + 0.05 * yrange,  # 5% più in alto
+        'early stop',
+        va='bottom',
+        ha='left',
+        fontsize=10,
+        color='black'
+    )
 
     fig.tight_layout()
     plt.show()
@@ -280,6 +305,7 @@ def plot_training_metrics(trainer):
 # ============================================================
 # Final Evaluation on test
 # ============================================================
+
 def evaluate_on_test(model, test_circuits, test_labels):
 
     test_acc = single_label_accuracy(model.forward(test_circuits), test_labels)
@@ -293,6 +319,28 @@ def evaluate_on_test(model, test_circuits, test_labels):
 
     test_f1 = single_label_f1(model.forward(test_circuits), test_labels)
     print('Test F1:', test_f1)
+
+def evaluate_per_class(model, test_circuits, test_labels):
+
+    class_names = ["O", "PE", "SE", "US"]
+
+    # Predizioni e etichette vere
+    y_pred = torch.argmax(model.forward(test_circuits), dim=1).numpy()
+    y_true = torch.argmax(torch.as_tensor(test_labels), dim=1).numpy()
+
+    # Report sklearn
+    report_dict = classification_report(
+        y_true, y_pred, target_names=class_names, output_dict=True, zero_division=0
+    )
+
+    # Conversione in DataFrame per un output leggibile
+    df_report = pd.DataFrame(report_dict).T
+    df_report = df_report[["precision", "recall", "f1-score"]].iloc[:-3]
+    df_report.loc["Average"] = df_report.mean()  # media tra le classi
+
+    # Stampa tabellare compatta
+    print("\n===== Per-class Metrics =====")
+    print(df_report.to_string(float_format="%.2f"))
 
 # ============================================================
 # Full Classic Pipeline
@@ -322,11 +370,12 @@ def run_lambeq_pipeline(
     trainer, model = run_training(
         train_circuits, val_circuits, test_circuits,
         train_labels, val_labels, test_labels,
-        learning_rate=0.01, epochs=50, batch_size=16,
+        learning_rate=0.01, epochs=50, batch_size=32,
     )
 
     plot_training_metrics(trainer)
     evaluate_on_test(model, test_circuits, encode_labels(test_labels))
+    evaluate_per_class(model, test_circuits, encode_labels(test_labels))
 
 # ============================================================
 # Run the Experiment
@@ -336,15 +385,22 @@ if __name__ == "__main__":
 
     arta_path = "../../dataset/ARTA/gold/ARTA_Req_balanced.csv"
     pure_path = "../../dataset/ReqExp_PURE/gold/PURE_Req_balanced.csv"
+    usor_path = "../../dataset/USoR/gold/USoR_balanced.csv"
 
-    # print("\nARTA - lambeq tensor network model training (Bobcat + BCELoss) ...")
-    # run_lambeq_pipeline(arta_path, parser_model="Bobcat")
+    print("\nARTA - lambeq tensor network model training (Bobcat + BCELoss) ...")
+    run_lambeq_pipeline(arta_path, parser_model="Bobcat")
 
-    # print("\nPURE - lambeq tensor network model training (Bobcat + BCELoss) ...")
-    # run_lambeq_pipeline(pure_path, parser_model="Bobcat")
+    print("\nPURE - lambeq tensor network model training (Bobcat + BCELoss) ...")
+    run_lambeq_pipeline(pure_path, parser_model="Bobcat")
+
+    print("\nUSoR - lambeq tensor network model training (Bobcat + BCELoss) ...")
+    run_lambeq_pipeline(usor_path, parser_model="Bobcat")
 
     print("\nARTA - lambeq tensor network model training (CupsReader + BCELoss) ...")
     run_lambeq_pipeline(arta_path, parser_model="CupsReader")
 
     print("\nPURE - lambeq tensor network model training (CupsReader + BCELoss) ...")
     run_lambeq_pipeline(pure_path, parser_model="CupsReader")
+
+    print("\nUSoR - lambeq tensor network model training (CupsReader + BCELoss) ...")
+    run_lambeq_pipeline(usor_path, parser_model="CupsReader")

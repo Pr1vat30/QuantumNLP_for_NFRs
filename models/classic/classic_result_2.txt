@@ -1,0 +1,339 @@
+ARTA - lambeq tensor network model training (Bobcat + CrossEntropy) ...
+Removed 1 rows matching exclusion list.
+Loaded 1054 rows from ../../dataset/ARTA/gold/ARTA_Req_balanced.csv
+Train: 632, Val: 211, Test: 211
+
+Starting training...
+Epoch 1:   train/loss: 1.5060   valid/loss: 1.3651   train/time: 2.95s   valid/time: 1.17s   train/accuracy: 0.2449   train/precision: 0.2463   train/recall: 0.2451   train/f1-score: 0.2444   valid/accuracy: 0.3467   valid/precision: 0.3465   valid/recall: 0.3473   valid/f1-score: 0.3465
+Epoch 2:   train/loss: 1.1609   valid/loss: 1.3430   train/time: 3.18s   valid/time: 0.61s   train/accuracy: 0.5221   train/precision: 0.5219   train/recall: 0.5233   train/f1-score: 0.5217   valid/accuracy: 0.3668   valid/precision: 0.3665   valid/recall: 0.3673   valid/f1-score: 0.3660
+Epoch 3:   train/loss: 0.9860   valid/loss: 1.3262   train/time: 3.11s   valid/time: 1.09s   train/accuracy: 0.6633   train/precision: 0.6641   train/recall: 0.6642   train/f1-score: 0.6639   valid/accuracy: 0.3568   valid/precision: 0.3576   valid/recall: 0.3574   valid/f1-score: 0.3563
+Epoch 4:   train/loss: 0.8449   valid/loss: 1.3138   train/time: 2.44s   valid/time: 1.08s   train/accuracy: 0.7483   train/precision: 0.7487   train/recall: 0.7489   train/f1-score: 0.7486   valid/accuracy: 0.3668   valid/precision: 0.3660   valid/recall: 0.3678   valid/f1-score: 0.3656
+Epoch 5:   train/loss: 0.7245   valid/loss: 1.3060   train/time: 2.94s   valid/time: 0.59s   train/accuracy: 0.8044   train/precision: 0.8051   train/recall: 0.8048   train/f1-score: 0.8049   valid/accuracy: 0.3618   valid/precision: 0.3609   valid/recall: 0.3631   valid/f1-score: 0.3606
+Epoch 6:   train/loss: 0.6234   valid/loss: 1.3039   train/time: 2.95s   valid/time: 0.64s   train/accuracy: 0.8367   train/precision: 0.8379   train/recall: 0.8368   train/f1-score: 0.8371   valid/accuracy: 0.3668   valid/precision: 0.3659   valid/recall: 0.3680   valid/f1-score: 0.3660
+Epoch 7:   train/loss: 0.5369   valid/loss: 1.3083   train/time: 2.95s   valid/time: 0.61s   train/accuracy: 0.8622   train/precision: 0.8632   train/recall: 0.8624   train/f1-score: 0.8626   valid/accuracy: 0.3719   valid/precision: 0.3709   valid/recall: 0.3729   valid/f1-score: 0.3712
+Epoch 8:   train/loss: 0.4635   valid/loss: 1.3198   train/time: 2.96s   valid/time: 0.60s   train/accuracy: 0.8844   train/precision: 0.8861   train/recall: 0.8843   train/f1-score: 0.8848   valid/accuracy: 0.3869   valid/precision: 0.3850   valid/recall: 0.3885   valid/f1-score: 0.3845
+Epoch 9:   train/loss: 0.4020   valid/loss: 1.3378   train/time: 2.90s   valid/time: 0.59s   train/accuracy: 0.9099   train/precision: 0.9114   train/recall: 0.9098   train/f1-score: 0.9102   valid/accuracy: 0.3869   valid/precision: 0.3875   valid/recall: 0.3883   valid/f1-score: 0.3840
+Epoch 10:  train/loss: 0.3493   valid/loss: 1.3613   train/time: 2.90s   valid/time: 1.07s   train/accuracy: 0.9286   train/precision: 0.9296   train/recall: 0.9286   train/f1-score: 0.9289   valid/accuracy: 0.3869   valid/precision: 0.3866   valid/recall: 0.3883   valid/f1-score: 0.3841
+Epoch 11:  train/loss: 0.3027   valid/loss: 1.3903   train/time: 2.43s   valid/time: 1.05s   train/accuracy: 0.9269   train/precision: 0.9280   train/recall: 0.9269   train/f1-score: 0.9272   valid/accuracy: 0.3920   valid/precision: 0.3921   valid/recall: 0.3932   valid/f1-score: 0.3891
+Epoch 12:  train/loss: 0.2614   valid/loss: 1.4251   train/time: 2.94s   valid/time: 0.59s   train/accuracy: 0.9456   train/precision: 0.9464   train/recall: 0.9455   train/f1-score: 0.9458   valid/accuracy: 0.3869   valid/precision: 0.3866   valid/recall: 0.3880   valid/f1-score: 0.3847
+Epoch 13:  train/loss: 0.2245   valid/loss: 1.4654   train/time: 3.03s   valid/time: 0.60s   train/accuracy: 0.9558   train/precision: 0.9561   train/recall: 0.9558   train/f1-score: 0.9559   valid/accuracy: 0.3869   valid/precision: 0.3859   valid/recall: 0.3880   valid/f1-score: 0.3847
+Epoch 14:  train/loss: 0.1920   valid/loss: 1.5109   train/time: 3.02s   valid/time: 0.59s   train/accuracy: 0.9558   train/precision: 0.9560   train/recall: 0.9558   train/f1-score: 0.9558   valid/accuracy: 0.3920   valid/precision: 0.3910   valid/recall: 0.3929   valid/f1-score: 0.3896
+Epoch 15:  train/loss: 0.1639   valid/loss: 1.5611   train/time: 2.99s   valid/time: 0.59s   train/accuracy: 0.9592   train/precision: 0.9593   train/recall: 0.9592   train/f1-score: 0.9592   valid/accuracy: 0.3869   valid/precision: 0.3851   valid/recall: 0.3880   valid/f1-score: 0.3846
+Epoch 16:  train/loss: 0.1402   valid/loss: 1.6158   train/time: 2.97s   valid/time: 0.61s   train/accuracy: 0.9643   train/precision: 0.9644   train/recall: 0.9644   train/f1-score: 0.9644   valid/accuracy: 0.3869   valid/precision: 0.3851   valid/recall: 0.3880   valid/f1-score: 0.3846
+Epoch 17:  train/loss: 0.1204   valid/loss: 1.6744   train/time: 2.99s   valid/time: 1.14s   train/accuracy: 0.9779   train/precision: 0.9779   train/recall: 0.9780   train/f1-score: 0.9779   valid/accuracy: 0.3819   valid/precision: 0.3792   valid/recall: 0.3831   valid/f1-score: 0.3793
+Epoch 18:  train/loss: 0.1038   valid/loss: 1.7362   train/time: 2.44s   valid/time: 1.09s   train/accuracy: 0.9779   train/precision: 0.9779   train/recall: 0.9780   train/f1-score: 0.9779   valid/accuracy: 0.3920   valid/precision: 0.3897   valid/recall: 0.3929   valid/f1-score: 0.3897
+Epoch 19:  train/loss: 0.0895   valid/loss: 1.8004   train/time: 3.00s   valid/time: 0.61s   train/accuracy: 0.9847   train/precision: 0.9847   train/recall: 0.9847   train/f1-score: 0.9847   valid/accuracy: 0.3869   valid/precision: 0.3840   valid/recall: 0.3880   valid/f1-score: 0.3841
+Epoch 20:  train/loss: 0.0770   valid/loss: 1.8666   train/time: 3.02s   valid/time: 0.62s   train/accuracy: 0.9881   train/precision: 0.9882   train/recall: 0.9881   train/f1-score: 0.9880   valid/accuracy: 0.3970   valid/precision: 0.3944   valid/recall: 0.3982   valid/f1-score: 0.3942
+Epoch 21:  train/loss: 0.0660   valid/loss: 1.9341   train/time: 3.04s   valid/time: 0.64s   train/accuracy: 0.9898   train/precision: 0.9899   train/recall: 0.9897   train/f1-score: 0.9897   valid/accuracy: 0.3970   valid/precision: 0.3962   valid/recall: 0.3982   valid/f1-score: 0.3945
+Epoch 22:  train/loss: 0.0561   valid/loss: 2.0027   train/time: 3.07s   valid/time: 0.60s   train/accuracy: 0.9915   train/precision: 0.9915   train/recall: 0.9914   train/f1-score: 0.9914   valid/accuracy: 0.3920   valid/precision: 0.3926   valid/recall: 0.3933   valid/f1-score: 0.3898
+Epoch 23:  train/loss: 0.0475   valid/loss: 2.0719   train/time: 3.00s   valid/time: 0.64s   train/accuracy: 0.9932   train/precision: 0.9932   train/recall: 0.9931   train/f1-score: 0.9931   valid/accuracy: 0.3920   valid/precision: 0.3928   valid/recall: 0.3933   valid/f1-score: 0.3897
+Epoch 24:  train/loss: 0.0403   valid/loss: 2.1411   train/time: 2.93s   valid/time: 1.15s   train/accuracy: 0.9949   train/precision: 0.9949   train/recall: 0.9948   train/f1-score: 0.9949   valid/accuracy: 0.3920   valid/precision: 0.3902   valid/recall: 0.3935   valid/f1-score: 0.3892
+Epoch 25:  train/loss: 0.0344   valid/loss: 2.2095   train/time: 2.43s   valid/time: 1.05s   train/accuracy: 0.9966   train/precision: 0.9966   train/recall: 0.9965   train/f1-score: 0.9966   valid/accuracy: 0.4020   valid/precision: 0.3997   valid/recall: 0.4033   valid/f1-score: 0.3996
+Epoch 26:  train/loss: 0.0295   valid/loss: 2.2766   train/time: 3.06s   valid/time: 0.61s   train/accuracy: 0.9983   train/precision: 0.9983   train/recall: 0.9982   train/f1-score: 0.9983   valid/accuracy: 0.4020   valid/precision: 0.3997   valid/recall: 0.4033   valid/f1-score: 0.3996
+Epoch 27:  train/loss: 0.0254   valid/loss: 2.3419   train/time: 3.37s   valid/time: 0.69s   train/accuracy: 0.9983   train/precision: 0.9983   train/recall: 0.9982   train/f1-score: 0.9983   valid/accuracy: 0.4020   valid/precision: 0.3997   valid/recall: 0.4033   valid/f1-score: 0.3996
+Epoch 28:  train/loss: 0.0218   valid/loss: 2.4051   train/time: 3.27s   valid/time: 0.64s   train/accuracy: 0.9983   train/precision: 0.9983   train/recall: 0.9982   train/f1-score: 0.9983   valid/accuracy: 0.4070   valid/precision: 0.4054   valid/recall: 0.4082   valid/f1-score: 0.4051
+Epoch 29:  train/loss: 0.0188   valid/loss: 2.4661   train/time: 3.27s   valid/time: 0.62s   train/accuracy: 0.9983   train/precision: 0.9983   train/recall: 0.9982   train/f1-score: 0.9983   valid/accuracy: 0.4070   valid/precision: 0.4054   valid/recall: 0.4082   valid/f1-score: 0.4051
+Epoch 30:  train/loss: 0.0162   valid/loss: 2.5246   train/time: 3.09s   valid/time: 1.15s   train/accuracy: 0.9983   train/precision: 0.9983   train/recall: 0.9982   train/f1-score: 0.9983   valid/accuracy: 0.4070   valid/precision: 0.4054   valid/recall: 0.4082   valid/f1-score: 0.4051
+Epoch 31:  train/loss: 0.0140   valid/loss: 2.5805   train/time: 2.97s   valid/time: 1.13s   train/accuracy: 0.9983   train/precision: 0.9983   train/recall: 0.9982   train/f1-score: 0.9983   valid/accuracy: 0.4121   valid/precision: 0.4107   valid/recall: 0.4134   valid/f1-score: 0.4098
+Epoch 32:  train/loss: 0.0121   valid/loss: 2.6339   train/time: 3.31s   valid/time: 0.63s   train/accuracy: 0.9983   train/precision: 0.9983   train/recall: 0.9982   train/f1-score: 0.9983   valid/accuracy: 0.4121   valid/precision: 0.4110   valid/recall: 0.4134   valid/f1-score: 0.4098
+Epoch 33:  train/loss: 0.0104   valid/loss: 2.6847   train/time: 3.16s   valid/time: 0.63s   train/accuracy: 0.9983   train/precision: 0.9983   train/recall: 0.9982   train/f1-score: 0.9983   valid/accuracy: 0.4121   valid/precision: 0.4101   valid/recall: 0.4134   valid/f1-score: 0.4096
+Epoch 34:  train/loss: 0.0090   valid/loss: 2.7328   train/time: 3.22s   valid/time: 0.70s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4121   valid/precision: 0.4099   valid/recall: 0.4134   valid/f1-score: 0.4099
+Epoch 35:  train/loss: 0.0079   valid/loss: 2.7782   train/time: 3.12s   valid/time: 0.63s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4070   valid/precision: 0.4041   valid/recall: 0.4085   valid/f1-score: 0.4044
+Epoch 36:  train/loss: 0.0069   valid/loss: 2.8210   train/time: 2.56s   valid/time: 1.11s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4121   valid/precision: 0.4091   valid/recall: 0.4136   valid/f1-score: 0.4093
+Epoch 37:  train/loss: 0.0061   valid/loss: 2.8611   train/time: 3.21s   valid/time: 0.63s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4121   valid/precision: 0.4091   valid/recall: 0.4136   valid/f1-score: 0.4093
+Epoch 38:  train/loss: 0.0055   valid/loss: 2.8986   train/time: 2.81s   valid/time: 1.12s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4171   valid/precision: 0.4147   valid/recall: 0.4188   valid/f1-score: 0.4144
+Epoch 39:  train/loss: 0.0049   valid/loss: 2.9336   train/time: 3.07s   valid/time: 0.61s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4171   valid/precision: 0.4147   valid/recall: 0.4188   valid/f1-score: 0.4144
+Epoch 40:  train/loss: 0.0044   valid/loss: 2.9661   train/time: 2.60s   valid/time: 1.18s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4171   valid/precision: 0.4147   valid/recall: 0.4188   valid/f1-score: 0.4144
+Epoch 41:  train/loss: 0.0040   valid/loss: 2.9963   train/time: 2.65s   valid/time: 1.19s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4121   valid/precision: 0.4088   valid/recall: 0.4139   valid/f1-score: 0.4088
+Epoch 42:  train/loss: 0.0037   valid/loss: 3.0242   train/time: 3.10s   valid/time: 0.62s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4121   valid/precision: 0.4088   valid/recall: 0.4139   valid/f1-score: 0.4088
+Epoch 43:  train/loss: 0.0033   valid/loss: 3.0500   train/time: 3.07s   valid/time: 0.62s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4121   valid/precision: 0.4099   valid/recall: 0.4139   valid/f1-score: 0.4096
+Epoch 44:  train/loss: 0.0031   valid/loss: 3.0739   train/time: 2.64s   valid/time: 1.20s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4070   valid/precision: 0.4051   valid/recall: 0.4088   valid/f1-score: 0.4048
+Epoch 45:  train/loss: 0.0028   valid/loss: 3.0958   train/time: 2.60s   valid/time: 1.08s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4070   valid/precision: 0.4051   valid/recall: 0.4088   valid/f1-score: 0.4048
+Epoch 46:  train/loss: 0.0026   valid/loss: 3.1159   train/time: 3.13s   valid/time: 0.64s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4070   valid/precision: 0.4051   valid/recall: 0.4088   valid/f1-score: 0.4048
+Epoch 47:  train/loss: 0.0024   valid/loss: 3.1344   train/time: 3.31s   valid/time: 0.66s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4070   valid/precision: 0.4051   valid/recall: 0.4088   valid/f1-score: 0.4048
+Epoch 48:  train/loss: 0.0022   valid/loss: 3.1514   train/time: 3.22s   valid/time: 1.51s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4070   valid/precision: 0.4051   valid/recall: 0.4088   valid/f1-score: 0.4048
+Epoch 49:  train/loss: 0.0021   valid/loss: 3.1669   train/time: 2.80s   valid/time: 1.21s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4121   valid/precision: 0.4097   valid/recall: 0.4137   valid/f1-score: 0.4095
+Epoch 50:  train/loss: 0.0020   valid/loss: 3.1811   train/time: 2.57s   valid/time: 1.12s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4121   valid/precision: 0.4097   valid/recall: 0.4137   valid/f1-score: 0.4095
+
+[Info] Early stopping detected at epoch 50/50
+Early stopping!
+Best model (epoch=38, step=38) saved to
+runs/Nov27_19-51-49_MBPdiSalvatore.homenet.telecomitalia.it/best_model.lt
+
+Training completed!
+train/time: 2m28s   train/time_per_epoch: 2.95s   train/time_per_step: 2.95s   valid/time: 41.53s   valid/time_per_eval: 0.83s
+Test Accuracy: 0.37438423645320196
+Test Recall: 0.37336753992062455
+Test Precision: 0.3757978880957318
+Test F1: 0.3726799799259533
+
+===== Per-class Metrics =====
+         precision  recall  f1-score
+O             0.35    0.37      0.36
+PE            0.37    0.28      0.32
+SE            0.39    0.45      0.42
+US            0.38    0.40      0.39
+Average       0.37    0.38      0.37
+
+
+PURE - lambeq tensor network model training (Bobcat + CrossEntropy) ...
+Removed 0 rows matching exclusion list.
+Loaded 876 rows from ../../dataset/ReqExp_PURE/gold/PURE_Req_balanced.csv
+Train: 525, Val: 175, Test: 176
+
+Starting training...
+Epoch 1:   train/loss: 1.5169   valid/loss: 1.7022   train/time: 2.38s   valid/time: 0.95s   train/accuracy: 0.2893   train/precision: 0.2889   train/recall: 0.2900   train/f1-score: 0.2883   valid/accuracy: 0.2293   valid/precision: 0.2231   valid/recall: 0.2292   valid/f1-score: 0.2246
+Epoch 2:   train/loss: 1.1231   valid/loss: 1.6969   train/time: 1.92s   valid/time: 0.91s   train/accuracy: 0.5283   train/precision: 0.5265   train/recall: 0.5270   train/f1-score: 0.5258   valid/accuracy: 0.2420   valid/precision: 0.2384   valid/recall: 0.2418   valid/f1-score: 0.2393
+Epoch 3:   train/loss: 0.9208   valid/loss: 1.7040   train/time: 2.39s   valid/time: 0.46s   train/accuracy: 0.6792   train/precision: 0.6789   train/recall: 0.6774   train/f1-score: 0.6769   valid/accuracy: 0.2484   valid/precision: 0.2441   valid/recall: 0.2482   valid/f1-score: 0.2456
+Epoch 4:   train/loss: 0.7670   valid/loss: 1.7197   train/time: 2.00s   valid/time: 0.81s   train/accuracy: 0.7673   train/precision: 0.7668   train/recall: 0.7653   train/f1-score: 0.7654   valid/accuracy: 0.2484   valid/precision: 0.2435   valid/recall: 0.2482   valid/f1-score: 0.2454
+Epoch 5:   train/loss: 0.6422   valid/loss: 1.7426   train/time: 2.43s   valid/time: 0.44s   train/accuracy: 0.8302   train/precision: 0.8324   train/recall: 0.8284   train/f1-score: 0.8294   valid/accuracy: 0.2357   valid/precision: 0.2289   valid/recall: 0.2354   valid/f1-score: 0.2315
+Epoch 6:   train/loss: 0.5386   valid/loss: 1.7723   train/time: 2.50s   valid/time: 0.45s   train/accuracy: 0.8679   train/precision: 0.8708   train/recall: 0.8666   train/f1-score: 0.8678   valid/accuracy: 0.2357   valid/precision: 0.2286   valid/recall: 0.2354   valid/f1-score: 0.2311
+Epoch 7:   train/loss: 0.4528   valid/loss: 1.8085   train/time: 1.92s   valid/time: 0.84s   train/accuracy: 0.9057   train/precision: 0.9079   train/recall: 0.9043   train/f1-score: 0.9054   valid/accuracy: 0.2357   valid/precision: 0.2289   valid/recall: 0.2354   valid/f1-score: 0.2315
+Epoch 8:   train/loss: 0.3806   valid/loss: 1.8512   train/time: 1.91s   valid/time: 0.82s   train/accuracy: 0.9224   train/precision: 0.9251   train/recall: 0.9216   train/f1-score: 0.9228   valid/accuracy: 0.2420   valid/precision: 0.2329   valid/recall: 0.2417   valid/f1-score: 0.2367
+Epoch 9:   train/loss: 0.3196   valid/loss: 1.8998   train/time: 2.35s   valid/time: 0.45s   train/accuracy: 0.9329   train/precision: 0.9345   train/recall: 0.9322   train/f1-score: 0.9330   valid/accuracy: 0.2357   valid/precision: 0.2225   valid/recall: 0.2353   valid/f1-score: 0.2281
+Epoch 10:  train/loss: 0.2696   valid/loss: 1.9532   train/time: 1.92s   valid/time: 0.82s   train/accuracy: 0.9497   train/precision: 0.9518   train/recall: 0.9493   train/f1-score: 0.9501   valid/accuracy: 0.2293   valid/precision: 0.2191   valid/recall: 0.2288   valid/f1-score: 0.2231
+Epoch 11:  train/loss: 0.2293   valid/loss: 2.0105   train/time: 2.37s   valid/time: 0.46s   train/accuracy: 0.9602   train/precision: 0.9626   train/recall: 0.9596   train/f1-score: 0.9605   valid/accuracy: 0.2420   valid/precision: 0.2303   valid/recall: 0.2417   valid/f1-score: 0.2349
+Epoch 12:  train/loss: 0.1966   valid/loss: 2.0710   train/time: 1.92s   valid/time: 0.83s   train/accuracy: 0.9686   train/precision: 0.9704   train/recall: 0.9680   train/f1-score: 0.9688   valid/accuracy: 0.2484   valid/precision: 0.2367   valid/recall: 0.2479   valid/f1-score: 0.2414
+Epoch 13:  train/loss: 0.1690   valid/loss: 2.1340   train/time: 2.36s   valid/time: 0.44s   train/accuracy: 0.9748   train/precision: 0.9761   train/recall: 0.9744   train/f1-score: 0.9751   valid/accuracy: 0.2484   valid/precision: 0.2367   valid/recall: 0.2479   valid/f1-score: 0.2414
+Epoch 14:  train/loss: 0.1455   valid/loss: 2.1993   train/time: 1.93s   valid/time: 0.85s   train/accuracy: 0.9790   train/precision: 0.9806   train/recall: 0.9787   train/f1-score: 0.9794   valid/accuracy: 0.2484   valid/precision: 0.2412   valid/recall: 0.2479   valid/f1-score: 0.2441
+Epoch 15:  train/loss: 0.1255   valid/loss: 2.2661   train/time: 1.92s   valid/time: 0.83s   train/accuracy: 0.9811   train/precision: 0.9823   train/recall: 0.9809   train/f1-score: 0.9815   valid/accuracy: 0.2484   valid/precision: 0.2412   valid/recall: 0.2479   valid/f1-score: 0.2441
+Epoch 16:  train/loss: 0.1085   valid/loss: 2.3339   train/time: 2.37s   valid/time: 0.44s   train/accuracy: 0.9832   train/precision: 0.9842   train/recall: 0.9830   train/f1-score: 0.9835   valid/accuracy: 0.2357   valid/precision: 0.2286   valid/recall: 0.2351   valid/f1-score: 0.2313
+Epoch 17:  train/loss: 0.0941   valid/loss: 2.4023   train/time: 1.88s   valid/time: 0.82s   train/accuracy: 0.9874   train/precision: 0.9882   train/recall: 0.9871   train/f1-score: 0.9875   valid/accuracy: 0.2357   valid/precision: 0.2286   valid/recall: 0.2351   valid/f1-score: 0.2313
+Epoch 18:  train/loss: 0.0815   valid/loss: 2.4707   train/time: 1.88s   valid/time: 0.83s   train/accuracy: 0.9895   train/precision: 0.9903   train/recall: 0.9892   train/f1-score: 0.9897   valid/accuracy: 0.2293   valid/precision: 0.2229   valid/recall: 0.2287   valid/f1-score: 0.2254
+Epoch 19:  train/loss: 0.0704   valid/loss: 2.5388   train/time: 2.40s   valid/time: 0.44s   train/accuracy: 0.9937   train/precision: 0.9940   train/recall: 0.9935   train/f1-score: 0.9937   valid/accuracy: 0.2357   valid/precision: 0.2281   valid/recall: 0.2349   valid/f1-score: 0.2309
+Epoch 20:  train/loss: 0.0606   valid/loss: 2.6062   train/time: 1.90s   valid/time: 0.81s   train/accuracy: 0.9937   train/precision: 0.9940   train/recall: 0.9935   train/f1-score: 0.9937   valid/accuracy: 0.2357   valid/precision: 0.2281   valid/recall: 0.2349   valid/f1-score: 0.2309
+Epoch 21:  train/loss: 0.0520   valid/loss: 2.6725   train/time: 2.47s   valid/time: 0.47s   train/accuracy: 0.9937   train/precision: 0.9940   train/recall: 0.9935   train/f1-score: 0.9937   valid/accuracy: 0.2357   valid/precision: 0.2278   valid/recall: 0.2349   valid/f1-score: 0.2308
+Epoch 22:  train/loss: 0.0446   valid/loss: 2.7372   train/time: 2.53s   valid/time: 0.49s   train/accuracy: 0.9937   train/precision: 0.9940   train/recall: 0.9935   train/f1-score: 0.9937   valid/accuracy: 0.2357   valid/precision: 0.2281   valid/recall: 0.2351   valid/f1-score: 0.2310
+Epoch 23:  train/loss: 0.0383   valid/loss: 2.8001   train/time: 1.89s   valid/time: 0.84s   train/accuracy: 0.9937   train/precision: 0.9940   train/recall: 0.9935   train/f1-score: 0.9937   valid/accuracy: 0.2357   valid/precision: 0.2281   valid/recall: 0.2351   valid/f1-score: 0.2310
+Epoch 24:  train/loss: 0.0330   valid/loss: 2.8608   train/time: 1.96s   valid/time: 0.83s   train/accuracy: 0.9937   train/precision: 0.9940   train/recall: 0.9935   train/f1-score: 0.9937   valid/accuracy: 0.2420   valid/precision: 0.2338   valid/recall: 0.2413   valid/f1-score: 0.2370
+Epoch 25:  train/loss: 0.0285   valid/loss: 2.9189   train/time: 2.33s   valid/time: 0.44s   train/accuracy: 0.9937   train/precision: 0.9940   train/recall: 0.9935   train/f1-score: 0.9937   valid/accuracy: 0.2420   valid/precision: 0.2331   valid/recall: 0.2413   valid/f1-score: 0.2364
+Early stopping!
+Best model (epoch=3, step=3) saved to
+runs/Nov27_19-56-29_MBPdiSalvatore.homenet.telecomitalia.it/best_model.lt
+
+Training completed!
+train/time: 53.83s   train/time_per_epoch: 2.15s   train/time_per_step: 2.15s   valid/time: 16.77s   valid/time_per_eval: 0.67s
+
+[Info] Early stopping detected at epoch 25/50
+Test Accuracy: 0.2891566265060241
+Test Recall: 0.2892361111111111
+Test Precision: 0.28667626568931165
+Test F1: 0.286111468129012
+
+===== Per-class Metrics =====
+         precision  recall  f1-score
+O             0.25    0.24      0.25
+PE            0.40    0.44      0.42
+SE            0.33    0.26      0.29
+US            0.18    0.21      0.19
+Average       0.29    0.29      0.29
+
+
+USoR - lambeq tensor network model training (Bobcat + CrossEntropy) ...
+Removed 1 rows matching exclusion list.
+Loaded 1638 rows from ../../dataset/USoR/gold/USoR_balanced.csv
+Train: 982, Val: 328, Test: 328
+
+
+Starting training...
+Epoch 1:   train/loss: 1.5011   valid/loss: 1.5493   train/time: 4.12s   valid/time: 0.84s   train/accuracy: 0.2680   train/precision: 0.2681   train/recall: 0.2675   train/f1-score: 0.2677   valid/accuracy: 0.2475   valid/precision: 0.2496   valid/recall: 0.2468   valid/f1-score: 0.2476
+Epoch 2:   train/loss: 1.2587   valid/loss: 1.5504   train/time: 3.70s   valid/time: 0.74s   train/accuracy: 0.4529   train/precision: 0.4527   train/recall: 0.4523   train/f1-score: 0.4522   valid/accuracy: 0.2542   valid/precision: 0.2549   valid/recall: 0.2535   valid/f1-score: 0.2537
+Epoch 3:   train/loss: 1.0383   valid/loss: 1.5634   train/time: 3.05s   valid/time: 1.38s   train/accuracy: 0.5869   train/precision: 0.5867   train/recall: 0.5858   train/f1-score: 0.5852   valid/accuracy: 0.2642   valid/precision: 0.2662   valid/recall: 0.2633   valid/f1-score: 0.2641
+Epoch 4:   train/loss: 0.9237   valid/loss: 1.5851   train/time: 3.65s   valid/time: 0.74s   train/accuracy: 0.6667   train/precision: 0.6664   train/recall: 0.6655   train/f1-score: 0.6652   valid/accuracy: 0.2508   valid/precision: 0.2520   valid/recall: 0.2495   valid/f1-score: 0.2500
+Epoch 5:   train/loss: 0.8246   valid/loss: 1.6140   train/time: 3.64s   valid/time: 0.74s   train/accuracy: 0.7099   train/precision: 0.7097   train/recall: 0.7085   train/f1-score: 0.7079   valid/accuracy: 0.2441   valid/precision: 0.2453   valid/recall: 0.2429   valid/f1-score: 0.2433
+Epoch 6:   train/loss: 0.7387   valid/loss: 1.6477   train/time: 3.67s   valid/time: 0.73s   train/accuracy: 0.7630   train/precision: 0.7630   train/recall: 0.7616   train/f1-score: 0.7612   valid/accuracy: 0.2441   valid/precision: 0.2449   valid/recall: 0.2427   valid/f1-score: 0.2430
+Epoch 7:   train/loss: 0.6572   valid/loss: 1.6877   train/time: 3.66s   valid/time: 0.74s   train/accuracy: 0.7951   train/precision: 0.7960   train/recall: 0.7941   train/f1-score: 0.7940   valid/accuracy: 0.2408   valid/precision: 0.2413   valid/recall: 0.2390   valid/f1-score: 0.2397
+Epoch 8:   train/loss: 0.5838   valid/loss: 1.7347   train/time: 3.65s   valid/time: 0.73s   train/accuracy: 0.8239   train/precision: 0.8241   train/recall: 0.8229   train/f1-score: 0.8230   valid/accuracy: 0.2475   valid/precision: 0.2478   valid/recall: 0.2458   valid/f1-score: 0.2466
+Epoch 9:   train/loss: 0.5158   valid/loss: 1.7894   train/time: 3.60s   valid/time: 1.35s   train/accuracy: 0.8516   train/precision: 0.8520   train/recall: 0.8505   train/f1-score: 0.8507   valid/accuracy: 0.2542   valid/precision: 0.2535   valid/recall: 0.2514   valid/f1-score: 0.2522
+Epoch 10:  train/loss: 0.4539   valid/loss: 1.8526   train/time: 3.02s   valid/time: 1.31s   train/accuracy: 0.8738   train/precision: 0.8743   train/recall: 0.8729   train/f1-score: 0.8733   valid/accuracy: 0.2475   valid/precision: 0.2467   valid/recall: 0.2450   valid/f1-score: 0.2456
+Epoch 11:  train/loss: 0.3985   valid/loss: 1.9246   train/time: 3.63s   valid/time: 0.74s   train/accuracy: 0.8859   train/precision: 0.8865   train/recall: 0.8852   train/f1-score: 0.8856   valid/accuracy: 0.2408   valid/precision: 0.2389   valid/recall: 0.2382   valid/f1-score: 0.2383
+Epoch 12:  train/loss: 0.3493   valid/loss: 2.0054   train/time: 3.66s   valid/time: 1.37s   train/accuracy: 0.9070   train/precision: 0.9075   train/recall: 0.9065   train/f1-score: 0.9068   valid/accuracy: 0.2542   valid/precision: 0.2523   valid/recall: 0.2516   valid/f1-score: 0.2518
+Epoch 13:  train/loss: 0.3058   valid/loss: 2.0948   train/time: 3.06s   valid/time: 1.37s   train/accuracy: 0.9214   train/precision: 0.9218   train/recall: 0.9208   train/f1-score: 0.9211   valid/accuracy: 0.2609   valid/precision: 0.2588   valid/recall: 0.2580   valid/f1-score: 0.2582
+
+[Info] Early stopping detected at epoch 13/50
+Early stopping!
+Best model (epoch=3, step=3) saved to
+runs/Nov27_19-59-00_MBPdiSalvatore.homenet.telecomitalia.it/best_model.lt
+
+Training completed!
+train/time: 46.11s   train/time_per_epoch: 3.55s   train/time_per_step: 3.55s   valid/time: 12.79s   valid/time_per_eval: 0.98s
+Test Accuracy: 0.2747603833865815
+Test Recall: 0.27558827042522693
+Test Precision: 0.27415239592146046
+Test F1: 0.27345664184191576
+
+===== Per-class Metrics =====
+         precision  recall  f1-score
+O             0.23    0.24      0.24
+PE            0.33    0.32      0.32
+SE            0.26    0.31      0.28
+US            0.29    0.23      0.25
+Average       0.28    0.27      0.27
+
+
+ARTA - lambeq tensor network model training (CupsReader + CrossEntropy) ...
+Removed 1 rows matching exclusion list.
+Loaded 1054 rows from ../../dataset/ARTA/gold/ARTA_Req_balanced.csv
+Train: 632, Val: 211, Test: 211
+
+Starting training...
+Epoch 1:   train/loss: 1.4660   valid/loss: 1.4680   train/time: 2.73s   valid/time: 0.98s   train/accuracy: 0.2595   train/precision: 0.2596   train/recall: 0.2595   train/f1-score: 0.2592   valid/accuracy: 0.2559   valid/precision: 0.2596   valid/recall: 0.2559   valid/f1-score: 0.2558
+Epoch 2:   train/loss: 1.3646   valid/loss: 1.4432   train/time: 2.77s   valid/time: 0.60s   train/accuracy: 0.3465   train/precision: 0.3476   train/recall: 0.3465   train/f1-score: 0.3465   valid/accuracy: 0.2749   valid/precision: 0.2804   valid/recall: 0.2748   valid/f1-score: 0.2744
+Epoch 3:   train/loss: 1.2880   valid/loss: 1.4259   train/time: 2.35s   valid/time: 0.97s   train/accuracy: 0.4098   train/precision: 0.4114   train/recall: 0.4098   train/f1-score: 0.4097   valid/accuracy: 0.2891   valid/precision: 0.2921   valid/recall: 0.2890   valid/f1-score: 0.2866
+Epoch 4:   train/loss: 1.2230   valid/loss: 1.4145   train/time: 2.76s   valid/time: 0.57s   train/accuracy: 0.4668   train/precision: 0.4670   train/recall: 0.4668   train/f1-score: 0.4665   valid/accuracy: 0.2891   valid/precision: 0.2948   valid/recall: 0.2890   valid/f1-score: 0.2887
+Epoch 5:   train/loss: 1.1623   valid/loss: 1.4081   train/time: 2.71s   valid/time: 0.99s   train/accuracy: 0.5332   train/precision: 0.5332   train/recall: 0.5332   train/f1-score: 0.5326   valid/accuracy: 0.2844   valid/precision: 0.2893   valid/recall: 0.2843   valid/f1-score: 0.2851
+Epoch 6:   train/loss: 1.1025   valid/loss: 1.4064   train/time: 2.91s   valid/time: 0.58s   train/accuracy: 0.5601   train/precision: 0.5593   train/recall: 0.5601   train/f1-score: 0.5592   valid/accuracy: 0.3175   valid/precision: 0.3185   valid/recall: 0.3174   valid/f1-score: 0.3168
+Epoch 7:   train/loss: 1.0421   valid/loss: 1.4096   train/time: 2.76s   valid/time: 0.59s   train/accuracy: 0.6155   train/precision: 0.6153   train/recall: 0.6155   train/f1-score: 0.6148   valid/accuracy: 0.3318   valid/precision: 0.3336   valid/recall: 0.3317   valid/f1-score: 0.3318
+Epoch 8:   train/loss: 0.9811   valid/loss: 1.4183   train/time: 2.75s   valid/time: 0.57s   train/accuracy: 0.6551   train/precision: 0.6546   train/recall: 0.6551   train/f1-score: 0.6544   valid/accuracy: 0.3365   valid/precision: 0.3358   valid/recall: 0.3364   valid/f1-score: 0.3354
+Epoch 9:   train/loss: 0.9197   valid/loss: 1.4334   train/time: 2.31s   valid/time: 0.95s   train/accuracy: 0.6867   train/precision: 0.6861   train/recall: 0.6867   train/f1-score: 0.6860   valid/accuracy: 0.3365   valid/precision: 0.3390   valid/recall: 0.3365   valid/f1-score: 0.3366
+Epoch 10:  train/loss: 0.8577   valid/loss: 1.4558   train/time: 2.69s   valid/time: 0.57s   train/accuracy: 0.7073   train/precision: 0.7066   train/recall: 0.7073   train/f1-score: 0.7066   valid/accuracy: 0.3507   valid/precision: 0.3565   valid/recall: 0.3507   valid/f1-score: 0.3519
+Epoch 11:  train/loss: 0.7953   valid/loss: 1.4871   train/time: 2.67s   valid/time: 0.96s   train/accuracy: 0.7278   train/precision: 0.7276   train/recall: 0.7278   train/f1-score: 0.7273   valid/accuracy: 0.3507   valid/precision: 0.3593   valid/recall: 0.3507   valid/f1-score: 0.3526
+Epoch 12:  train/loss: 0.7329   valid/loss: 1.5289   train/time: 2.72s   valid/time: 0.57s   train/accuracy: 0.7500   train/precision: 0.7495   train/recall: 0.7500   train/f1-score: 0.7493   valid/accuracy: 0.3507   valid/precision: 0.3595   valid/recall: 0.3506   valid/f1-score: 0.3535
+Epoch 13:  train/loss: 0.6711   valid/loss: 1.5826   train/time: 2.70s   valid/time: 0.56s   train/accuracy: 0.7769   train/precision: 0.7772   train/recall: 0.7769   train/f1-score: 0.7766   valid/accuracy: 0.3460   valid/precision: 0.3549   valid/recall: 0.3460   valid/f1-score: 0.3481
+Epoch 14:  train/loss: 0.6109   valid/loss: 1.6494   train/time: 2.70s   valid/time: 0.57s   train/accuracy: 0.7991   train/precision: 0.7994   train/recall: 0.7991   train/f1-score: 0.7989   valid/accuracy: 0.3555   valid/precision: 0.3660   valid/recall: 0.3554   valid/f1-score: 0.3577
+Epoch 15:  train/loss: 0.5528   valid/loss: 1.7299   train/time: 2.64s   valid/time: 0.57s   train/accuracy: 0.8133   train/precision: 0.8147   train/recall: 0.8133   train/f1-score: 0.8133   valid/accuracy: 0.3744   valid/precision: 0.3824   valid/recall: 0.3744   valid/f1-score: 0.3751
+Epoch 16:  train/loss: 0.4974   valid/loss: 1.8243   train/time: 2.29s   valid/time: 0.94s   train/accuracy: 0.8212   train/precision: 0.8227   train/recall: 0.8212   train/f1-score: 0.8213   valid/accuracy: 0.3791   valid/precision: 0.3849   valid/recall: 0.3791   valid/f1-score: 0.3788
+Epoch 17:  train/loss: 0.4455   valid/loss: 1.9329   train/time: 2.68s   valid/time: 0.57s   train/accuracy: 0.8418   train/precision: 0.8427   train/recall: 0.8418   train/f1-score: 0.8417   valid/accuracy: 0.3744   valid/precision: 0.3844   valid/recall: 0.3743   valid/f1-score: 0.3761
+Epoch 18:  train/loss: 0.3977   valid/loss: 2.0558   train/time: 2.28s   valid/time: 0.96s   train/accuracy: 0.8718   train/precision: 0.8729   train/recall: 0.8718   train/f1-score: 0.8718   valid/accuracy: 0.3791   valid/precision: 0.3892   valid/recall: 0.3790   valid/f1-score: 0.3808
+Epoch 19:  train/loss: 0.3540   valid/loss: 2.1922   train/time: 2.78s   valid/time: 0.58s   train/accuracy: 0.8940   train/precision: 0.8956   train/recall: 0.8940   train/f1-score: 0.8941   valid/accuracy: 0.3744   valid/precision: 0.3846   valid/recall: 0.3742   valid/f1-score: 0.3756
+Epoch 20:  train/loss: 0.3140   valid/loss: 2.3415   train/time: 2.78s   valid/time: 0.58s   train/accuracy: 0.9082   train/precision: 0.9089   train/recall: 0.9082   train/f1-score: 0.9082   valid/accuracy: 0.3744   valid/precision: 0.3840   valid/recall: 0.3742   valid/f1-score: 0.3752
+Epoch 21:  train/loss: 0.2775   valid/loss: 2.5028   train/time: 2.74s   valid/time: 0.98s   train/accuracy: 0.9130   train/precision: 0.9139   train/recall: 0.9130   train/f1-score: 0.9131   valid/accuracy: 0.3886   valid/precision: 0.3986   valid/recall: 0.3884   valid/f1-score: 0.3902
+Epoch 22:  train/loss: 0.2448   valid/loss: 2.6752   train/time: 2.27s   valid/time: 0.94s   train/accuracy: 0.9209   train/precision: 0.9216   train/recall: 0.9209   train/f1-score: 0.9209   valid/accuracy: 0.3886   valid/precision: 0.3984   valid/recall: 0.3883   valid/f1-score: 0.3901
+Epoch 23:  train/loss: 0.2161   valid/loss: 2.8574   train/time: 2.68s   valid/time: 0.57s   train/accuracy: 0.9272   train/precision: 0.9278   train/recall: 0.9272   train/f1-score: 0.9273   valid/accuracy: 0.3839   valid/precision: 0.3917   valid/recall: 0.3836   valid/f1-score: 0.3844
+Epoch 24:  train/loss: 0.1909   valid/loss: 3.0478   train/time: 2.66s   valid/time: 0.96s   train/accuracy: 0.9399   train/precision: 0.9402   train/recall: 0.9399   train/f1-score: 0.9399   valid/accuracy: 0.3934   valid/precision: 0.4015   valid/recall: 0.3931   valid/f1-score: 0.3943
+Epoch 25:  train/loss: 0.1685   valid/loss: 3.2452   train/time: 2.78s   valid/time: 0.57s   train/accuracy: 0.9557   train/precision: 0.9558   train/recall: 0.9557   train/f1-score: 0.9557   valid/accuracy: 0.3886   valid/precision: 0.3954   valid/recall: 0.3883   valid/f1-score: 0.3889
+Epoch 26:  train/loss: 0.1484   valid/loss: 3.4489   train/time: 2.75s   valid/time: 0.57s   train/accuracy: 0.9604   train/precision: 0.9605   train/recall: 0.9604   train/f1-score: 0.9605   valid/accuracy: 0.3886   valid/precision: 0.3951   valid/recall: 0.3883   valid/f1-score: 0.3890
+Epoch 27:  train/loss: 0.1306   valid/loss: 3.6589   train/time: 2.75s   valid/time: 0.57s   train/accuracy: 0.9636   train/precision: 0.9636   train/recall: 0.9636   train/f1-score: 0.9636   valid/accuracy: 0.3839   valid/precision: 0.3872   valid/recall: 0.3835   valid/f1-score: 0.3832
+Epoch 28:  train/loss: 0.1151   valid/loss: 3.8750   train/time: 2.67s   valid/time: 0.98s   train/accuracy: 0.9652   train/precision: 0.9652   train/recall: 0.9652   train/f1-score: 0.9652   valid/accuracy: 0.3886   valid/precision: 0.3929   valid/recall: 0.3882   valid/f1-score: 0.3883
+Epoch 29:  train/loss: 0.1014   valid/loss: 4.0970   train/time: 2.72s   valid/time: 0.57s   train/accuracy: 0.9684   train/precision: 0.9684   train/recall: 0.9684   train/f1-score: 0.9683   valid/accuracy: 0.3886   valid/precision: 0.3913   valid/recall: 0.3882   valid/f1-score: 0.3881
+Epoch 30:  train/loss: 0.0891   valid/loss: 4.3244   train/time: 2.71s   valid/time: 0.57s   train/accuracy: 0.9699   train/precision: 0.9701   train/recall: 0.9699   train/f1-score: 0.9700   valid/accuracy: 0.3886   valid/precision: 0.3913   valid/recall: 0.3882   valid/f1-score: 0.3881
+Epoch 31:  train/loss: 0.0784   valid/loss: 4.5564   train/time: 2.74s   valid/time: 0.57s   train/accuracy: 0.9763   train/precision: 0.9763   train/recall: 0.9763   train/f1-score: 0.9763   valid/accuracy: 0.3934   valid/precision: 0.3948   valid/recall: 0.3930   valid/f1-score: 0.3921
+Epoch 32:  train/loss: 0.0692   valid/loss: 4.7896   train/time: 2.71s   valid/time: 0.57s   train/accuracy: 0.9778   train/precision: 0.9779   train/recall: 0.9778   train/f1-score: 0.9779   valid/accuracy: 0.3934   valid/precision: 0.3954   valid/recall: 0.3930   valid/f1-score: 0.3922
+Epoch 33:  train/loss: 0.0614   valid/loss: 5.0218   train/time: 2.69s   valid/time: 0.99s   train/accuracy: 0.9794   train/precision: 0.9795   train/recall: 0.9794   train/f1-score: 0.9794   valid/accuracy: 0.3981   valid/precision: 0.4016   valid/recall: 0.3978   valid/f1-score: 0.3978
+Epoch 34:  train/loss: 0.0550   valid/loss: 5.2514   train/time: 2.27s   valid/time: 0.94s   train/accuracy: 0.9810   train/precision: 0.9811   train/recall: 0.9810   train/f1-score: 0.9810   valid/accuracy: 0.3934   valid/precision: 0.3974   valid/recall: 0.3931   valid/f1-score: 0.3931
+Epoch 35:  train/loss: 0.0497   valid/loss: 5.4754   train/time: 2.70s   valid/time: 0.57s   train/accuracy: 0.9826   train/precision: 0.9827   train/recall: 0.9826   train/f1-score: 0.9826   valid/accuracy: 0.4076   valid/precision: 0.4108   valid/recall: 0.4072   valid/f1-score: 0.4060
+Epoch 36:  train/loss: 0.0451   valid/loss: 5.6911   train/time: 2.67s   valid/time: 0.57s   train/accuracy: 0.9873   train/precision: 0.9874   train/recall: 0.9873   train/f1-score: 0.9874   valid/accuracy: 0.4123   valid/precision: 0.4145   valid/recall: 0.4119   valid/f1-score: 0.4103
+Epoch 37:  train/loss: 0.0410   valid/loss: 5.9013   train/time: 2.26s   valid/time: 0.95s   train/accuracy: 0.9858   train/precision: 0.9858   train/recall: 0.9858   train/f1-score: 0.9858   valid/accuracy: 0.4123   valid/precision: 0.4145   valid/recall: 0.4119   valid/f1-score: 0.4103
+Epoch 38:  train/loss: 0.0373   valid/loss: 6.1045   train/time: 2.80s   valid/time: 0.58s   train/accuracy: 0.9889   train/precision: 0.9889   train/recall: 0.9889   train/f1-score: 0.9889   valid/accuracy: 0.4123   valid/precision: 0.4128   valid/recall: 0.4119   valid/f1-score: 0.4100
+Epoch 39:  train/loss: 0.0339   valid/loss: 6.2964   train/time: 2.67s   valid/time: 0.97s   train/accuracy: 0.9905   train/precision: 0.9905   train/recall: 0.9905   train/f1-score: 0.9905   valid/accuracy: 0.4123   valid/precision: 0.4128   valid/recall: 0.4119   valid/f1-score: 0.4100
+Epoch 40:  train/loss: 0.0306   valid/loss: 6.4813   train/time: 2.28s   valid/time: 0.94s   train/accuracy: 0.9921   train/precision: 0.9921   train/recall: 0.9921   train/f1-score: 0.9921   valid/accuracy: 0.4171   valid/precision: 0.4176   valid/recall: 0.4167   valid/f1-score: 0.4150
+Epoch 41:  train/loss: 0.0275   valid/loss: 6.6595   train/time: 2.67s   valid/time: 0.97s   train/accuracy: 0.9921   train/precision: 0.9921   train/recall: 0.9921   train/f1-score: 0.9921   valid/accuracy: 0.4171   valid/precision: 0.4176   valid/recall: 0.4167   valid/f1-score: 0.4150
+Epoch 42:  train/loss: 0.0247   valid/loss: 6.8278   train/time: 2.27s   valid/time: 0.95s   train/accuracy: 0.9921   train/precision: 0.9921   train/recall: 0.9921   train/f1-score: 0.9921   valid/accuracy: 0.4171   valid/precision: 0.4176   valid/recall: 0.4167   valid/f1-score: 0.4150
+Epoch 43:  train/loss: 0.0220   valid/loss: 6.9868   train/time: 2.70s   valid/time: 0.58s   train/accuracy: 0.9921   train/precision: 0.9921   train/recall: 0.9921   train/f1-score: 0.9921   valid/accuracy: 0.4171   valid/precision: 0.4176   valid/recall: 0.4167   valid/f1-score: 0.4150
+Epoch 44:  train/loss: 0.0197   valid/loss: 7.1384   train/time: 2.68s   valid/time: 0.57s   train/accuracy: 0.9937   train/precision: 0.9937   train/recall: 0.9937   train/f1-score: 0.9937   valid/accuracy: 0.4171   valid/precision: 0.4176   valid/recall: 0.4167   valid/f1-score: 0.4150
+Epoch 45:  train/loss: 0.0176   valid/loss: 7.2827   train/time: 2.65s   valid/time: 0.96s   train/accuracy: 0.9953   train/precision: 0.9953   train/recall: 0.9953   train/f1-score: 0.9953   valid/accuracy: 0.4171   valid/precision: 0.4168   valid/recall: 0.4167   valid/f1-score: 0.4148
+Epoch 46:  train/loss: 0.0157   valid/loss: 7.4191   train/time: 2.28s   valid/time: 0.94s   train/accuracy: 0.9953   train/precision: 0.9953   train/recall: 0.9953   train/f1-score: 0.9953   valid/accuracy: 0.4171   valid/precision: 0.4151   valid/recall: 0.4167   valid/f1-score: 0.4139
+Epoch 47:  train/loss: 0.0140   valid/loss: 7.5476   train/time: 2.69s   valid/time: 0.57s   train/accuracy: 0.9968   train/precision: 0.9969   train/recall: 0.9968   train/f1-score: 0.9968   valid/accuracy: 0.4123   valid/precision: 0.4102   valid/recall: 0.4120   valid/f1-score: 0.4091
+Epoch 48:  train/loss: 0.0124   valid/loss: 7.6682   train/time: 2.66s   valid/time: 0.97s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4123   valid/precision: 0.4102   valid/recall: 0.4120   valid/f1-score: 0.4091
+Epoch 49:  train/loss: 0.0110   valid/loss: 7.7812   train/time: 2.26s   valid/time: 0.94s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4123   valid/precision: 0.4102   valid/recall: 0.4120   valid/f1-score: 0.4091
+Epoch 50:  train/loss: 0.0097   valid/loss: 7.8866   train/time: 2.69s   valid/time: 0.57s   train/accuracy: 1.0000   train/precision: 1.0000   train/recall: 1.0000   train/f1-score: 1.0000   valid/accuracy: 0.4123   valid/precision: 0.4102   valid/recall: 0.4120   valid/f1-score: 0.4091
+
+[Info] Early stopping detected at epoch 50/50
+
+Training completed!
+train/time: 2m11s   train/time_per_epoch: 2.62s   train/time_per_step: 2.62s   valid/time: 37.16s   valid/time_per_eval: 0.74s
+Test Accuracy: 0.36018957345971564
+Test Recall: 0.35771622717187235
+Test Precision: 0.36075834542815677
+Test F1: 0.3541468583133517
+
+===== Per-class Metrics =====
+         precision  recall  f1-score
+O             0.31    0.19      0.24
+PE            0.29    0.34      0.31
+SE            0.46    0.48      0.47
+US            0.37    0.43      0.40
+Average       0.36    0.36      0.35
+
+
+PURE - lambeq tensor network model training (CupsReader + CrossEntropy) ...
+Removed 0 rows matching exclusion list.
+Loaded 876 rows from ../../dataset/ReqExp_PURE/gold/PURE_Req_balanced.csv
+Train: 525, Val: 175, Test: 176
+
+Starting training...
+Epoch 1:   train/loss: 1.5575   valid/loss: 1.5281   train/time: 2.14s   valid/time: 0.78s   train/accuracy: 0.2590   train/precision: 0.2593   train/recall: 0.2591   train/f1-score: 0.2588   valid/accuracy: 0.3029   valid/precision: 0.3048   valid/recall: 0.3031   valid/f1-score: 0.3031
+Epoch 2:   train/loss: 1.4049   valid/loss: 1.5219   train/time: 2.19s   valid/time: 0.44s   train/accuracy: 0.3010   train/precision: 0.3009   train/recall: 0.3010   train/f1-score: 0.3007   valid/accuracy: 0.2800   valid/precision: 0.2806   valid/recall: 0.2799   valid/f1-score: 0.2789
+Epoch 3:   train/loss: 1.2946   valid/loss: 1.5199   train/time: 2.18s   valid/time: 0.44s   train/accuracy: 0.3829   train/precision: 0.3830   train/recall: 0.3829   train/f1-score: 0.3827   valid/accuracy: 0.2857   valid/precision: 0.2865   valid/recall: 0.2857   valid/f1-score: 0.2849
+Epoch 4:   train/loss: 1.2069   valid/loss: 1.5217   train/time: 2.18s   valid/time: 0.45s   train/accuracy: 0.4629   train/precision: 0.4625   train/recall: 0.4630   train/f1-score: 0.4625   valid/accuracy: 0.2857   valid/precision: 0.2845   valid/recall: 0.2857   valid/f1-score: 0.2846
+Epoch 5:   train/loss: 1.1301   valid/loss: 1.5268   train/time: 2.19s   valid/time: 0.44s   train/accuracy: 0.5048   train/precision: 0.5044   train/recall: 0.5049   train/f1-score: 0.5044   valid/accuracy: 0.2857   valid/precision: 0.2841   valid/recall: 0.2857   valid/f1-score: 0.2844
+Epoch 6:   train/loss: 1.0586   valid/loss: 1.5351   train/time: 2.18s   valid/time: 0.44s   train/accuracy: 0.5790   train/precision: 0.5786   train/recall: 0.5791   train/f1-score: 0.5787   valid/accuracy: 0.2914   valid/precision: 0.2900   valid/recall: 0.2915   valid/f1-score: 0.2901
+Epoch 7:   train/loss: 0.9897   valid/loss: 1.5467   train/time: 2.19s   valid/time: 0.44s   train/accuracy: 0.6324   train/precision: 0.6321   train/recall: 0.6324   train/f1-score: 0.6317   valid/accuracy: 0.2857   valid/precision: 0.2839   valid/recall: 0.2858   valid/f1-score: 0.2841
+Epoch 8:   train/loss: 0.9225   valid/loss: 1.5621   train/time: 1.84s   valid/time: 0.77s   train/accuracy: 0.6781   train/precision: 0.6781   train/recall: 0.6781   train/f1-score: 0.6776   valid/accuracy: 0.2857   valid/precision: 0.2839   valid/recall: 0.2859   valid/f1-score: 0.2842
+Epoch 9:   train/loss: 0.8562   valid/loss: 1.5819   train/time: 2.15s   valid/time: 0.44s   train/accuracy: 0.7181   train/precision: 0.7193   train/recall: 0.7182   train/f1-score: 0.7177   valid/accuracy: 0.2800   valid/precision: 0.2779   valid/recall: 0.2803   valid/f1-score: 0.2782
+Epoch 10:  train/loss: 0.7910   valid/loss: 1.6069   train/time: 2.17s   valid/time: 0.44s   train/accuracy: 0.7543   train/precision: 0.7550   train/recall: 0.7544   train/f1-score: 0.7540   valid/accuracy: 0.2800   valid/precision: 0.2797   valid/recall: 0.2803   valid/f1-score: 0.2794
+Epoch 11:  train/loss: 0.7269   valid/loss: 1.6381   train/time: 2.16s   valid/time: 0.44s   train/accuracy: 0.7924   train/precision: 0.7935   train/recall: 0.7924   train/f1-score: 0.7923   valid/accuracy: 0.2743   valid/precision: 0.2742   valid/recall: 0.2744   valid/f1-score: 0.2739
+
+[Info] Early stopping detected at epoch 11/50
+Early stopping!
+Best model (epoch=1, step=1) saved to
+runs/Nov27_20-03-45_MBPdiSalvatore.homenet.telecomitalia.it/best_model.lt
+
+Training completed!
+train/time: 23.57s   train/time_per_epoch: 2.14s   train/time_per_step: 2.14s   valid/time: 5.52s   valid/time_per_eval: 0.50s
+Test Accuracy: 0.2840909090909091
+Test Recall: 0.2825815217391304
+Test Precision: 0.28409090909090906
+Test F1: 0.2815528452645644
+
+===== Per-class Metrics =====
+         precision  recall  f1-score
+O             0.31    0.34      0.33
+PE            0.22    0.25      0.23
+SE            0.35    0.36      0.36
+US            0.25    0.18      0.21
+Average       0.28    0.28      0.28
+
+
+USoR - lambeq tensor network model training (CupsReader + CrossEntropy) ...
+Removed 1 rows matching exclusion list.
+Loaded 1638 rows from ../../dataset/USoR/gold/USoR_balanced.csv
+Train: 982, Val: 328, Test: 328
+
+Starting training...
+Epoch 1:   train/loss: 1.8492   valid/loss: 1.8907   train/time: 3.25s   valid/time: 1.17s   train/accuracy: 0.2709   train/precision: 0.2704   train/recall: 0.2708   train/f1-score: 0.2705   valid/accuracy: 0.2652   valid/precision: 0.2656   valid/recall: 0.2652   valid/f1-score: 0.2654
+Epoch 2:   train/loss: 1.6140   valid/loss: 1.8181   train/time: 3.29s   valid/time: 0.70s   train/accuracy: 0.3198   train/precision: 0.3198   train/recall: 0.3197   train/f1-score: 0.3197   valid/accuracy: 0.2652   valid/precision: 0.2663   valid/recall: 0.2652   valid/f1-score: 0.2657
+Epoch 3:   train/loss: 1.4486   valid/loss: 1.7628   train/time: 2.78s   valid/time: 1.18s   train/accuracy: 0.3605   train/precision: 0.3604   train/recall: 0.3605   train/f1-score: 0.3604   valid/accuracy: 0.2652   valid/precision: 0.2667   valid/recall: 0.2652   valid/f1-score: 0.2658
+Epoch 4:   train/loss: 1.3308   valid/loss: 1.7217   train/time: 3.31s   valid/time: 0.70s   train/accuracy: 0.4236   train/precision: 0.4236   train/recall: 0.4236   train/f1-score: 0.4235   valid/accuracy: 0.2622   valid/precision: 0.2636   valid/recall: 0.2622   valid/f1-score: 0.2625
+Epoch 5:   train/loss: 1.2438   valid/loss: 1.6921   train/time: 3.27s   valid/time: 1.19s   train/accuracy: 0.4593   train/precision: 0.4593   train/recall: 0.4593   train/f1-score: 0.4592   valid/accuracy: 0.2561   valid/precision: 0.2576   valid/recall: 0.2561   valid/f1-score: 0.2565
+Epoch 6:   train/loss: 1.1761   valid/loss: 1.6719   train/time: 3.32s   valid/time: 0.69s   train/accuracy: 0.4929   train/precision: 0.4933   train/recall: 0.4929   train/f1-score: 0.4929   valid/accuracy: 0.2561   valid/precision: 0.2573   valid/recall: 0.2561   valid/f1-score: 0.2565
+Epoch 7:   train/loss: 1.1204   valid/loss: 1.6594   train/time: 3.33s   valid/time: 0.70s   train/accuracy: 0.5305   train/precision: 0.5315   train/recall: 0.5306   train/f1-score: 0.5307   valid/accuracy: 0.2591   valid/precision: 0.2599   valid/recall: 0.2591   valid/f1-score: 0.2592
+Epoch 8:   train/loss: 1.0719   valid/loss: 1.6537   train/time: 2.81s   valid/time: 1.19s   train/accuracy: 0.5692   train/precision: 0.5699   train/recall: 0.5693   train/f1-score: 0.5695   valid/accuracy: 0.2500   valid/precision: 0.2508   valid/recall: 0.2500   valid/f1-score: 0.2501
+Epoch 9:   train/loss: 1.0272   valid/loss: 1.6539   train/time: 3.34s   valid/time: 0.70s   train/accuracy: 0.5978   train/precision: 0.5981   train/recall: 0.5978   train/f1-score: 0.5979   valid/accuracy: 0.2470   valid/precision: 0.2483   valid/recall: 0.2470   valid/f1-score: 0.2473
+Epoch 10:  train/loss: 0.9842   valid/loss: 1.6596   train/time: 3.32s   valid/time: 1.20s   train/accuracy: 0.6171   train/precision: 0.6176   train/recall: 0.6171   train/f1-score: 0.6173   valid/accuracy: 0.2500   valid/precision: 0.2508   valid/recall: 0.2500   valid/f1-score: 0.2500
+Epoch 11:  train/loss: 0.9417   valid/loss: 1.6707   train/time: 2.83s   valid/time: 1.18s   train/accuracy: 0.6415   train/precision: 0.6419   train/recall: 0.6416   train/f1-score: 0.6416   valid/accuracy: 0.2561   valid/precision: 0.2566   valid/recall: 0.2561   valid/f1-score: 0.2562
+Epoch 12:  train/loss: 0.8988   valid/loss: 1.6870   train/time: 3.28s   valid/time: 0.70s   train/accuracy: 0.6660   train/precision: 0.6661   train/recall: 0.6660   train/f1-score: 0.6659   valid/accuracy: 0.2622   valid/precision: 0.2627   valid/recall: 0.2622   valid/f1-score: 0.2624
+Epoch 13:  train/loss: 0.8551   valid/loss: 1.7089   train/time: 3.26s   valid/time: 1.18s   train/accuracy: 0.6925   train/precision: 0.6928   train/recall: 0.6925   train/f1-score: 0.6924   valid/accuracy: 0.2652   valid/precision: 0.2655   valid/recall: 0.2652   valid/f1-score: 0.2653
+Epoch 14:  train/loss: 0.8107   valid/loss: 1.7367   train/time: 3.34s   valid/time: 0.69s   train/accuracy: 0.7138   train/precision: 0.7143   train/recall: 0.7139   train/f1-score: 0.7137   valid/accuracy: 0.2652   valid/precision: 0.2653   valid/recall: 0.2652   valid/f1-score: 0.2652
+Epoch 15:  train/loss: 0.7656   valid/loss: 1.7708   train/time: 3.30s   valid/time: 1.21s   train/accuracy: 0.7332   train/precision: 0.7336   train/recall: 0.7332   train/f1-score: 0.7333   valid/accuracy: 0.2683   valid/precision: 0.2681   valid/recall: 0.2683   valid/f1-score: 0.2682
+Epoch 16:  train/loss: 0.7201   valid/loss: 1.8116   train/time: 2.80s   valid/time: 1.19s   train/accuracy: 0.7627   train/precision: 0.7632   train/recall: 0.7628   train/f1-score: 0.7629   valid/accuracy: 0.2774   valid/precision: 0.2775   valid/recall: 0.2774   valid/f1-score: 0.2774
+Epoch 17:  train/loss: 0.6746   valid/loss: 1.8597   train/time: 3.45s   valid/time: 1.28s   train/accuracy: 0.7709   train/precision: 0.7715   train/recall: 0.7709   train/f1-score: 0.7710   valid/accuracy: 0.2683   valid/precision: 0.2683   valid/recall: 0.2683   valid/f1-score: 0.2683
+Epoch 18:  train/loss: 0.6295   valid/loss: 1.9157   train/time: 2.89s   valid/time: 1.31s   train/accuracy: 0.7892   train/precision: 0.7899   train/recall: 0.7892   train/f1-score: 0.7894   valid/accuracy: 0.2652   valid/precision: 0.2650   valid/recall: 0.2652   valid/f1-score: 0.2651
+Epoch 19:  train/loss: 0.5852   valid/loss: 1.9800   train/time: 3.46s   valid/time: 0.73s   train/accuracy: 0.8024   train/precision: 0.8030   train/recall: 0.8025   train/f1-score: 0.8026   valid/accuracy: 0.2652   valid/precision: 0.2648   valid/recall: 0.2652   valid/f1-score: 0.2649
+Epoch 20:  train/loss: 0.5418   valid/loss: 2.0530   train/time: 3.41s   valid/time: 1.42s   train/accuracy: 0.8218   train/precision: 0.8221   train/recall: 0.8218   train/f1-score: 0.8218   valid/accuracy: 0.2713   valid/precision: 0.2710   valid/recall: 0.2713   valid/f1-score: 0.2711
+Epoch 21:  train/loss: 0.4997   valid/loss: 2.1349   train/time: 3.49s   valid/time: 0.74s   train/accuracy: 0.8360   train/precision: 0.8364   train/recall: 0.8361   train/f1-score: 0.8361   valid/accuracy: 0.2744   valid/precision: 0.2740   valid/recall: 0.2744   valid/f1-score: 0.2741
+Epoch 22:  train/loss: 0.4592   valid/loss: 2.2258   train/time: 3.49s   valid/time: 0.72s   train/accuracy: 0.8483   train/precision: 0.8486   train/recall: 0.8483   train/f1-score: 0.8483   valid/accuracy: 0.2713   valid/precision: 0.2711   valid/recall: 0.2713   valid/f1-score: 0.2712
+Epoch 23:  train/loss: 0.4205   valid/loss: 2.3255   train/time: 3.48s   valid/time: 0.72s   train/accuracy: 0.8554   train/precision: 0.8555   train/recall: 0.8554   train/f1-score: 0.8554   valid/accuracy: 0.2713   valid/precision: 0.2710   valid/recall: 0.2713   valid/f1-score: 0.2711
+Epoch 24:  train/loss: 0.3837   valid/loss: 2.4340   train/time: 3.42s   valid/time: 1.24s   train/accuracy: 0.8656   train/precision: 0.8661   train/recall: 0.8656   train/f1-score: 0.8657   valid/accuracy: 0.2683   valid/precision: 0.2679   valid/recall: 0.2683   valid/f1-score: 0.2680
+Epoch 25:  train/loss: 0.3490   valid/loss: 2.5513   train/time: 3.54s   valid/time: 0.75s   train/accuracy: 0.8819   train/precision: 0.8824   train/recall: 0.8819   train/f1-score: 0.8820   valid/accuracy: 0.2652   valid/precision: 0.2647   valid/recall: 0.2652   valid/f1-score: 0.2649
+Epoch 26:  train/loss: 0.3165   valid/loss: 2.6770   train/time: 3.54s   valid/time: 0.72s   train/accuracy: 0.8971   train/precision: 0.8974   train/recall: 0.8972   train/f1-score: 0.8972   valid/accuracy: 0.2622   valid/precision: 0.2620   valid/recall: 0.2622   valid/f1-score: 0.2620
+
+[Info] Early stopping detected at epoch 26/50
+Early stopping!
+Best model (epoch=16, step=16) saved to
+runs/Nov27_20-04-34_MBPdiSalvatore.homenet.telecomitalia.it/best_model.lt
+
+Training completed!
+train/time: 1m25s   train/time_per_epoch: 3.27s   train/time_per_step: 3.27s   valid/time: 25.20s   valid/time_per_eval: 0.97s
+Test Accuracy: 0.29878048780487804
+Test Recall: 0.2985304924559543
+Test Precision: 0.2987804878048781
+Test F1: 0.29822797674179274
+
+===== Per-class Metrics =====
+         precision  recall  f1-score
+O             0.29    0.27      0.28
+PE            0.33    0.32      0.33
+SE            0.32    0.35      0.33
+US            0.26    0.26      0.26
+Average       0.30    0.30      0.30

@@ -1,97 +1,34 @@
 from lambeq import Dataset, PytorchModel
-import torch, pandas as pd, numpy as np
-
-# ============================================================
-# Custom lambeq trainer
-# ============================================================
-
 from lambeq.training import PytorchTrainer
-
-class MyPytorchTrainer(PytorchTrainer):
-    """
-    Custom trainer that converts labels to Long Tensor for CrossEntropyLoss.
-    """
-
-    def validation_step(
-            self,
-            batch: tuple[list, torch.Tensor]
-        ) -> tuple[torch.Tensor, float]:
-        """
-        Perform a validation step compatible with CrossEntropyLoss
-        """
-        x, y = batch
-        with torch.no_grad():
-            y_hat = self.model(x)
-
-            if y.ndim > 1 and y.dtype == torch.float32:
-                y = torch.argmax(y, dim=1)
-
-            y = y.to(self.device).long()
-
-            loss = self.loss_function(y_hat, y)
-        return y_hat, loss.item()
-
-    def training_step(
-            self,
-            batch: tuple[list, torch.Tensor]
-        ) -> tuple[torch.Tensor, float]:
-        """
-        Perform a training step compatible with CrossEntropyLoss
-        """
-        x, y = batch
-
-        y_hat = self.model(x)
-
-        if y.ndim > 1 and y.dtype == torch.float32:
-            y = torch.argmax(y, dim=1)
-
-        y = y.to(self.device).long()
-
-        loss = self.loss_function(y_hat, y)
-        self.train_costs.append(loss.item())
-        self.optimizer.zero_grad()
-        loss.backward()
-        self.optimizer.step()
-        return y_hat, loss.item()
+import torch, pandas as pd
 
 # ============================================================
 # Evaluation metrics
 # ============================================================
 
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
 
 def eval_metrics():
-    """
-    Evaluation metrics for CrossEntropyLoss (multi-class classification).
-    """
 
     def accuracy(y_hat: torch.Tensor, y_true: torch.Tensor):
-        preds = torch.argmax(y_hat, dim=1).detach().cpu().numpy()
-        y = y_true.detach().cpu().numpy()
-        if y.ndim > 1:  # one-hot → indici
-            y = torch.argmax(y_true, dim=1).detach().cpu().numpy()
+        preds = torch.argmax(y_hat, dim=1).numpy()
+        y = y_true.numpy()
         return accuracy_score(y, preds)
 
     def precision(y_hat: torch.Tensor, y_true: torch.Tensor):
-        preds = torch.argmax(y_hat, dim=1).detach().cpu().numpy()
-        y = y_true.detach().cpu().numpy()
-        if y.ndim > 1:
-            y = torch.argmax(y_true, dim=1).detach().cpu().numpy()
-        return precision_score(y, preds, average='weighted', zero_division=0)
+        preds = torch.argmax(y_hat, dim=1).numpy()
+        y = y_true.numpy()
+        return precision_score(y, preds, average='macro', zero_division=0)
 
     def recall(y_hat: torch.Tensor, y_true: torch.Tensor):
-        preds = torch.argmax(y_hat, dim=1).detach().cpu().numpy()
-        y = y_true.detach().cpu().numpy()
-        if y.ndim > 1:
-            y = torch.argmax(y_true, dim=1).detach().cpu().numpy()
-        return recall_score(y, preds, average='weighted', zero_division=0)
+        preds = torch.argmax(y_hat, dim=1).numpy()
+        y = y_true.numpy()
+        return recall_score(y, preds, average='macro', zero_division=0)
 
     def f1(y_hat: torch.Tensor, y_true: torch.Tensor):
-        preds = torch.argmax(y_hat, dim=1).detach().cpu().numpy()
-        y = y_true.detach().cpu().numpy()
-        if y.ndim > 1:
-            y = torch.argmax(y_true, dim=1).detach().cpu().numpy()
-        return f1_score(y, preds, average='weighted', zero_division=0)
+        preds = torch.argmax(y_hat, dim=1).numpy()
+        y = y_true.numpy()
+        return f1_score(y, preds, average='macro', zero_division=0)
 
     return {
         "accuracy": accuracy,
@@ -118,40 +55,35 @@ from classic_methods_pt1 import generate_diagrams, generate_circuits
 
 def encode_labels(label_lists):
     """
-    Encode string labels as integer indices per PyTorch CrossEntropyLoss.
+    Encode string labels as integer indices.
     """
     all_labels = sorted(set(label_lists))
     label_map = {name: i for i, name in enumerate(all_labels)}
     return [label_map[label] for label in label_lists]
 
+
 def run_training(
         train_circuits, val_circuits, test_circuits,
         train_labels, val_labels, test_labels,
-        learning_rate=0.01, epochs=50, batch_size=32,
+        learning_rate, epochs, batch_size,
 ):
-    # 1. Encode label
-    train_encoded = encode_labels(train_labels)
-    val_encoded = encode_labels(val_labels)
-
-    train_encoded = np.array(train_encoded, dtype=np.int64)
-    val_encoded = np.array(val_encoded, dtype=np.int64)
-
-    print(f"\nTrain labels (encoded, first 10): {train_encoded[:10].tolist()}")
-
-    # 2. Dataset lambeq
-    train_dataset = Dataset(train_circuits, train_encoded.tolist())
-    val_dataset   = Dataset(val_circuits, val_encoded.tolist())
+    # Dataset lambeq
+    train_dataset = Dataset(train_circuits, encode_labels(train_labels))
+    val_dataset   = Dataset(val_circuits, encode_labels(val_labels))
 
     all_circuits = train_circuits + val_circuits + test_circuits
 
-    # 3. PyTorch model
+    # PyTorch model
     model = PytorchModel.from_diagrams(all_circuits)
-    loss_fn = torch.nn.CrossEntropyLoss()  # Required y_true to be int64
 
-    # 4. Trainer lambeq
-    trainer = MyPytorchTrainer(
+    def cross_entropy_loss(logits, labels):
+        # Calcola la Cross Entropy (PyTorch gestisce softmax interno)
+        return torch.nn.functional.cross_entropy(logits, labels.long())
+
+    # Trainer lambeq
+    trainer = PytorchTrainer(
         model=model,
-        loss_function=loss_fn,
+        loss_function=cross_entropy_loss,
         optimizer=torch.optim.AdamW,
         learning_rate=learning_rate,
         epochs=epochs,
@@ -164,9 +96,9 @@ def run_training(
     print("\nStarting training...")
 
     trainer.fit(
-        train_dataset,
-        val_dataset,
+        train_dataset, val_dataset,
         early_stopping_criterion='accuracy',
+        early_stopping_interval=10,
         minimize_criterion=False
     )
 
@@ -197,6 +129,30 @@ def evaluate_on_test(model, test_circuits, test_labels):
 
     test_f1 = metrics["f1-score"](model.forward(test_circuits), test_labels)
     print('Test F1:', test_f1)
+
+
+def evaluate_per_class(model, test_circuits, test_labels):
+
+    class_names = ["O", "PE", "SE", "US"]
+
+    # Predizioni
+    logits = model(test_circuits)
+    y_pred = torch.argmax(logits, dim=1).numpy()
+
+    # Etichette vere (già intere!)
+    y_true = torch.as_tensor(test_labels).numpy()
+
+    # Sklearn
+    report_dict = classification_report(
+        y_true, y_pred, target_names=class_names, output_dict=True, zero_division=0
+    )
+
+    df_report = pd.DataFrame(report_dict).T
+    df_report = df_report[["precision", "recall", "f1-score"]].iloc[:-3]
+    df_report.loc["Average"] = df_report.mean()
+
+    print("\n===== Per-class Metrics =====")
+    print(df_report.to_string(float_format="%.2f"))
 
 # ============================================================
 # Full Classic Pipeline
@@ -235,6 +191,7 @@ def run_lambeq_pipeline(
     test_encoded = torch.tensor(test_encoded, dtype=torch.long)
 
     evaluate_on_test(model, test_circuits, test_encoded)
+    evaluate_per_class(model, test_circuits, test_encoded)
 
 # ============================================================
 # Run the Experiment
@@ -244,6 +201,7 @@ if __name__ == "__main__":
 
     arta_path = "../../dataset/ARTA/gold/ARTA_Req_balanced.csv"
     pure_path = "../../dataset/ReqExp_PURE/gold/PURE_Req_balanced.csv"
+    usor_path = "../../dataset/USoR/gold/USoR_balanced.csv"
 
     print("\nARTA - lambeq tensor network model training (Bobcat + CrossEntropy) ...")
     run_lambeq_pipeline(arta_path, parser_model="Bobcat")
@@ -251,8 +209,14 @@ if __name__ == "__main__":
     print("\nPURE - lambeq tensor network model training (Bobcat + CrossEntropy) ...")
     run_lambeq_pipeline(pure_path, parser_model="Bobcat")
 
-    # print("\nARTA - lambeq tensor network model training (CupsReader + CrossEntropy) ...")
-    # run_lambeq_pipeline(arta_path, parser_model="CupsReader")
-    #
-    # print("\nPURE - lambeq tensor network model training (CupsReader + CrossEntropy) ...")
-    # run_lambeq_pipeline(pure_path, parser_model="CupsReader")
+    print("\nUSoR - lambeq tensor network model training (Bobcat + CrossEntropy) ...")
+    run_lambeq_pipeline(usor_path, parser_model="Bobcat")
+
+    print("\nARTA - lambeq tensor network model training (CupsReader + CrossEntropy) ...")
+    run_lambeq_pipeline(arta_path, parser_model="CupsReader")
+
+    print("\nPURE - lambeq tensor network model training (CupsReader + CrossEntropy) ...")
+    run_lambeq_pipeline(pure_path, parser_model="CupsReader")
+
+    print("\nUSoR - lambeq tensor network model training (CupsReader + CrossEntropy) ...")
+    run_lambeq_pipeline(usor_path, parser_model="CupsReader")
