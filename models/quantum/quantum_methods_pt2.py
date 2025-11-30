@@ -1,10 +1,10 @@
-from lambeq import RemoveCupsRewriter, IQPAnsatz, AtomicType, Dataset
-from lambeq import Dataset, TketModel, QuantumTrainer, SPSAOptimizer
+from lambeq import RemoveCupsRewriter, SPSAOptimizer
+from lambeq import Dataset, TketModel, QuantumTrainer
 from pytket.extensions.qiskit import AerBackend
 import numpy as np
 from jax import numpy as jnp
 
-class CustomNumpyModel(TketModel):
+class CustomTketModel(TketModel):
 
     from lambeq.backend.tensor import Diagram
 
@@ -12,13 +12,9 @@ class CustomNumpyModel(TketModel):
         self,
         diagrams: list[Diagram]
     ) -> jnp.ndarray | np.ndarray:
-        from typing import Any
-
-        import numpy as np
 
         from lambeq.backend.quantum import Diagram as Circuit, Id, Measure
-        from lambeq.backend.tensor import Diagram
-        from lambeq.training.quantum_model import QuantumModel
+
         if len(self.weights) == 0 or not self.symbols:
             raise ValueError('Weights and/or symbols not initialised. '
                              'Instantiate through '
@@ -107,11 +103,11 @@ def run_training(
     backend = AerBackend()
     backend_config = {
         'backend': backend,
-        'compilation': backend.default_compilation_pass(0),
-        'shots': 16
+        'compilation': backend.default_compilation_pass(2),
+        'shots': 1024
     }
 
-    model = CustomNumpyModel.from_diagrams(all_circuits, backend_config=backend_config)
+    model = CustomTketModel.from_diagrams(all_circuits, backend_config=backend_config)
 
     trainer = QuantumTrainer(
         model=model,
