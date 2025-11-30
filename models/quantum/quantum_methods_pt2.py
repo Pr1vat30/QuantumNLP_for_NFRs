@@ -2,6 +2,57 @@ from lambeq import RemoveCupsRewriter, IQPAnsatz, AtomicType, Dataset
 from lambeq import Dataset, TketModel, QuantumTrainer, SPSAOptimizer
 from pytket.extensions.qiskit import AerBackend
 import numpy as np
+from jax import numpy as jnp
+
+class CustomNumpyModel(TketModel):
+
+    from lambeq.backend.tensor import Diagram
+
+    def get_diagram_output(
+        self,
+        diagrams: list[Diagram]
+    ) -> jnp.ndarray | np.ndarray:
+        from typing import Any
+
+        import numpy as np
+
+        from lambeq.backend.quantum import Diagram as Circuit, Id, Measure
+        from lambeq.backend.tensor import Diagram
+        from lambeq.training.quantum_model import QuantumModel
+        if len(self.weights) == 0 or not self.symbols:
+            raise ValueError('Weights and/or symbols not initialised. '
+                             'Instantiate through '
+                             '`TketModel.from_diagrams()` first, '
+                             'then call `initialise_weights()`, or load '
+                             'from pre-trained checkpoint.')
+
+        measured = [diagram >> Id().tensor(*[Measure()] * len(diagram.cod))
+                    for diagram in diagrams]  # noqa: E501
+        measured = self._fast_subs(measured, self.weights)
+
+        tensors = Circuit.eval(
+            *measured,  # type: ignore[arg-type]
+            **self.backend_config,
+            seed=self._randint()
+        )
+        self.backend_config['backend'].empty_cache()
+        # lambeq evals a single diagram into a single result
+        # and not a list of results
+
+        def force_shape_2_2(arr):
+            arr = jnp.asarray(arr)
+            flat = arr.flatten()
+            # padding o trim per avere 4 elementi
+            if flat.size < 4:
+                flat = jnp.pad(flat, (0, 4 - flat.size))
+            elif flat.size > 4:
+                flat = flat[:4]
+            return flat.reshape((2, 2))
+
+        if len(diagrams) == 1:
+            result: np.ndarray = self._normalise_vector(tensors)
+            return result.reshape(1, *result.shape)
+        return np.array([self._normalise_vector(force_shape_2_2(t)) for t in tensors])
 
 # ============================================================
 # Load & Split Dataset
@@ -56,11 +107,11 @@ def run_training(
     backend = AerBackend()
     backend_config = {
         'backend': backend,
-        'compilation': backend.default_compilation_pass(2),
-        'shots': 128
+        'compilation': backend.default_compilation_pass(0),
+        'shots': 16
     }
 
-    model = TketModel.from_diagrams(all_circuits, backend_config=backend_config)
+    model = CustomNumpyModel.from_diagrams(all_circuits, backend_config=backend_config)
 
     trainer = QuantumTrainer(
         model=model,
@@ -93,7 +144,7 @@ def run_training(
 # Plot Metrics
 # ============================================================
 
-from quantum_methods_pt1 import plot_training_metrics, evaluate_on_test
+from quantum_methods_pt1 import plot_training_metrics, evaluate_on_test, evaluate_per_class
 
 # ============================================================
 # Full Quantum Pipeline
@@ -134,6 +185,7 @@ def run_lambeq_pipeline(
     plot_training_metrics(trainer)
     test_encoded = np.array(encode_labels(test_labels))
     evaluate_on_test(model, test_circuits, test_encoded)
+    evaluate_per_class(model, test_circuits, test_encoded)
 
 
 # ============================================================
