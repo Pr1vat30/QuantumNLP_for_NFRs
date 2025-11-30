@@ -41,7 +41,7 @@ from quantum_methods_pt1 import generate_circuits
 # Training & Evaluation
 # ============================================================
 
-from quantum_methods_pt1 import encode_labels, eval_metrics, MyCrossEntropyLoss
+from quantum_methods_pt1 import encode_labels, eval_metrics, cross_entropy_loss
 
 def run_training(
         train_circuits, val_circuits, test_circuits,
@@ -57,16 +57,14 @@ def run_training(
     backend_config = {
         'backend': backend,
         'compilation': backend.default_compilation_pass(2),
-        'shots': 4096
+        'shots': 128
     }
 
     model = TketModel.from_diagrams(all_circuits, backend_config=backend_config)
 
-    loss_fn = MyCrossEntropyLoss()
-
     trainer = QuantumTrainer(
         model=model,
-        loss_function=loss_fn,
+        loss_function=cross_entropy_loss,
         epochs=epochs,
         optimizer=SPSAOptimizer,
         optim_hyperparams={
@@ -83,8 +81,7 @@ def run_training(
     print("\nStarting training...")
 
     trainer.fit(
-        train_dataset,
-        val_dataset,
+        train_dataset, val_dataset,
         early_stopping_criterion='accuracy',
         early_stopping_interval=10,
         minimize_criterion=False
@@ -147,16 +144,22 @@ if __name__ == "__main__":
 
     arta_path = "../../dataset/ARTA/gold/ARTA_Req_balanced.csv"
     pure_path = "../../dataset/ReqExp_PURE/gold/PURE_Req_balanced.csv"
+    usor_path = "../../dataset/USoR/gold/USoR_balanced.csv"
 
-    # print("\nARTA - Noisy shot-based quantum model training (Bobcat + TketModel Model + CrossEntropy) ...")
-    # run_lambeq_pipeline(arta_path, parser_model="Bobcat")
+    print("\nARTA - Noisy shot-based quantum model training (Bobcat + TketModel Model + CrossEntropy) ...")
+    run_lambeq_pipeline(arta_path, parser_model="Bobcat")
 
-    # print("\nPURE - Noisy shot-based quantum model training (Bobcat + TketModel Model + CrossEntropy) ...")
-    # run_lambeq_pipeline(pure_path, parser_model="Bobcat")
+    print("\nPURE - Noisy shot-based quantum model training (Bobcat + TketModel Model + CrossEntropy) ...")
+    run_lambeq_pipeline(pure_path, parser_model="Bobcat")
 
-    # print("\nARTA - Noisy shot-based quantum model training (CupsReader + TketModel Model + CrossEntropy) ...")
-    # run_lambeq_pipeline(arta_path, parser_model="CupsReader")
+    print("\nUSoR - Noisy shot-based quantum model training (Bobcat + TketModel Model + CrossEntropy) ...")
+    run_lambeq_pipeline(usor_path, parser_model="Bobcat")
+
+    print("\nARTA - Noisy shot-based quantum model training (CupsReader + TketModel Model + CrossEntropy) ...")
+    run_lambeq_pipeline(arta_path, parser_model="CupsReader")
 
     print("\nPURE - Noisy shot-based quantum model training (CupsReader + TketModel Model + CrossEntropy) ...")
     run_lambeq_pipeline(pure_path, parser_model="CupsReader")
 
+    print("\nUSoR - Noisy shot-based quantum model training (CupsReader + TketModel Model + CrossEntropy) ...")
+    run_lambeq_pipeline(usor_path, parser_model="CupsReader")

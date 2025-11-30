@@ -1,68 +1,65 @@
+import pandas as pd
 from lambeq import Dataset, NumpyModel, QuantumTrainer
-from lambeq import AtomicType, IQPAnsatz
-from lambeq import CrossEntropyLoss, SPSAOptimizer
-import numpy as np, tensornetwork as tn
+from lambeq import AtomicType, IQPAnsatz, RemoveCupsRewriter
+from lambeq import SPSAOptimizer
+import numpy as np, os, warnings
 from jax import numpy as jnp
 
+warnings.filterwarnings('ignore')
+os.environ['TOKENIZERS_PARALLELISM'] = 'true'
 
-class MyCrossEntropyLoss(CrossEntropyLoss):
-    """Custom CrossEntropyLoss per lambeq (compatibile e autonoma)."""
-    def __init__(self,
-                 use_jax: bool = False,
-                 epsilon: float = 1e-9) -> None:
-        """Initialise a multiclass cross-entropy loss function.
+class CustomNumpyModel(NumpyModel):
 
-        Parameters
-        ----------
-        use_jax : bool, default: False
-            Whether to use the Jax variant of numpy.
-        epsilon : float, default: 1e-9
-            Smoothing constant used to prevent calculating log(0).
+    from lambeq.backend.tensor import Diagram
 
-        """
+    def get_diagram_output(
+        self,
+        diagrams: list[Diagram]
+    ) -> jnp.ndarray | np.ndarray:
 
-        self._epsilon = epsilon
+        if self.use_jit:
 
-        super().__init__(use_jax)
+            lambdified_diagrams = [self._get_lambda(d) for d in diagrams]
 
-    def calculate_loss(self,
-                       y_pred: np.ndarray | jnp.ndarray,
-                       y_true: np.ndarray | jnp.ndarray) -> float:
-        """Calculate value of CE loss function."""
+            if hasattr(self.weights, "filled"):
+                self.weights = self.weights.filled()
 
-        print("\nCalculating loss (+1) ...")
+            raw_results = [diag_f(self.weights) for diag_f in lambdified_diagrams]
 
-        pred = y_pred.reshape(y_pred.shape[0], -1)
-        self._match_shapes(pred, y_true)
+            def force_shape_2_2(arr):
+                arr = jnp.asarray(arr)
+                flat = arr.flatten()
+                # padding o trim per avere 4 elementi
+                if flat.size < 4:
+                    flat = jnp.pad(flat, (0, 4 - flat.size))
+                elif flat.size > 4:
+                    flat = flat[:4]
+                return flat.reshape((2, 2))
 
-        y_pred_smoothed = self._smooth_and_normalise(pred, self._epsilon)
-
-        entropies = y_true * self.backend.log(y_pred_smoothed)
-        loss_val: float = -self.backend.sum(entropies) / len(y_true)
-
-        return loss_val
-
+            aligned = [force_shape_2_2(r) for r in raw_results]
+            return jnp.stack(aligned, axis=0)
 
 # ============================================================
 # Evaluation metrics
 # ============================================================
 
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
+
+def flatten_output(y_pred):
+    """Appiattisce eventuali output multidimensionali."""
+    if y_pred.ndim > 2:
+        y_pred = y_pred.reshape(y_pred.shape[0], -1)
+    return y_pred
+
+
+def to_class_indices(y):
+    """Converte one-hot o logit in indici di classe."""
+    if y.ndim > 1:
+        return np.argmax(y, axis=1)
+    return y
 
 def eval_metrics():
     """Evaluation metrics (NumPy, Torch, JAX compatible)."""
-
-    def flatten_output(y_pred):
-        """Appiattisce eventuali output multidimensionali (es. (batch,2,2) -> (batch,4))."""
-        if y_pred.ndim > 2:
-            y_pred = y_pred.reshape(y_pred.shape[0], -1)
-        return y_pred
-
-    def to_class_indices(y):
-        """Converte one-hot o logit in indici di classe."""
-        if y.ndim > 1:
-            return np.argmax(y, axis=1)
-        return y
 
     def accuracy(y_hat, y_true):
         y_hat = flatten_output(y_hat)
@@ -74,19 +71,19 @@ def eval_metrics():
         y_hat = flatten_output(y_hat)
         y_hat = to_class_indices(y_hat)
         y_true = to_class_indices(y_true)
-        return precision_score(y_true, y_hat, average='weighted', zero_division=0)
+        return precision_score(y_true, y_hat, average='macro', zero_division=0)
 
     def recall(y_hat, y_true):
         y_hat = flatten_output(y_hat)
         y_hat = to_class_indices(y_hat)
         y_true = to_class_indices(y_true)
-        return recall_score(y_true, y_hat, average='weighted', zero_division=0)
+        return recall_score(y_true, y_hat, average='macro', zero_division=0)
 
     def f1(y_hat, y_true):
         y_hat = flatten_output(y_hat)
         y_hat = to_class_indices(y_hat)
         y_true = to_class_indices(y_true)
-        return f1_score(y_true, y_hat, average='weighted', zero_division=0)
+        return f1_score(y_true, y_hat, average='macro', zero_division=0)
 
     return {
         "accuracy": accuracy,
@@ -124,10 +121,11 @@ def generate_circuits(diagrams, labels, limit_circuit_qbit = False):
     )
 
     valid_circuits, valid_labels = [], []
+    remove_cups = RemoveCupsRewriter()
 
     for diagram, label in zip(diagrams, labels):
         try:
-            circuit = ansatz(diagram)
+            circuit = ansatz(remove_cups(diagram))
             n_qubits = circuit.to_tk().n_qubits
 
             if limit_circuit_qbit and n_qubits > 28:
@@ -176,6 +174,23 @@ def encode_labels(label_lists):
 
     return encoded
 
+def cross_entropy_loss(logits, labels):
+    # Flatten output
+    logits = flatten_output(logits)
+    labels = flatten_output(labels)
+
+    # Converti da one-hot a indici
+    labels = to_class_indices(labels)
+
+    # Log-softmax numericamente stabile
+    log_probs = logits - jnp.max(logits, axis=1, keepdims=True)
+    log_probs = log_probs - jnp.log(jnp.sum(jnp.exp(log_probs), axis=1, keepdims=True))
+
+    # Loss = -log prob della classe corretta
+    loss = -log_probs[jnp.arange(labels.shape[0]), labels]
+
+    return float(jnp.mean(loss))
+
 def run_training(
         train_circuits, val_circuits, test_circuits,
         train_labels, val_labels, test_labels,
@@ -185,13 +200,11 @@ def run_training(
     val_dataset = Dataset(val_circuits, encode_labels(val_labels), shuffle=False)
 
     all_circuits = train_circuits + val_circuits + test_circuits
-    model = NumpyModel.from_diagrams(all_circuits, use_jit=True)
-
-    loss_fn = MyCrossEntropyLoss(use_jax=True)
+    model = CustomNumpyModel.from_diagrams(all_circuits, use_jit=True)
 
     trainer = QuantumTrainer(
         model=model,
-        loss_function=loss_fn,
+        loss_function=cross_entropy_loss,
         epochs=epochs,
         optimizer=SPSAOptimizer,
         optim_hyperparams={
@@ -208,11 +221,10 @@ def run_training(
     print("\nStarting training...")
 
     trainer.fit(
-        train_dataset,
-        val_dataset,
+        train_dataset, val_dataset,
         early_stopping_criterion='accuracy',
         early_stopping_interval=10,
-        minimize_criterion=False
+        minimize_criterion=False,
     )
 
     return trainer, model
@@ -231,17 +243,51 @@ def evaluate_on_test(model, test_circuits, test_labels):
 
     metrics = eval_metrics()
 
-    test_acc = metrics["accuracy"](model.forward(test_circuits), test_labels)
+    test_acc = metrics["accuracy"](model(test_circuits), test_labels)
     print('Test Accuracy:', test_acc)
 
-    test_rec = metrics["precision"](model.forward(test_circuits), test_labels)
+    test_rec = metrics["recall"](model(test_circuits), test_labels)
     print('Test Recall:', test_rec)
 
-    test_pre = metrics["recall"](model.forward(test_circuits), test_labels)
+    test_pre = metrics["precision"](model(test_circuits), test_labels)
     print('Test Precision:', test_pre)
 
-    test_f1 = metrics["f1-score"](model.forward(test_circuits), test_labels)
+    test_f1 = metrics["f1-score"](model(test_circuits), test_labels)
     print('Test F1:', test_f1)
+
+def evaluate_per_class(model, test_circuits, test_labels):
+
+    class_names = ["O", "PE", "SE", "US"]
+
+    # ---- 1. Ottieni logits dal modello ----
+    logits = model(test_circuits)
+    logits = np.asarray(logits)
+
+    # ---- 2. Normalizzazione shape (flatten se serve) ----
+    logits = flatten_output(logits)
+
+    # ---- 3. Converti logits → classi predette ----
+    y_pred = to_class_indices(logits)
+
+    # ---- 4. Etichette vere ----
+    y_true = np.asarray(test_labels)
+    y_true = to_class_indices(y_true)
+
+    # ---- 5. Report sklearn ----
+    report_dict = classification_report(
+        y_true, y_pred,
+        target_names=class_names,
+        output_dict=True,
+        zero_division=0
+    )
+
+    df_report = pd.DataFrame(report_dict).T
+    df_report.loc["Average"] = df_report.mean()
+
+    print("\n===== Per-class Metrics (NumPy) =====")
+    print(df_report.to_string(float_format="%.3f"))
+
+    return df_report
 
 # ============================================================
 # Full Quantum Pipeline
@@ -277,6 +323,7 @@ def run_lambeq_pipeline(
     plot_training_metrics(trainer)
     test_encoded = np.array(encode_labels(test_labels))
     evaluate_on_test(model, test_circuits, test_encoded)
+    evaluate_per_class(model, test_circuits, test_encoded)
 
 # ============================================================
 # Run the Experiment
@@ -286,15 +333,22 @@ if __name__ == "__main__":
 
     arta_path = "../../dataset/ARTA/gold/ARTA_Req_balanced.csv"
     pure_path = "../../dataset/ReqExp_PURE/gold/PURE_Req_balanced.csv"
+    usor_path = "../../dataset/USoR/gold/USoR_balanced.csv"
 
-    # print("\nARTA - Non shot-based quantum model training (Bobcat + Numpy Model + CrossEntropy) ...")
-    # run_lambeq_pipeline(arta_path, parser_model="Bobcat")
+    print("\nARTA - Non shot-based quantum model training (Bobcat + Numpy Model + CrossEntropy) ...")
+    run_lambeq_pipeline(arta_path, parser_model="Bobcat")
 
-    # print("\nPURE - Non shot-based quantum model training (Bobcat + Numpy Model + CrossEntropy) ...")
-    # run_lambeq_pipeline(pure_path, parser_model="Bobcat")
+    print("\nPURE - Non shot-based quantum model training (Bobcat + Numpy Model + CrossEntropy) ...")
+    run_lambeq_pipeline(pure_path, parser_model="Bobcat")
 
-    # print("\nARTA - Non shot-based quantum model training (CupsReader + Numpy Model + CrossEntropy) ...")
-    #run_lambeq_pipeline(arta_path, parser_model="CupsReader")
+    print("\nUSoR - Non shot-based quantum model training (Bobcat + Numpy Model + CrossEntropy) ...")
+    run_lambeq_pipeline(usor_path, parser_model="Bobcat")
+
+    print("\nARTA - Non shot-based quantum model training (CupsReader + Numpy Model + CrossEntropy) ...")
+    run_lambeq_pipeline(arta_path, parser_model="CupsReader")
 
     print("\nPURE - Non shot-based quantum model training (CupsReader + Numpy Model + CrossEntropy) ...")
     run_lambeq_pipeline(pure_path, parser_model="CupsReader")
+
+    print("\nUSoR - Non shot-based quantum model training (CupsReader + Numpy Model + CrossEntropy) ...")
+    run_lambeq_pipeline(usor_path, parser_model="CupsReader")
